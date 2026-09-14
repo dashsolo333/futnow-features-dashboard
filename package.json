@@ -1,0 +1,13 @@
+{
+  "name": "futnow-features-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dashboard d'équipe de suivi des features Futnow (GitHub Pages + JSON versionné).",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:coverage": "node --test --experimental-test-coverage tests/*.test.mjs",
+    "seed": "node scripts/seed-from-devhub.mjs",
+    "serve": "python3 -m http.server 4173"
+  }
+}
