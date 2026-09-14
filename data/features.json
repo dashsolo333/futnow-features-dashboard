@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T15:08:07.789Z",
+  "updatedAt": "2026-09-14T15:09:06.296Z",
   "stages": [
     {
       "id": "idea",
@@ -1325,42 +1325,6 @@
       }
     },
     {
-      "id": "f_mu1bjnvk0fyswh",
-      "title": "Test",
-      "description": "",
-      "icon": "",
-      "family": "other",
-      "familyLabel": "Autre",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "idea",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "",
-      "links": [],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "",
-        "prodFinalPlanned": "",
-        "prodFinalActual": ""
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-09-14T14:08:59.552Z",
-      "createdBy": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "updatedAt": "2026-09-14T14:08:59.552Z",
-      "updatedBy": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      }
-    },
-    {
       "id": "f_mu1bs4rmkdzws9",
       "title": "TEST",
       "description": "",
@@ -2068,6 +2032,17 @@
       "featureId": "f_mu1dnppp557kq3",
       "type": "create",
       "text": "a créé « Equilibrage XP GD »"
+    },
+    {
+      "id": "a_2026-09-14T15:09:06.296Z_f_mu1bjnvk0fyswh_delete",
+      "at": "2026-09-14T15:09:06.296Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1bjnvk0fyswh",
+      "type": "delete",
+      "text": "a supprimé « Test »"
     }
   ]
 }
