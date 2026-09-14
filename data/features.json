@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:47:07.937Z",
+  "updatedAt": "2026-09-14T14:47:10.581Z",
   "stages": [
     {
       "id": "idea",
@@ -1021,7 +1021,7 @@
         "ios",
         "android"
       ],
-      "stageId": "dev",
+      "stageId": "design",
       "stepProgress": 80,
       "releaseId": "",
       "devhubId": "pronos",
@@ -1065,7 +1065,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:47:07.937Z",
+      "updatedAt": "2026-09-14T14:47:10.581Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1904,6 +1904,28 @@
     {
       "id": "a_2026-09-14T14:47:07.937Z_dh_pronos_update",
       "at": "2026-09-14T14:47:07.937Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_pronos",
+      "type": "update",
+      "text": "a modifié stepProgress de « Pronos sans stats ballon »"
+    },
+    {
+      "id": "a_2026-09-14T14:47:10.573Z_dh_pronos_move",
+      "at": "2026-09-14T14:47:10.573Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_pronos",
+      "type": "move",
+      "text": "a passé « Pronos sans stats ballon » en Design"
+    },
+    {
+      "id": "a_2026-09-14T14:47:10.581Z_dh_pronos_update",
+      "at": "2026-09-14T14:47:10.581Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
