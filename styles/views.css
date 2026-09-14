@@ -56,8 +56,11 @@
 /* Board */
 .board { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 12px; scroll-snap-type: x proximity; }
 .col { flex: 1 1 250px; min-width: 250px; display: flex; flex-direction: column; gap: 10px; min-height: 240px; padding: 10px; border-radius: var(--r-lg); background: rgba(255,255,255,.03); border: 1px solid transparent; scroll-snap-align: start; transition: background var(--dur-fast), border-color var(--dur-fast); }
-.col.is-empty { flex: 0 0 124px; min-width: 124px; }
+.col.is-empty { flex: 0 0 132px; min-width: 132px; }
 .col.is-empty .col-gate { display: none; }
+.col.is-empty .col-head { flex-wrap: wrap; align-items: flex-start; }
+.col.is-empty .col-head h2 { white-space: normal; line-height: 1.2; flex: 1; min-width: 0; }
+.col.is-empty .col-count { margin-left: 0; }
 .col-drop { flex: 1; display: grid; place-items: center; border: 1px dashed var(--hairline); border-radius: var(--r-md); color: var(--ink-3); font-size: 13px; text-align: center; padding: 10px; }
 .col.is-over { background: var(--glass); border-color: var(--hairline-strong); }
 .col-head { display: flex; align-items: center; gap: 8px; padding: 6px 6px 2px; }
