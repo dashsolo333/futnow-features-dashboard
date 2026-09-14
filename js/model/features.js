@@ -99,21 +99,33 @@ export function addChecklistItem(doc, id, { id: itemId, text, group = '', due = 
   const f = requireFeature(doc, id);
   const clean = String(text || '').trim();
   if (!clean) throw new Error('Le texte de la tâche est obligatoire.');
-  const item = { id: itemId, text: clean, group: group || '', due: due || '', done: false, doneAt: '', doneBy: null, createdAt: at, createdBy: by };
+  const item = { id: itemId, text: clean, group: group || '', due: due || '', note: '', status: 'todo', done: false, doneAt: '', doneBy: null, createdAt: at, createdBy: by };
   const next = { ...f, items: [...f.items, item], updatedAt: at, updatedBy: by };
   const out = replaceFeature(doc, next);
   if (silent) return out;
   return journal(out, { type: 'update', featureId: id, text: `a ajouté la tâche « ${clean} » à « ${f.title} »`, by, at });
 }
 
-export function toggleChecklistItem(doc, id, itemId, { by, at }) {
+const ITEM_STATUSES = ['todo', 'doing', 'blocked', 'done'];
+const STATUS_TEXT = { todo: 'à faire', doing: 'en cours', blocked: 'bloquée', done: 'faite' };
+
+export function setChecklistStatus(doc, id, itemId, status, { by, at }) {
   const f = requireFeature(doc, id);
   const item = f.items.find((i) => i.id === itemId);
   if (!item) return doc;
-  const items = f.items.map((i) => (i.id === itemId ? { ...i, done: !i.done, doneAt: i.done ? '' : at, doneBy: i.done ? null : by } : i));
+  if (!ITEM_STATUSES.includes(status)) throw new Error('Statut de tâche invalide.');
+  const done = status === 'done';
+  const items = f.items.map((i) => (i.id === itemId ? { ...i, status, done, doneAt: done ? at : '', doneBy: done ? by : null } : i));
   const next = { ...f, items, updatedAt: at, updatedBy: by };
-  const text = `a ${item.done ? 'rouvert' : 'coché'} « ${item.text} » sur « ${f.title} »`;
+  const text = `a passé « ${item.text} » ${STATUS_TEXT[status]} sur « ${f.title} »`;
   return journal(replaceFeature(doc, next), { type: 'update', featureId: id, text, by, at });
+}
+
+export function toggleChecklistItem(doc, id, itemId, meta) {
+  const f = requireFeature(doc, id);
+  const item = f.items.find((i) => i.id === itemId);
+  if (!item) return doc;
+  return setChecklistStatus(doc, id, itemId, item.done ? 'todo' : 'done', meta);
 }
 
 export function updateChecklistItem(doc, id, itemId, patch, { by, at }) {

@@ -97,7 +97,7 @@ function writeHash() {
   if (location.hash !== next) history.replaceState(null, '', `${location.pathname}${next}`);
 }
 
-function renderMain() {
+function renderMainNow() {
   const doc = store.state.doc;
   const view = clear($('view'));
   const kpis = clear($('kpis'));
@@ -134,7 +134,25 @@ function measureChrome() {
   document.documentElement.style.setProperty('--chrome', `${px}px`);
 }
 
-function render() {
+// Un rendu peut être déclenché pendant un rendu (un champ perd le focus quand
+// la vue est vidée → change → sauvegarde → emit). On sérialise.
+let rendering = false;
+let queued = null;
+function guarded(fn) {
+  return () => {
+    if (rendering) { queued = queued === render ? render : fn; return; }
+    rendering = true;
+    try { fn(); } finally {
+      rendering = false;
+      if (queued) { const next = queued; queued = null; next(); }
+    }
+  };
+}
+
+const render = guarded(renderAll);
+const renderMain = guarded(renderMainNow);
+
+function renderAll() {
   const top = clear($('topbar'));
   top.append(renderHeader(ctx));
   const banner = clear($('banner'));

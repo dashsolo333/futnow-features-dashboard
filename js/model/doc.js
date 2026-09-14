@@ -76,12 +76,17 @@ export function normalizeFeature(f) {
       ...(f.dates || {}),
     },
     tests: Array.isArray(f.tests) ? f.tests : [],
-    items: Array.isArray(f.items) ? f.items : [],
+    items: Array.isArray(f.items) ? f.items.map(normalizeItem) : [],
     createdAt: f.createdAt || '',
     createdBy: f.createdBy || null,
     updatedAt: f.updatedAt || f.createdAt || '',
     updatedBy: f.updatedBy || f.createdBy || null,
   };
+}
+
+function normalizeItem(i) {
+  const status = ['todo', 'doing', 'blocked', 'done'].includes(i.status) ? i.status : (i.done ? 'done' : 'todo');
+  return { group: '', due: '', note: '', doneAt: '', doneBy: null, ...i, status, done: status === 'done' };
 }
 
 export function pushActivity(doc, entry) {

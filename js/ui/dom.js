@@ -33,7 +33,7 @@ export function append(el, children) {
 }
 
 export function clear(el) {
-  while (el.firstChild) el.removeChild(el.firstChild);
+  el.replaceChildren();
   return el;
 }
 
@@ -102,6 +102,7 @@ export function icon(name) {
     flag: 'M4 22V4M4 4h12l-2 4 2 4H4',
     expand: 'M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5',
     left: 'M15 18l-6-6 6-6',
+    note: 'M4 4h16v12l-4 4H4zM8 9h8M8 13h5',
     right: 'M9 6l6 6-6 6',
   };
   return svg('svg', { class: `ico ico-${name}`, viewBox: '0 0 24 24', width: 16, height: 16, fill: 'none', stroke: 'currentColor', 'stroke-width': 1.8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true' },
