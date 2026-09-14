@@ -19,7 +19,8 @@ export function renderSettings(ctx) {
 function renderAccount(ctx) {
   const { state } = ctx.store;
   let input;
-  const tokenUrl = `https://github.com/settings/personal-access-tokens/new`;
+  const classicUrl = `https://github.com/settings/tokens/new?scopes=repo&description=${encodeURIComponent(`Futnow Features (${CONFIG.repo})`)}`;
+  const fineUrl = 'https://github.com/settings/personal-access-tokens/new';
   return h('div', { style: { display: 'grid', gap: '16px' } },
     state.user ? h('div', { class: 'user-card' }, avatar(state.user, 40),
       h('div', { style: { flex: 1 } }, h('b', {}, state.user.name), h('div', { class: 'muted' }, `@${state.user.login} · ${state.user.canWrite ? 'peut écrire' : 'lecture seule sur ce dépôt'}`)),
@@ -32,10 +33,15 @@ function renderAccount(ctx) {
           try { const u = await ctx.store.setToken(input.value); ctx.toast(u.canWrite ? `Connecté : ${u.login}` : `${u.login} connecté, mais sans droit d’écriture`, { kind: u.canWrite ? 'ok' : 'error' }); ctx.rerender(); }
           catch (e) { ctx.toast(`Token refusé : ${e.message}`, { kind: 'error' }); }
         } }, 'Vérifier'))),
-    h('div', { class: 'hint' },
-      h('p', {}, 'Le token reste dans ce navigateur (localStorage) et sert uniquement à écrire ', h('code', {}, CONFIG.dataPath), ' dans ', h('code', {}, `${CONFIG.owner}/${CONFIG.repo}`), '. Chaque modification devient un commit à ton nom.'),
-      h('p', { style: { marginTop: '8px' } }, 'Créer un token fine-grained : ', h('a', { href: tokenUrl, target: '_blank', rel: 'noopener noreferrer' }, 'github.com/settings/personal-access-tokens'),
-        ' → Repository access : ', h('code', {}, CONFIG.repo), ' → Permissions → Contents : ', h('b', {}, 'Read and write'), '. Il faut être collaborateur du dépôt.')));
+    h('div', { class: 'token-help glass' },
+      h('b', {}, 'Créer un token qui peut tout faire sur ce dépôt'),
+      h('ol', { class: 'token-steps' },
+        h('li', {}, h('a', { href: classicUrl, target: '_blank', rel: 'noopener noreferrer', class: 'btn btn-cta btn-sm', style: { display: 'inline-flex' } }, 'Ouvrir GitHub avec les bons réglages ↗'),
+          h('span', { class: 'hint' }, ' la case « repo » est déjà cochée, tu n’as qu’à choisir la durée.')),
+        h('li', {}, 'Clique « Generate token » en bas, copie le token (il commence par ', h('code', {}, 'ghp_'), ').'),
+        h('li', {}, 'Colle-le ci-dessus et clique « Vérifier ».')),
+      h('p', { class: 'hint' }, 'Il faut être collaborateur du dépôt ', h('code', {}, `${CONFIG.owner}/${CONFIG.repo}`), '. Alternative plus restrictive : un token ', h('a', { href: fineUrl, target: '_blank', rel: 'noopener noreferrer' }, 'fine-grained'), ' limité à ce dépôt avec Contents : Read and write.'),
+      h('p', { class: 'hint' }, 'Le token reste dans ce navigateur (localStorage) et sert uniquement à écrire ', h('code', {}, CONFIG.dataPath), '. Chaque modification devient un commit à ton nom. La page vérifie le droit d’écriture du token lui-même à la connexion.')));
 }
 
 function renderPipeline(ctx) {

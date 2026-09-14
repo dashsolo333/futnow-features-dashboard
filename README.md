@@ -29,9 +29,10 @@ au nom de la personne connectée.
 ## Écrire depuis la page
 
 1. Être collaborateur du dépôt.
-2. Créer un token fine-grained : https://github.com/settings/personal-access-tokens/new
-   → Repository access : ce dépôt → Permissions → Contents : *Read and write*.
-3. Dans la page, ⚙︎ / « Connexion » → coller le token → Vérifier.
+2. Créer un token avec accès complet au dépôt (lien pré-rempli, la case `repo` est cochée) :
+   https://github.com/settings/tokens/new?scopes=repo&description=Futnow%20Features
+   Alternative restrictive : token fine-grained limité à ce dépôt, Contents : *Read and write*.
+3. Dans la page, « Connexion » → coller le token → Vérifier.
 
 Le token reste dans le navigateur (localStorage). Sans token, la page est en lecture.
 À la connexion, la page teste le droit d'écriture **du token lui-même** (un token

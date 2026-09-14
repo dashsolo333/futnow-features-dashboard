@@ -231,3 +231,9 @@ input[type='date'].input { color-scheme: dark; }
   .check-add { grid-template-columns: 1fr; }
   .check-add .check-box { display: none; }
 }
+
+.token-help { display: grid; gap: 12px; padding: 16px 18px; border-radius: var(--r-md); }
+.token-help > b { font-size: 15px; }
+.token-steps { display: grid; gap: 10px; padding-left: 22px; list-style: decimal; color: var(--ink-2); }
+.token-steps li { line-height: 1.6; }
+.token-steps .btn { vertical-align: middle; margin-right: 6px; text-decoration: none; }
