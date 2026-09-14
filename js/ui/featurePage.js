@@ -2,7 +2,8 @@
 import { h, icon, avatar, fmtDay, fmtDayFull, relTime, today } from './dom.js';
 import { bigGauge, stageStepper } from './gauge.js';
 import { FAMILIES, PRIORITIES, PLATFORMS, newId } from '../model/doc.js';
-import { updateFeature, deleteFeature, isLate, addChecklistItem, toggleChecklistItem, removeChecklistItem, checklistProgress, lastVerdict } from '../model/features.js';
+import { updateFeature, deleteFeature, isLate, lastVerdict } from '../model/features.js';
+import { renderChecklist } from './checklist.js';
 import { stageIndex, canMoveTo } from '../model/stages.js';
 import { featureTimeline } from '../model/timeline.js';
 import { renderJournal } from './journal.js';
@@ -63,12 +64,13 @@ export function renderFeaturePage(ctx, feature) {
           h('button', { type: 'button', class: 'btn btn-cta', onClick: () => ctx.move(feature.id, nextStage.id) }, `Passer en ${nextStage.label}`, icon('arrow')),
           !gate.ok ? h('span', { class: 'hint' }, gate.reason) : null) : null)),
 
+    renderChecklist(ctx, feature, ro),
+
     h('div', { class: 'fpage-cols' },
       h('div', { class: 'fpage-main' },
         h('section', { class: 'panel glass' },
           h('div', { class: 'section-head' }, h('h3', {}, 'Description')),
           h('textarea', { class: 'textarea fpage-desc', placeholder: 'Intention, périmètre, ce qui reste à trancher…', disabled: ro, onChange: (e) => patch({ description: e.target.value }) }, feature.description)),
-        renderChecklist(ctx, feature, ro),
         renderTests(ctx, feature, ro),
         h('section', { class: 'panel glass' },
           h('div', { class: 'section-head' }, h('h3', {}, 'Historique complet')),
@@ -109,28 +111,6 @@ function testers(feature) {
   if (!seen.size) return null;
   return h('div', { class: 'person' }, h('span', { class: 'avatar-stack' }, [...seen.values()].map((u) => avatar(u, 26))),
     h('div', {}, h('div', { class: 'muted', style: { fontSize: '12px' } }, 'Testeurs'), h('b', {}, [...seen.keys()].join(', '))));
-}
-
-function renderChecklist(ctx, feature, ro) {
-  const { done, total } = checklistProgress(feature);
-  let input;
-  const add = () => {
-    const text = input.value.trim();
-    if (!text) return;
-    if (ctx.act(`a ajouté une tâche à « ${feature.title} »`, (d) => addChecklistItem(d, feature.id, { id: newId('i'), text, ...ctx.meta() }))) input.value = '';
-  };
-  return h('section', { class: 'panel glass' },
-    h('div', { class: 'section-head' }, h('h3', {}, `Checklist · ${done}/${total}`),
-      total ? h('div', { class: 'bar', style: { '--bar': done === total ? '#b5f03a' : '#4f8cff' } }, h('i', { style: { width: `${Math.round((done / total) * 100)}%` } })) : h('span', { class: 'hint' }, 'sous-tâches, critères d’acceptation, points à vérifier')),
-    h('ul', { class: 'checklist' }, feature.items.map((it) => h('li', { class: `check-item${it.done ? ' is-done' : ''}` },
-      h('button', { type: 'button', class: 'check-box', role: 'checkbox', 'aria-checked': it.done ? 'true' : 'false', disabled: ro, 'aria-label': it.text,
-        onClick: () => ctx.act(`a coché une tâche de « ${feature.title} »`, (d) => toggleChecklistItem(d, feature.id, it.id, ctx.meta())) }, it.done ? icon('check') : null),
-      h('span', { class: 'check-text' }, it.text),
-      it.done && it.doneAt ? h('span', { class: 'dim', style: { fontSize: '12px' } }, fmtDay(it.doneAt)) : null,
-      ro ? null : h('button', { type: 'button', class: 'btn btn-ghost btn-sm btn-icon', 'aria-label': 'Retirer', onClick: () => ctx.act(`a retiré une tâche de « ${feature.title} »`, (d) => removeChecklistItem(d, feature.id, it.id, ctx.meta())) }, icon('close'))))),
-    ro ? null : h('div', { class: 'check-add' },
-      input = h('input', { class: 'input', placeholder: 'Nouvelle tâche… (Entrée)', onKeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); add(); } } }),
-      h('button', { type: 'button', class: 'btn btn-sm', onClick: add }, icon('plus'), 'Ajouter')));
 }
 
 const KIND = {

@@ -47,9 +47,17 @@ export function renderHeader(ctx) {
 
 export function renderBanner(ctx) {
   const { state } = ctx.store;
-  if (!state.doc || ctx.canWrite()) return null;
+  if (!state.doc) return null;
+  const n = state.pending.length;
+  if (n && (state.status === 'error' || state.status === 'conflict' || state.status === 'offline')) {
+    return h('div', { class: 'readonly-bar is-danger', role: 'alert' }, icon('warn'),
+      h('span', { style: { flex: 1 } }, h('b', {}, `${n} modification${n > 1 ? 's' : ''} non enregistrée${n > 1 ? 's' : ''}.`), ` ${state.error || ''} Ne ferme pas la page : `),
+      h('button', { type: 'button', onClick: ctx.retry }, 'Réessayer maintenant'),
+      h('button', { type: 'button', onClick: () => ctx.openSettings() }, 'Vérifier le token'));
+  }
+  if (ctx.canWrite()) return null;
   const text = state.user && !state.user.canWrite
-    ? `${state.user.login} n’a pas les droits d’écriture sur ce dépôt. Demande à être ajouté comme collaborateur.`
+    ? `${state.user.login} est connecté mais ne peut pas écrire : ${state.user.writeIssue || 'droits insuffisants.'}`
     : 'Mode lecture. Ajoute ton token GitHub pour créer et déplacer des features.';
   return h('div', { class: 'readonly-bar' }, icon('warn'), h('span', {}, text),
     h('button', { type: 'button', onClick: () => ctx.openSettings() }, state.user ? 'Changer de compte' : 'Se connecter'));

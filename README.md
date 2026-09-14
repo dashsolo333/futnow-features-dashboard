@@ -17,9 +17,10 @@ au nom de la personne connectée.
   - entrer en **prod test** date automatiquement le test réel ;
   - entrer en **prod final** exige que le **dernier test soit OK** (forçable, journalisé).
 - **Page par feature** (clic sur une carte, lien `#f=<id>` partageable) : jauge et pipeline
-  en tête, bouton « Passer en … », description, **checklist** de tâches, sessions de test,
-  historique complet, temporalité avec **frise** datée (passé journalisé, cibles à venir),
-  liens, personnes.
+  en tête, bouton « Passer en … », **checklist centrale** groupée par étape (échéances,
+  qui a coché quand, checklist type spec → stores), description, sessions de test,
+  historique complet, **jalons** Prod test / Prod final (J-x, retard, fait, raccourcis),
+  frise datée, liens, personnes.
 - **Sessions de test** : testeur, plateforme, build, verdict OK/KO, notes.
 - **Temporalité** : dates cibles et réelles prod test / prod final, retard en rouge.
 - **Fiches vierges** : bouton « Feature » (ou touche `n`) pour une idée sans mockup.
@@ -33,6 +34,10 @@ au nom de la personne connectée.
 3. Dans la page, ⚙︎ / « Connexion » → coller le token → Vérifier.
 
 Le token reste dans le navigateur (localStorage). Sans token, la page est en lecture.
+À la connexion, la page teste le droit d'écriture **du token lui-même** (un token
+fine-grained sans « Contents : write » est refusé avec un message clair). Si un
+enregistrement échoue, un bandeau rouge reste affiché tant que des modifications ne sont
+pas sauvegardées, et le navigateur prévient avant de fermer l'onglet.
 Les conflits d'écriture (deux personnes en même temps) sont résolus en rejouant les
 opérations locales sur la version distante.
 
@@ -42,6 +47,7 @@ opérations locales sur la version distante.
 npm test               # tests du modèle (node --test)
 npm run test:coverage
 npm run serve          # http://127.0.0.1:4173/?dev=1  (utilisateur simulé, rien n'est écrit)
+                       # …&fail=1 : les écritures échouent, pour tester le bandeau d'alerte
 npm run seed -- ../futnow-app --force   # régénérer data/features.json depuis le DevHub
 ```
 

@@ -164,6 +164,7 @@ document.addEventListener('keydown', (e) => {
 window.addEventListener('hashchange', () => { const hsh = readHash(); if (hsh.view) ui.view = hsh.view; ui.featureId = hsh.feature; if (hsh.focus) ui.focusId = hsh.focus; render(); });
 document.addEventListener('fullscreenchange', () => document.body.classList.toggle('is-fullscreen', Boolean(document.fullscreenElement)));
 document.addEventListener('visibilitychange', () => { if (!document.hidden) store.reload(); });
+window.addEventListener('beforeunload', (e) => { if (store.state.pending.length) { e.preventDefault(); e.returnValue = ''; } });
 
 let lastStatus = '';
 store.subscribe((s) => {

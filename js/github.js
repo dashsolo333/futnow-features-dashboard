@@ -1,6 +1,6 @@
 // Client minimal de l'API GitHub Contents. Lecture publique sans token
 // (avec ETag pour ne pas consommer le quota), écriture avec token perso.
-import { CONFIG, IS_LOCAL, DEV_MODE } from './config.js';
+import { CONFIG, IS_LOCAL, DEV_MODE, DEV_FAIL } from './config.js';
 
 const API = 'https://api.github.com';
 
@@ -55,6 +55,7 @@ export async function loadDoc({ token, etag } = {}) {
 
 /** Écrit le JSON. Lève GitHubError(409/422) si le sha ne correspond plus. */
 export async function saveDoc({ token, doc, sha, message }) {
+  if (DEV_FAIL) throw new GitHubError(403, 'Resource not accessible by personal access token');
   if (DEV_MODE) { console.info('[dev] commit simulé :', message); return { sha: `dev-${Date.now()}` }; }
   const res = await fetch(contentsUrl().split('?')[0], {
     method: 'PUT',
@@ -79,10 +80,27 @@ export async function whoAmI(token) {
   const res = await fetch(`${API}/user`, { headers: headers(token) });
   if (!res.ok) throw await readError(res);
   const u = await res.json();
-  const repoRes = await fetch(`${API}/repos/${CONFIG.owner}/${CONFIG.repo}`, { headers: headers(token) });
-  const repo = repoRes.ok ? await repoRes.json() : null;
-  const canWrite = Boolean(repo?.permissions?.push || repo?.permissions?.admin);
-  return { login: u.login, avatar: u.avatar_url, name: u.name || u.login, canWrite };
+  const probe = await probeWrite(token);
+  return { login: u.login, avatar: u.avatar_url, name: u.name || u.login, canWrite: probe.ok, writeIssue: probe.reason };
+}
+
+/**
+ * Teste le droit d'écriture du token lui-même (un token fine-grained peut
+ * appartenir au propriétaire et pourtant ne pas avoir « Contents : write »).
+ * On tente un PUT avec un sha impossible : 409/422 = le droit existe (rien
+ * n'est écrit), 403/404 = le token ne peut pas écrire ici.
+ */
+export async function probeWrite(token) {
+  const res = await fetch(contentsUrl().split('?')[0], {
+    method: 'PUT',
+    headers: headers(token, { 'Content-Type': 'application/json' }),
+    body: JSON.stringify({ message: 'probe', branch: CONFIG.branch, sha: '0000000000000000000000000000000000000000', content: '' }),
+  });
+  if (res.status === 409 || res.status === 422) return { ok: true, reason: '' };
+  if (res.status === 403) return { ok: false, reason: 'Le token n’a pas la permission « Contents : Read and write » sur ce dépôt.' };
+  if (res.status === 404) return { ok: false, reason: 'Le token n’a pas accès à ce dépôt (Repository access). Ajoute-le, et vérifie que tu es collaborateur.' };
+  if (res.ok) return { ok: true, reason: '' };
+  return { ok: false, reason: `Réponse inattendue de GitHub (${res.status}).` };
 }
 
 /** Recette locale : lit data/features.json servi par le serveur statique. */

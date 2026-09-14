@@ -1,6 +1,6 @@
 import { h, icon, avatar, fmtDay, today } from './dom.js';
 import { progressRow } from './gauge.js';
-import { isLate, lastVerdict } from '../model/features.js';
+import { isLate, lastVerdict, checklistProgress } from '../model/features.js';
 
 export function datePill(label, planned, actual, late) {
   if (!planned && !actual) return null;
@@ -13,6 +13,12 @@ export function verdictBadge(feature) {
   const last = lastVerdict(feature);
   if (!last) return null;
   return h('span', { class: `badge badge-${last.verdict}`, title: last.notes || '' }, `Test ${last.verdict.toUpperCase()}`);
+}
+
+export function tasksChip(feature) {
+  const { done, total } = checklistProgress(feature);
+  if (!total) return null;
+  return h('span', { class: `badge ${done === total ? 'badge-ok' : 'badge-neutral'}`, title: 'Checklist' }, `${done}/${total} tâches`);
 }
 
 export function releaseChip(doc, feature) {
@@ -41,6 +47,7 @@ export function renderCard(ctx, feature) {
     datePill('Test', feature.dates.prodTestPlanned, feature.dates.prodTestActual, late.prodTest),
     datePill('Prod', feature.dates.prodFinalPlanned, feature.dates.prodFinalActual, late.prodFinal),
     verdictBadge(feature),
+    tasksChip(feature),
     releaseChip(doc, feature),
     avatar(feature.updatedBy, 20)));
   return el;

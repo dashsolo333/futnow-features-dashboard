@@ -36,6 +36,8 @@
 .sync-user:hover { background: var(--glass-2); }
 .readonly-bar { display: flex; align-items: center; gap: 12px; padding: 10px var(--gutter); background: rgba(245,158,11,.10); border-bottom: 1px solid rgba(245,158,11,.3); font-size: 14px; color: #ffd98a; }
 .readonly-bar button { color: #fff; font-weight: 600; text-decoration: underline; }
+.readonly-bar.is-danger { background: rgba(248,113,113,.14); border-bottom-color: rgba(248,113,113,.45); color: #ffb3b3; }
+.readonly-bar.is-danger b { color: #fff; }
 
 /* ---------- KPIs ---------- */
 .kpis { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); padding: 18px var(--gutter) 0; }
@@ -110,15 +112,6 @@
 .panel .section-head { margin-bottom: 12px; }
 .panel .section-head .bar { width: 140px; }
 .fpage-desc { min-height: 140px; font-size: 14.5px; }
-.checklist { display: grid; gap: 4px; }
-.check-item { display: flex; align-items: center; gap: 10px; padding: 6px 8px; border-radius: var(--r-xs); }
-.check-item:hover { background: var(--glass); }
-.check-box { width: 20px; height: 20px; border-radius: 6px; border: 1.5px solid var(--hairline-strong); display: grid; place-items: center; color: var(--on-cta); flex: none; transition: all var(--dur-fast); }
-.check-box:hover { border-color: var(--ink-2); }
-.check-item.is-done .check-box { background: var(--lime); border-color: var(--lime); }
-.check-text { flex: 1; min-width: 0; }
-.check-item.is-done .check-text { color: var(--ink-3); text-decoration: line-through; }
-.check-add { display: flex; gap: 8px; margin-top: 10px; }
 .person { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
 .person + .person { border-top: 1px solid rgba(255,255,255,.05); }
 .tl { position: relative; display: grid; gap: 2px; padding-left: 6px; }

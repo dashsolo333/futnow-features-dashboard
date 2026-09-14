@@ -12,6 +12,8 @@ export function repoFromLocation(loc = globalThis.location) {
 export const IS_LOCAL = /^(localhost|127\.0\.0\.1)$/.test(globalThis.location?.hostname || '');
 // Sur localhost, ?dev=1 simule un utilisateur autorisé et n'écrit rien (recette UI).
 export const DEV_MODE = IS_LOCAL && new URLSearchParams(globalThis.location?.search || '').get('dev') === '1';
+// ?dev=1&fail=1 : les écritures simulées échouent (recette du bandeau « non enregistré »).
+export const DEV_FAIL = DEV_MODE && new URLSearchParams(globalThis.location?.search || '').get('fail') === '1';
 
 export const CONFIG = {
   ...repoFromLocation(),

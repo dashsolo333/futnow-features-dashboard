@@ -95,22 +95,36 @@ export function isLate(feature, today) {
 
 /* ---------- checklist de tâches ---------- */
 
-export function addChecklistItem(doc, id, { id: itemId, text, by, at }) {
+export function addChecklistItem(doc, id, { id: itemId, text, group = '', due = '', by, at, silent = false }) {
   const f = requireFeature(doc, id);
   const clean = String(text || '').trim();
   if (!clean) throw new Error('Le texte de la tâche est obligatoire.');
-  const next = { ...f, items: [...f.items, { id: itemId, text: clean, done: false }], updatedAt: at, updatedBy: by };
-  return journal(replaceFeature(doc, next), { type: 'update', featureId: id, text: `a ajouté la tâche « ${clean} » à « ${f.title} »`, by, at });
+  const item = { id: itemId, text: clean, group: group || '', due: due || '', done: false, doneAt: '', doneBy: null, createdAt: at, createdBy: by };
+  const next = { ...f, items: [...f.items, item], updatedAt: at, updatedBy: by };
+  const out = replaceFeature(doc, next);
+  if (silent) return out;
+  return journal(out, { type: 'update', featureId: id, text: `a ajouté la tâche « ${clean} » à « ${f.title} »`, by, at });
 }
 
 export function toggleChecklistItem(doc, id, itemId, { by, at }) {
   const f = requireFeature(doc, id);
   const item = f.items.find((i) => i.id === itemId);
   if (!item) return doc;
-  const items = f.items.map((i) => (i.id === itemId ? { ...i, done: !i.done, doneAt: i.done ? '' : at } : i));
+  const items = f.items.map((i) => (i.id === itemId ? { ...i, done: !i.done, doneAt: i.done ? '' : at, doneBy: i.done ? null : by } : i));
   const next = { ...f, items, updatedAt: at, updatedBy: by };
   const text = `a ${item.done ? 'rouvert' : 'coché'} « ${item.text} » sur « ${f.title} »`;
   return journal(replaceFeature(doc, next), { type: 'update', featureId: id, text, by, at });
+}
+
+export function updateChecklistItem(doc, id, itemId, patch, { by, at }) {
+  const f = requireFeature(doc, id);
+  const item = f.items.find((i) => i.id === itemId);
+  if (!item) return doc;
+  if (patch.text !== undefined && !String(patch.text).trim()) throw new Error('Le texte de la tâche est obligatoire.');
+  const clean = { ...patch };
+  if (clean.text !== undefined) clean.text = String(clean.text).trim();
+  const items = f.items.map((i) => (i.id === itemId ? { ...i, ...clean } : i));
+  return replaceFeature(doc, { ...f, items, updatedAt: at, updatedBy: by });
 }
 
 export function removeChecklistItem(doc, id, itemId, { by, at }) {
