@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:19:29.714Z",
+  "updatedAt": "2026-09-14T14:26:03.875Z",
   "stages": [
     {
       "id": "idea",
@@ -1362,6 +1362,42 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
+    },
+    {
+      "id": "f_mu1c5m8z9pu0rz",
+      "title": "Chat & DM sync",
+      "description": "Recuperer DM privé et chat des games.",
+      "icon": "",
+      "family": "other",
+      "familyLabel": "Autre",
+      "priority": "p2",
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "stageId": "idea",
+      "stepProgress": 0,
+      "releaseId": "",
+      "devhubId": "",
+      "links": [],
+      "dates": {
+        "prodTestPlanned": "",
+        "prodTestActual": "",
+        "prodFinalPlanned": "",
+        "prodFinalActual": ""
+      },
+      "tests": [],
+      "items": [],
+      "createdAt": "2026-09-14T14:26:03.875Z",
+      "createdBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "updatedAt": "2026-09-14T14:26:03.875Z",
+      "updatedBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      }
     }
   ],
   "activity": [
@@ -1518,6 +1554,17 @@
       "featureId": "dh_lobby",
       "type": "move",
       "text": "a passé « Lobby » en Prod final (forcé, sans test OK)"
+    },
+    {
+      "id": "a_2026-09-14T14:26:03.875Z_f_mu1c5m8z9pu0rz_create",
+      "at": "2026-09-14T14:26:03.875Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "create",
+      "text": "a créé « Chat & DM sync »"
     }
   ]
 }
