@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:14:29.575Z",
+  "updatedAt": "2026-09-14T14:14:36.521Z",
   "stages": [
     {
       "id": "idea",
@@ -264,6 +264,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu1bqvvt5ydzjv",
+          "text": "ajouter blablka",
+          "group": "design",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-14T14:14:36.521Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-10T11:33:04+02:00",
@@ -271,7 +287,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:14:29.575Z",
+      "updatedAt": "2026-09-14T14:14:36.521Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1400,6 +1416,17 @@
       "featureId": "dh_activity-v2",
       "type": "update",
       "text": "a ajouté la tâche « enlever le + » à « Activité v2 »"
+    },
+    {
+      "id": "a_2026-09-14T14:14:36.521Z_dh_activity-v2_update",
+      "at": "2026-09-14T14:14:36.521Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "update",
+      "text": "a ajouté la tâche « ajouter blablka » à « Activité v2 »"
     }
   ]
 }
