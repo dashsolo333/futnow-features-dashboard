@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T15:09:06.296Z",
+  "updatedAt": "2026-09-14T15:09:12.715Z",
   "stages": [
     {
       "id": "idea",
@@ -1325,42 +1325,6 @@
       }
     },
     {
-      "id": "f_mu1bs4rmkdzws9",
-      "title": "TEST",
-      "description": "",
-      "icon": "",
-      "family": "other",
-      "familyLabel": "Autre",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "idea",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "",
-      "links": [],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "",
-        "prodFinalPlanned": "",
-        "prodFinalActual": ""
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-09-14T14:15:34.691Z",
-      "createdBy": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "updatedAt": "2026-09-14T14:15:34.691Z",
-      "updatedBy": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      }
-    },
-    {
       "id": "f_mu1c5m8z9pu0rz",
       "title": "Chat & DM sync",
       "description": "Recuperer DM privé et chat des games.",
@@ -2043,6 +2007,17 @@
       "featureId": "f_mu1bjnvk0fyswh",
       "type": "delete",
       "text": "a supprimé « Test »"
+    },
+    {
+      "id": "a_2026-09-14T15:09:12.715Z_f_mu1bs4rmkdzws9_delete",
+      "at": "2026-09-14T15:09:12.715Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1bs4rmkdzws9",
+      "type": "delete",
+      "text": "a supprimé « TEST »"
     }
   ]
 }
