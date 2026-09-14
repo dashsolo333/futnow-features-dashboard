@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:14:36.521Z",
+  "updatedAt": "2026-09-14T14:14:40.371Z",
   "stages": [
     {
       "id": "idea",
@@ -271,7 +271,7 @@
           "group": "design",
           "due": "",
           "note": "",
-          "status": "todo",
+          "status": "doing",
           "done": false,
           "doneAt": "",
           "doneBy": null,
@@ -287,7 +287,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:14:36.521Z",
+      "updatedAt": "2026-09-14T14:14:40.371Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1427,6 +1427,17 @@
       "featureId": "dh_activity-v2",
       "type": "update",
       "text": "a ajouté la tâche « ajouter blablka » à « Activité v2 »"
+    },
+    {
+      "id": "a_2026-09-14T14:14:40.371Z_dh_activity-v2_update",
+      "at": "2026-09-14T14:14:40.371Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "update",
+      "text": "a passé « ajouter blablka » en cours sur « Activité v2 »"
     }
   ]
 }
