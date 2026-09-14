@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:18:34.658Z",
+  "updatedAt": "2026-09-14T14:18:36.490Z",
   "stages": [
     {
       "id": "idea",
@@ -411,7 +411,7 @@
         "ios",
         "android"
       ],
-      "stageId": "dev",
+      "stageId": "review",
       "stepProgress": 0,
       "releaseId": "",
       "devhubId": "join-game",
@@ -434,7 +434,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:18:34.658Z",
+      "updatedAt": "2026-09-14T14:18:36.490Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1474,6 +1474,17 @@
       "featureId": "dh_join-game",
       "type": "move",
       "text": "a passé « JoinGame » en Dev"
+    },
+    {
+      "id": "a_2026-09-14T14:18:36.490Z_dh_join-game_move",
+      "at": "2026-09-14T14:18:36.490Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_join-game",
+      "type": "move",
+      "text": "a passé « JoinGame » en Review"
     }
   ]
 }
