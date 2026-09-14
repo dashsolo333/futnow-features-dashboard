@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:14:45.313Z",
+  "updatedAt": "2026-09-14T14:15:34.691Z",
   "stages": [
     {
       "id": "idea",
@@ -1326,6 +1326,42 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
+    },
+    {
+      "id": "f_mu1bs4rmkdzws9",
+      "title": "TEST",
+      "description": "",
+      "icon": "",
+      "family": "other",
+      "familyLabel": "Autre",
+      "priority": "p2",
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "stageId": "idea",
+      "stepProgress": 0,
+      "releaseId": "",
+      "devhubId": "",
+      "links": [],
+      "dates": {
+        "prodTestPlanned": "",
+        "prodTestActual": "",
+        "prodFinalPlanned": "",
+        "prodFinalActual": ""
+      },
+      "tests": [],
+      "items": [],
+      "createdAt": "2026-09-14T14:15:34.691Z",
+      "createdBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "updatedAt": "2026-09-14T14:15:34.691Z",
+      "updatedBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      }
     }
   ],
   "activity": [
@@ -1416,6 +1452,17 @@
       "featureId": "dh_activity-v2",
       "type": "update",
       "text": "a passé « ajouter blablka » bloquée sur « Activité v2 »"
+    },
+    {
+      "id": "a_2026-09-14T14:15:34.691Z_f_mu1bs4rmkdzws9_create",
+      "at": "2026-09-14T14:15:34.691Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1bs4rmkdzws9",
+      "type": "create",
+      "text": "a créé « TEST »"
     }
   ]
 }
