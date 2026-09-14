@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:07:11.993Z",
+  "updatedAt": "2026-09-14T14:08:59.552Z",
   "stages": [
     {
       "id": "idea",
@@ -1011,15 +1011,15 @@
       "tests": [],
       "items": [
         {
-          "id": "i_mu1bhcvtfbc154",
-          "text": "test",
           "group": "design",
           "due": "",
           "note": "",
-          "status": "todo",
-          "done": false,
           "doneAt": "",
           "doneBy": null,
+          "id": "i_mu1bhcvtfbc154",
+          "text": "test",
+          "status": "todo",
+          "done": false,
           "createdAt": "2026-09-14T14:07:11.993Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1290,6 +1290,42 @@
         "login": "devhub",
         "avatar": ""
       }
+    },
+    {
+      "id": "f_mu1bjnvk0fyswh",
+      "title": "Test",
+      "description": "",
+      "icon": "",
+      "family": "other",
+      "familyLabel": "Autre",
+      "priority": "p2",
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "stageId": "idea",
+      "stepProgress": 0,
+      "releaseId": "",
+      "devhubId": "",
+      "links": [],
+      "dates": {
+        "prodTestPlanned": "",
+        "prodTestActual": "",
+        "prodFinalPlanned": "",
+        "prodFinalActual": ""
+      },
+      "tests": [],
+      "items": [],
+      "createdAt": "2026-09-14T14:08:59.552Z",
+      "createdBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "updatedAt": "2026-09-14T14:08:59.552Z",
+      "updatedBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      }
     }
   ],
   "activity": [
@@ -1303,6 +1339,17 @@
       "featureId": "dh_pronos",
       "type": "update",
       "text": "a ajouté la tâche « test » à « Pronos »"
+    },
+    {
+      "id": "a_2026-09-14T14:08:59.552Z_f_mu1bjnvk0fyswh_create",
+      "at": "2026-09-14T14:08:59.552Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1bjnvk0fyswh",
+      "type": "create",
+      "text": "a créé « Test »"
     }
   ]
 }
