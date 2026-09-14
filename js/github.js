@@ -97,6 +97,7 @@ export async function probeWrite(token) {
     body: JSON.stringify({ message: 'probe', branch: CONFIG.branch, sha: '0000000000000000000000000000000000000000', content: '' }),
   });
   if (res.status === 409 || res.status === 422) return { ok: true, reason: '' };
+  if (res.status === 401) return { ok: false, reason: 'Token invalide ou expiré.' };
   if (res.status === 403) return { ok: false, reason: 'Le token n’a pas la permission « Contents : Read and write » sur ce dépôt.' };
   if (res.status === 404) return { ok: false, reason: 'Le token n’a pas accès à ce dépôt (Repository access). Ajoute-le, et vérifie que tu es collaborateur.' };
   if (res.ok) return { ok: true, reason: '' };
