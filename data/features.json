@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:45:12.337Z",
+  "updatedAt": "2026-09-14T14:46:37.087Z",
   "stages": [
     {
       "id": "idea",
@@ -1011,7 +1011,7 @@
     },
     {
       "id": "dh_pronos",
-      "title": "Pronos",
+      "title": "Pronos V1",
       "description": "Le ticket d'avant-match façon Winamax, mais gratuit. Deux niveaux. V1 « sans stats ballon » : la feuille de score décide — vainqueur, score exact, buts (total des deux équipes, tranches calées sur 59 fives réels : moins de 25 · 25 à 34 · 35 et +), écart (0 à 3 · 4 à 6 · 7 et +) ; pas de cotes, leur case reste grisée à sa place, homme du match et buteur visibles mais verrouillés, XP à plat, pas de combiné. Final « avec stats ballon » : tout se joue, cotes sur les cartes 3D et dans la feuille, combiné sans plafond. Feuille compacte = trois panneaux (Résultat, Buts, Joueurs avec onglets + roster 5v5 une colonne par équipe), boutons de cote en grille, ticket replié en bas (un tap l'ouvre : capsules, combiné). Un pari se voit deux fois : dans la discussion à la mise (une carte par joueur, push au visé) et au verdict — seulement s'il passe. Le verdict vit sur la Compo 3D du détail de match. GD : docs/brain/game-design/gd-pronos.md.\n\nTag DevHub : ticket gratuit · V1 score / final stats",
       "icon": "🎰",
       "family": "labs",
@@ -1065,7 +1065,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:07:11.993Z",
+      "updatedAt": "2026-09-14T14:46:37.087Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1834,6 +1834,17 @@
       "featureId": "dh_radar",
       "type": "move",
       "text": "a passé « Mode RADAR » en Design"
+    },
+    {
+      "id": "a_2026-09-14T14:46:37.087Z_dh_pronos_update",
+      "at": "2026-09-14T14:46:37.087Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_pronos",
+      "type": "update",
+      "text": "a modifié title de « Pronos »"
     }
   ]
 }
