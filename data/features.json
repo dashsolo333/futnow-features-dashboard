@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T15:26:25.009Z",
+  "updatedAt": "2026-09-14T15:26:57.476Z",
   "stages": [
     {
       "id": "idea",
@@ -399,7 +399,7 @@
         "ios",
         "android"
       ],
-      "stageId": "review",
+      "stageId": "prodtest",
       "stepProgress": 0,
       "releaseId": "",
       "devhubId": "join-game",
@@ -411,7 +411,7 @@
       ],
       "dates": {
         "prodTestPlanned": "",
-        "prodTestActual": "",
+        "prodTestActual": "2026-09-14",
         "prodFinalPlanned": "",
         "prodFinalActual": ""
       },
@@ -422,7 +422,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:18:36.490Z",
+      "updatedAt": "2026-09-14T15:26:57.476Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1756,6 +1756,28 @@
       "featureId": "dh_attack-direction",
       "type": "delete",
       "text": "a supprimé « Sens d'attaque »"
+    },
+    {
+      "id": "a_2026-09-14T15:26:56.774Z_dh_join-game_update",
+      "at": "2026-09-14T15:26:56.774Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_join-game",
+      "type": "update",
+      "text": "a modifié stepProgress de « JoinGame »"
+    },
+    {
+      "id": "a_2026-09-14T15:26:57.476Z_dh_join-game_move",
+      "at": "2026-09-14T15:26:57.476Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_join-game",
+      "type": "move",
+      "text": "a passé « JoinGame » en Prod test"
     }
   ]
 }
