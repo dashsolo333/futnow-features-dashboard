@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T15:27:08.241Z",
+  "updatedAt": "2026-09-14T15:27:12.090Z",
   "stages": [
     {
       "id": "idea",
@@ -399,7 +399,7 @@
         "ios",
         "android"
       ],
-      "stageId": "prodtest",
+      "stageId": "prod",
       "stepProgress": 0,
       "releaseId": "",
       "devhubId": "join-game",
@@ -413,7 +413,7 @@
         "prodTestPlanned": "",
         "prodTestActual": "2026-09-14",
         "prodFinalPlanned": "",
-        "prodFinalActual": ""
+        "prodFinalActual": "2026-09-14"
       },
       "tests": [
         {
@@ -435,7 +435,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T15:27:08.241Z",
+      "updatedAt": "2026-09-14T15:27:12.090Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1802,6 +1802,17 @@
       "featureId": "dh_join-game",
       "type": "test",
       "text": "a testé « JoinGame » sur ios : OK — ok"
+    },
+    {
+      "id": "a_2026-09-14T15:27:12.090Z_dh_join-game_move",
+      "at": "2026-09-14T15:27:12.090Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_join-game",
+      "type": "move",
+      "text": "a passé « JoinGame » en Prod final"
     }
   ]
 }
