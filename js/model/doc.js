@@ -76,6 +76,7 @@ export function normalizeFeature(f) {
       ...(f.dates || {}),
     },
     tests: Array.isArray(f.tests) ? f.tests : [],
+    items: Array.isArray(f.items) ? f.items : [],
     createdAt: f.createdAt || '',
     createdBy: f.createdBy || null,
     updatedAt: f.updatedAt || f.createdAt || '',

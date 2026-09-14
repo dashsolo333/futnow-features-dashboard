@@ -92,3 +92,34 @@ export function isLate(feature, today) {
     prodFinal: late(d.prodFinalPlanned, d.prodFinalActual),
   };
 }
+
+/* ---------- checklist de tâches ---------- */
+
+export function addChecklistItem(doc, id, { id: itemId, text, by, at }) {
+  const f = requireFeature(doc, id);
+  const clean = String(text || '').trim();
+  if (!clean) throw new Error('Le texte de la tâche est obligatoire.');
+  const next = { ...f, items: [...f.items, { id: itemId, text: clean, done: false }], updatedAt: at, updatedBy: by };
+  return journal(replaceFeature(doc, next), { type: 'update', featureId: id, text: `a ajouté la tâche « ${clean} » à « ${f.title} »`, by, at });
+}
+
+export function toggleChecklistItem(doc, id, itemId, { by, at }) {
+  const f = requireFeature(doc, id);
+  const item = f.items.find((i) => i.id === itemId);
+  if (!item) return doc;
+  const items = f.items.map((i) => (i.id === itemId ? { ...i, done: !i.done, doneAt: i.done ? '' : at } : i));
+  const next = { ...f, items, updatedAt: at, updatedBy: by };
+  const text = `a ${item.done ? 'rouvert' : 'coché'} « ${item.text} » sur « ${f.title} »`;
+  return journal(replaceFeature(doc, next), { type: 'update', featureId: id, text, by, at });
+}
+
+export function removeChecklistItem(doc, id, itemId, { by, at }) {
+  const f = requireFeature(doc, id);
+  const next = { ...f, items: f.items.filter((i) => i.id !== itemId), updatedAt: at, updatedBy: by };
+  return replaceFeature(doc, next);
+}
+
+export function checklistProgress(feature) {
+  const items = feature.items || [];
+  return { done: items.filter((i) => i.done).length, total: items.length };
+}

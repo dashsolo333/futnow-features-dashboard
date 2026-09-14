@@ -16,6 +16,10 @@ au nom de la personne connectée.
   ajouter des étapes. Deux étapes portent une garde :
   - entrer en **prod test** date automatiquement le test réel ;
   - entrer en **prod final** exige que le **dernier test soit OK** (forçable, journalisé).
+- **Page par feature** (clic sur une carte, lien `#f=<id>` partageable) : jauge et pipeline
+  en tête, bouton « Passer en … », description, **checklist** de tâches, sessions de test,
+  historique complet, temporalité avec **frise** datée (passé journalisé, cibles à venir),
+  liens, personnes.
 - **Sessions de test** : testeur, plateforme, build, verdict OK/KO, notes.
 - **Temporalité** : dates cibles et réelles prod test / prod final, retard en rouge.
 - **Fiches vierges** : bouton « Feature » (ou touche `n`) pour une idée sans mockup.

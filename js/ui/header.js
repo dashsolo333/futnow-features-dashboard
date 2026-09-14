@@ -23,7 +23,7 @@ export function renderHeader(ctx) {
       h('div', { class: 'brand-name' }, 'Futnow ', h('span', {}, '· Features'))),
     h('nav', { class: 'tabs', role: 'tablist', 'aria-label': 'Vues' },
       VIEWS.map((v) => h('button', {
-        type: 'button', class: 'tab', role: 'tab', 'aria-selected': ctx.view === v.id ? 'true' : 'false',
+        type: 'button', class: 'tab', role: 'tab', 'aria-selected': ctx.view === v.id && !ctx.featureId ? 'true' : 'false',
         onClick: () => ctx.setView(v.id),
       }, v.label, v.id === 'board' && ctx.doc ? h('span', { class: 'tab-count' }, ctx.doc.features.length) : null))),
     h('div', { class: 'topbar-right' },

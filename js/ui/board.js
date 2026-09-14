@@ -7,7 +7,7 @@ export function renderBoard(ctx) {
   const feats = visibleFeatures(doc, ctx.filters);
   return h('div', { class: 'board' },
     doc.stages.map((stage) => {
-      const items = feats.filter((f) => f.stageId === stage.id);
+      const items = feats.filter((f) => f.stageId === stage.id).sort((a, b) => a.priority.localeCompare(b.priority) || String(b.updatedAt).localeCompare(String(a.updatedAt)));
       const gate = stage.id === doc.gates.finalStageId ? 'test OK requis' : stage.id === doc.gates.testStageId ? 'garde test' : '';
       const col = h('section', {
         class: 'col', 'aria-label': stage.label,
