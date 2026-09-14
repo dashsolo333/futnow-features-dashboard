@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:39:05.228Z",
+  "updatedAt": "2026-09-14T14:40:06.992Z",
   "stages": [
     {
       "id": "idea",
@@ -147,7 +147,7 @@
         "android"
       ],
       "stageId": "design",
-      "stepProgress": 0,
+      "stepProgress": 45,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -165,15 +165,15 @@
       "tests": [],
       "items": [
         {
-          "id": "i_mu1cmd58oyilmg",
-          "text": "générer un rules_radar.md synthétique pour françois",
           "group": "dev",
           "due": "",
           "note": "",
-          "status": "todo",
-          "done": false,
           "doneAt": "",
           "doneBy": null,
+          "id": "i_mu1cmd58oyilmg",
+          "text": "générer un rules_radar.md synthétique pour françois",
+          "status": "todo",
+          "done": false,
           "createdAt": "2026-09-14T14:39:05.228Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -186,7 +186,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:39:05.228Z",
+      "updatedAt": "2026-09-14T14:40:06.992Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1697,6 +1697,17 @@
       "featureId": "dh_radar",
       "type": "update",
       "text": "a ajouté la tâche « générer un rules_radar.md synthétique pour françois » à « Mode RADAR »"
+    },
+    {
+      "id": "a_2026-09-14T14:40:06.992Z_dh_radar_update",
+      "at": "2026-09-14T14:40:06.992Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "update",
+      "text": "a modifié stepProgress de « Mode RADAR »"
     }
   ]
 }
