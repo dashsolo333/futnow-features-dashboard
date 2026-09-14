@@ -10,7 +10,7 @@ export function renderBoard(ctx) {
       const items = feats.filter((f) => f.stageId === stage.id).sort((a, b) => a.priority.localeCompare(b.priority) || String(b.updatedAt).localeCompare(String(a.updatedAt)));
       const gate = stage.id === doc.gates.finalStageId ? 'test OK requis' : stage.id === doc.gates.testStageId ? 'garde test' : '';
       const col = h('section', {
-        class: 'col', 'aria-label': stage.label,
+        class: `col${items.length ? '' : ' is-empty'}`, 'aria-label': stage.label,
         onDragover: (e) => { if (!ctx.canWrite()) return; e.preventDefault(); col.classList.add('is-over'); },
         onDragleave: () => col.classList.remove('is-over'),
         onDrop: (e) => { e.preventDefault(); col.classList.remove('is-over'); const id = e.dataTransfer.getData('text/plain'); if (id) ctx.move(id, stage.id); },
@@ -21,7 +21,7 @@ export function renderBoard(ctx) {
         gate ? h('span', { class: 'col-gate' }, gate) : null,
         h('span', { class: 'col-count' }, items.length)),
       items.map((f) => renderCard(ctx, f)),
-      !items.length ? h('div', { class: 'empty', style: { padding: '30px 10px' } }, 'Rien ici') : null);
+      !items.length ? h('div', { class: 'col-drop' }, ctx.canWrite() ? 'Glisse une carte ici' : 'Aucune feature') : null);
       return col;
     }));
 }

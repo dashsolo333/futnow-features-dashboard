@@ -2,6 +2,8 @@
 import { h, icon, avatar, fmtDay } from './dom.js';
 import { PLATFORMS, newId } from '../model/doc.js';
 import { updateFeature, addTestSession, removeTestSession } from '../model/features.js';
+import { milestoneStatus, shiftDay } from '../model/milestones.js';
+import { today } from './dom.js';
 
 export function isSafeUrl(url) {
   try { return ['http:', 'https:'].includes(new URL(url).protocol); } catch { return false; }
@@ -16,6 +18,41 @@ export function dateField(label, value, disabled, onChange, late = false) {
   return h('div', { class: 'field' },
     h('label', {}, label, late ? h('span', { class: 'badge badge-late', style: { marginLeft: '6px' } }, 'retard') : null),
     h('input', { class: 'input', type: 'date', value: value || '', disabled, onChange: (e) => onChange(e.target.value) }));
+}
+
+/** Sélecteur de date lisible : bouton avec la date en clair, calendrier natif au clic. */
+export function datePicker(value, onChange, { disabled = false, placeholder = 'Choisir une date' } = {}) {
+  const input = h('input', { class: 'dp-input', type: 'date', value: value || '', disabled, tabindex: -1, 'aria-hidden': 'true', onChange: (e) => onChange(e.target.value) });
+  const btn = h('button', { type: 'button', class: `dp-btn${value ? '' : ' is-empty'}`, disabled, onClick: () => { try { input.showPicker(); } catch { input.focus(); input.click(); } } },
+    icon('flag'), value ? fmtDay(value) : placeholder);
+  return h('span', { class: 'dp' }, btn, input);
+}
+
+/** Jalon : cible + réel, état lisible, raccourcis. */
+export function milestone(ctx, feature, { key, label, hint }) {
+  const ro = !ctx.canWrite();
+  const planned = feature.dates[`${key}Planned`] || '';
+  const actual = feature.dates[`${key}Actual`] || '';
+  const t = today();
+  const st = milestoneStatus({ planned, actual }, t);
+  const setDates = (patch, text) => ctx.act(text, (d) => updateFeature(d, feature.id, { dates: patch }, ctx.meta()));
+  const setPlanned = (v) => setDates({ [`${key}Planned`]: v }, v ? `a fixé la cible ${label.toLowerCase()} de « ${feature.title} » au ${fmtDay(v)}` : `a retiré la cible ${label.toLowerCase()} de « ${feature.title} »`);
+  const setActual = (v) => setDates({ [`${key}Actual`]: v }, v ? `a marqué ${label.toLowerCase()} de « ${feature.title} » fait le ${fmtDay(v)}` : `a annulé la date réelle ${label.toLowerCase()} de « ${feature.title} »`);
+  const base = planned || t;
+  const quick = (txt, opts) => h('button', { type: 'button', class: 'chip chip-btn', disabled: ro, onClick: () => setPlanned(shiftDay(base, opts)) }, txt);
+  return h('div', { class: `milestone is-${st.state}` },
+    h('div', { class: 'milestone-head' },
+      h('div', {}, h('b', {}, label), hint ? h('div', { class: 'hint' }, hint) : null),
+      h('span', { class: `badge badge-ms badge-ms-${st.state}` }, st.label)),
+    h('div', { class: 'milestone-row' },
+      h('span', { class: 'milestone-k' }, 'Cible'),
+      datePicker(planned, setPlanned, { disabled: ro, placeholder: 'Fixer une date' }),
+      ro ? null : h('span', { class: 'milestone-quick' }, quick('+1 sem', { weeks: 1 }), quick('+2 sem', { weeks: 2 }), quick('+1 mois', { months: 1 }),
+        planned ? h('button', { type: 'button', class: 'chip chip-btn', onClick: () => setPlanned('') }, 'Effacer') : null)),
+    h('div', { class: 'milestone-row' },
+      h('span', { class: 'milestone-k' }, 'Réel'),
+      actual ? [datePicker(actual, setActual, { disabled: ro }), ro ? null : h('button', { type: 'button', class: 'chip chip-btn', onClick: () => setActual('') }, 'Annuler')]
+        : ro ? h('span', { class: 'dim' }, '—') : h('button', { type: 'button', class: 'btn btn-sm', onClick: () => setActual(t) }, icon('check'), 'Fait aujourd’hui')));
 }
 
 export function addLink(ctx, feature) {

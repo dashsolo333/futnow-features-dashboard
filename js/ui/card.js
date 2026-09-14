@@ -1,5 +1,5 @@
 import { h, icon, avatar, fmtDay, today } from './dom.js';
-import { ringGauge, stageBar } from './gauge.js';
+import { progressRow } from './gauge.js';
 import { isLate, lastVerdict } from '../model/features.js';
 
 export function datePill(label, planned, actual, late) {
@@ -35,9 +35,8 @@ export function renderCard(ctx, feature) {
     h('span', { class: 'card-icon' }, feature.icon || '•'),
     h('div', { style: { flex: 1, minWidth: 0 } },
       h('div', { class: 'card-title' }, feature.title),
-      h('div', { class: 'card-sub' }, feature.familyLabel || feature.family, feature.priority === 'p0' || feature.priority === 'p1' ? h('span', { class: 'badge badge-soon' }, feature.priority === 'p0' ? 'Critique' : 'Haute') : null)),
-    ringGauge(doc, feature, 40)),
-  stageBar(doc, feature),
+      h('div', { class: 'card-sub' }, feature.familyLabel || feature.family, feature.priority === 'p0' || feature.priority === 'p1' ? h('span', { class: 'badge badge-soon' }, feature.priority === 'p0' ? 'Critique' : 'Haute') : null))),
+  progressRow(doc, feature),
   h('div', { class: 'card-foot' },
     datePill('Test', feature.dates.prodTestPlanned, feature.dates.prodTestActual, late.prodTest),
     datePill('Prod', feature.dates.prodFinalPlanned, feature.dates.prodFinalActual, late.prodFinal),

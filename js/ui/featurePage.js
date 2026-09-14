@@ -6,7 +6,7 @@ import { updateFeature, deleteFeature, isLate, addChecklistItem, toggleChecklist
 import { stageIndex, canMoveTo } from '../model/stages.js';
 import { featureTimeline } from '../model/timeline.js';
 import { renderJournal } from './journal.js';
-import { pillSelect, dateField, renderLinks, renderTests } from './featureParts.js';
+import { pillSelect, milestone, renderLinks, renderTests } from './featureParts.js';
 
 export function renderFeaturePage(ctx, feature) {
   const doc = ctx.doc;
@@ -76,11 +76,10 @@ export function renderFeaturePage(ctx, feature) {
       h('aside', { class: 'fpage-side' },
         h('section', { class: 'panel glass' },
           h('div', { class: 'section-head' }, h('h3', {}, 'Temporalité')),
-          h('div', { class: 'grid-2' },
-            dateField('Prod test · cible', feature.dates.prodTestPlanned, ro, (v) => patch({ dates: { prodTestPlanned: v } }, `a planifié le prod test de « ${feature.title} » au ${fmtDay(v)}`), late.prodTest),
-            dateField('Prod test · réel', feature.dates.prodTestActual, ro, (v) => patch({ dates: { prodTestActual: v } })),
-            dateField('Prod final · cible', feature.dates.prodFinalPlanned, ro, (v) => patch({ dates: { prodFinalPlanned: v } }, `a planifié la prod de « ${feature.title} » au ${fmtDay(v)}`), late.prodFinal),
-            dateField('Prod final · réel', feature.dates.prodFinalActual, ro, (v) => patch({ dates: { prodFinalActual: v } }))),
+          h('div', { class: 'milestones' },
+            milestone(ctx, feature, { key: 'prodTest', label: 'Prod test', hint: 'build de test (TestFlight / interne)' }),
+            milestone(ctx, feature, { key: 'prodFinal', label: 'Prod final', hint: release?.plannedAt ? `version ${release.version} prévue le ${fmtDay(release.plannedAt)}` : 'sortie store' })),
+          release?.plannedAt && !ro && feature.dates.prodFinalPlanned !== release.plannedAt ? h('button', { type: 'button', class: 'btn btn-ghost btn-sm', style: { marginTop: '8px' }, onClick: () => patch({ dates: { prodFinalPlanned: release.plannedAt } }, `a aligné la cible prod de « ${feature.title} » sur la version ${release.version}`) }, icon('flag'), `Aligner la cible sur la version ${release.version}`) : null,
           renderTimeline(ctx, feature, t)),
         renderLinks(ctx, feature, ro),
         h('section', { class: 'panel glass' },

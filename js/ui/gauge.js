@@ -41,6 +41,17 @@ export function stageStepper(doc, feature, onPick) {
       h('span', { class: 'step-label' }, s.label)))));
 }
 
+/** Ligne de progression lisible : barre colorée, pourcentage, étape. */
+export function progressRow(doc, feature) {
+  const value = gaugeOf(doc, feature);
+  const stage = stageById(doc, feature.stageId);
+  const color = stage?.color || '#8b97ad';
+  return h('div', { class: 'progress', role: 'img', 'aria-label': `${value} % · ${stage?.label || ''}` },
+    h('div', { class: 'bar', style: { '--bar': color } }, h('i', { style: { width: `${value}%` } })),
+    h('span', { class: 'progress-pct' }, `${value} %`),
+    h('span', { class: 'progress-stage', style: { '--dot': color } }, h('i'), stage?.label || '—', feature.stepProgress && value < 100 ? h('span', { class: 'dim' }, ` · ${feature.stepProgress} % de l’étape`) : null));
+}
+
 export function bigGauge(doc, feature) {
   const value = gaugeOf(doc, feature);
   const stage = stageById(doc, feature.stageId);
