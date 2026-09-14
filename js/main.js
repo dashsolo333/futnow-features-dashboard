@@ -10,6 +10,7 @@ import { renderRoadmap } from './ui/roadmap.js';
 import { renderReleases } from './ui/releases.js';
 import { renderJournal } from './ui/journal.js';
 import { renderFeaturePage } from './ui/featurePage.js';
+import { renderFocus, focusList, toggleFullscreen } from './ui/focus.js';
 import { renderCreate } from './ui/create.js';
 import { renderSettings } from './ui/settings.js';
 import { moveFeature, featureById } from './model/features.js';
@@ -24,6 +25,7 @@ const ui = {
   sort: null,
   journalType: '',
   featureId: readHash().feature || null,
+  focusId: readHash().focus || null,
   backView: 'board',
   modal: null, // 'create' | 'settings'
   settingsTab: 'account',
@@ -34,6 +36,8 @@ const ctx = {
   get doc() { return store.state.doc; },
   get view() { return ui.view; },
   get featureId() { return ui.featureId; },
+  get focusId() { return ui.focusId; },
+  setFocus(id) { ui.focusId = id; writeHash(); renderMain(); },
   get filters() { return ui.filters; },
   get sort() { return ui.sort; },
   get journalType() { return ui.journalType; },
@@ -82,12 +86,13 @@ function guardWrite() {
 
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
-  return { view: VIEWS.some((v) => v.id === p.get('v')) ? p.get('v') : null, feature: p.get('f') };
+  return { view: VIEWS.some((v) => v.id === p.get('v')) ? p.get('v') : null, feature: p.get('f'), focus: p.get('a') };
 }
 function writeHash() {
   const p = new URLSearchParams();
   if (ui.view !== 'board') p.set('v', ui.view);
   if (ui.featureId) p.set('f', ui.featureId);
+  if (ui.view === 'focus' && ui.focusId) p.set('a', ui.focusId);
   const next = p.toString() ? `#${p}` : '';
   if (location.hash !== next) history.replaceState(null, '', `${location.pathname}${next}`);
 }
@@ -108,9 +113,9 @@ function renderMain() {
     ui.featureId = null;
     writeHash();
   }
-  kpis.hidden = false;
-  kpis.append(...(renderKpis(ctx) || []));
-  const renderers = { board: renderBoard, list: renderList, roadmap: renderRoadmap, releases: renderReleases, journal: renderJournal };
+  kpis.hidden = ui.view === 'focus';
+  if (!kpis.hidden) kpis.append(...(renderKpis(ctx) || []));
+  const renderers = { board: renderBoard, focus: renderFocus, list: renderList, roadmap: renderRoadmap, releases: renderReleases, journal: renderJournal };
   view.append((renderers[ui.view] || renderBoard)(ctx));
 }
 
@@ -124,6 +129,11 @@ function renderLayer() {
   if (focus && ui.modal === 'create') focus.focus();
 }
 
+function measureChrome() {
+  const px = $('topbar').offsetHeight + $('banner').offsetHeight;
+  document.documentElement.style.setProperty('--chrome', `${px}px`);
+}
+
 function render() {
   const top = clear($('topbar'));
   top.append(renderHeader(ctx));
@@ -132,6 +142,7 @@ function render() {
   if (b) banner.append(b);
   renderMain();
   renderLayer();
+  measureChrome();
 }
 
 document.addEventListener('keydown', (e) => {
@@ -140,9 +151,18 @@ document.addEventListener('keydown', (e) => {
   if (typing) return;
   if (e.key === '/') { e.preventDefault(); $('search-input')?.focus(); }
   if (e.key === 'n') ctx.openCreate();
-  if (/^[1-5]$/.test(e.key)) ctx.setView(VIEWS[Number(e.key) - 1].id);
+  if (/^[1-6]$/.test(e.key)) ctx.setView(VIEWS[Number(e.key) - 1].id);
+  if (ui.view === 'focus' && !ui.featureId) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+      const list = focusList(ctx); if (!list.length) return;
+      let i = list.findIndex((f) => f.id === ui.focusId); if (i < 0) i = 0;
+      ctx.setFocus(list[(i + (e.key === 'ArrowRight' ? 1 : -1) + list.length) % list.length].id);
+    }
+    if (e.key === 'f') toggleFullscreen();
+  }
 });
-window.addEventListener('hashchange', () => { const hsh = readHash(); if (hsh.view) ui.view = hsh.view; ui.featureId = hsh.feature; render(); });
+window.addEventListener('hashchange', () => { const hsh = readHash(); if (hsh.view) ui.view = hsh.view; ui.featureId = hsh.feature; if (hsh.focus) ui.focusId = hsh.focus; render(); });
+document.addEventListener('fullscreenchange', () => document.body.classList.toggle('is-fullscreen', Boolean(document.fullscreenElement)));
 document.addEventListener('visibilitychange', () => { if (!document.hidden) store.reload(); });
 
 let lastStatus = '';
@@ -153,4 +173,5 @@ store.subscribe((s) => {
   render();
 });
 render();
+new ResizeObserver(measureChrome).observe($('topbar'));
 store.boot();

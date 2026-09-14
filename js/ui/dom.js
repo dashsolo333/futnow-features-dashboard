@@ -100,6 +100,9 @@ export function icon(name) {
     up: 'M12 19V5M5 12l7-7 7 7',
     down: 'M12 5v14M19 12l-7 7-7-7',
     flag: 'M4 22V4M4 4h12l-2 4 2 4H4',
+    expand: 'M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5',
+    left: 'M15 18l-6-6 6-6',
+    right: 'M9 6l6 6-6 6',
   };
   return svg('svg', { class: `ico ico-${name}`, viewBox: '0 0 24 24', width: 16, height: 16, fill: 'none', stroke: 'currentColor', 'stroke-width': 1.8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true' },
     svg('path', { d: paths[name] || '' }));

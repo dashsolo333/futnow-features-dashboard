@@ -3,6 +3,7 @@ import { FAMILIES } from '../model/doc.js';
 
 export const VIEWS = [
   { id: 'board', label: 'Tableau' },
+  { id: 'focus', label: 'Avancement' },
   { id: 'list', label: 'Liste' },
   { id: 'roadmap', label: 'Roadmap' },
   { id: 'releases', label: 'Versions' },
@@ -33,7 +34,7 @@ export function renderHeader(ctx) {
         h('input', { class: 'input', type: 'search', placeholder: 'Rechercher…', title: 'Raccourci : /', value: ctx.filters.q || '', id: 'search-input',
           onInput: (e) => ctx.setFilter({ q: e.target.value }, { silent: true }) })),
       h('select', { class: 'select select-pill', 'aria-label': 'Famille', onChange: (e) => ctx.setFilter({ family: e.target.value }) },
-        h('option', { value: '' }, 'Toutes les familles'),
+        h('option', { value: '' }, 'Familles'),
         FAMILIES.map((f) => h('option', { value: f.id, selected: ctx.filters.family === f.id }, f.label))),
       h('button', { type: 'button', class: 'btn btn-cta', onClick: ctx.openCreate, title: 'Nouvelle feature (n)' }, icon('plus'), 'Feature'),
       h('div', { class: 'sync', title: state.error || (state.lastSync ? `Dernière synchro ${relTime(state.lastSync)}` : '') },
