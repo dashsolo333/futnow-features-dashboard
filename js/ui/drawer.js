@@ -53,7 +53,7 @@ export function renderDrawer(ctx, feature) {
     h('section', { class: 'section' },
       h('div', { class: 'section-head' }, h('h3', {}, 'Liens'), ro ? null : h('button', { type: 'button', class: 'btn btn-ghost btn-sm', onClick: () => addLink(ctx, feature) }, icon('plus'), 'Lien')),
       h('div', { class: 'link-list' }, feature.links.length ? feature.links.map((l, i) => h('div', { class: 'link-item' },
-        icon('link'), h('a', { href: l.url, target: '_blank', rel: 'noopener noreferrer' }, l.label || l.url),
+        icon('link'), isSafeUrl(l.url) ? h('a', { href: l.url, target: '_blank', rel: 'noopener noreferrer' }, l.label || l.url) : h('span', { class: 'dim' }, l.label || l.url),
         ro ? null : h('button', { type: 'button', class: 'btn btn-ghost btn-sm btn-icon', 'aria-label': 'Retirer', onClick: () => patch({ links: feature.links.filter((_, j) => j !== i) }) }, icon('close'))))
         : h('span', { class: 'dim' }, 'Aucun lien (PR, Figma, doc…)'))),
 
@@ -88,9 +88,14 @@ function dateField(label, value, disabled, onChange, late = false) {
     h('input', { class: 'input', type: 'date', value: value || '', disabled, onChange: (e) => onChange(e.target.value) }));
 }
 
+export function isSafeUrl(url) {
+  try { return ['http:', 'https:'].includes(new URL(url).protocol); } catch { return false; }
+}
+
 function addLink(ctx, feature) {
   const url = prompt('URL du lien (PR, Figma, doc…)');
   if (!url) return;
+  if (!isSafeUrl(url)) { ctx.toast('Lien refusé : il faut une URL http(s).', { kind: 'error' }); return; }
   let label = '';
   try { label = new URL(url).hostname.replace('www.', '') + new URL(url).pathname.slice(0, 40); } catch { label = url; }
   const custom = prompt('Libellé', label);
