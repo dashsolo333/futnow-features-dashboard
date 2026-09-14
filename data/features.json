@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:27:33.503Z",
+  "updatedAt": "2026-09-14T14:28:10.592Z",
   "stages": [
     {
       "id": "idea",
@@ -1389,8 +1389,24 @@
       "tests": [],
       "items": [
         {
+          "group": "idea",
+          "due": "",
+          "note": "",
+          "doneAt": "",
+          "doneBy": null,
           "id": "i_mu1c7jenacsjsn",
           "text": "créer un groupe automatiquement dans les dm pour chaque lobby",
+          "status": "todo",
+          "done": false,
+          "createdAt": "2026-09-14T14:27:33.503Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_mu1c8c0wc1yk0b",
+          "text": "fonctionnalité répondre au sein d'un chat",
           "group": "idea",
           "due": "",
           "note": "",
@@ -1398,7 +1414,7 @@
           "done": false,
           "doneAt": "",
           "doneBy": null,
-          "createdAt": "2026-09-14T14:27:33.503Z",
+          "createdAt": "2026-09-14T14:28:10.592Z",
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1410,7 +1426,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-14T14:27:33.503Z",
+      "updatedAt": "2026-09-14T14:28:10.592Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1615,6 +1631,17 @@
       "featureId": "f_mu1c5m8z9pu0rz",
       "type": "update",
       "text": "a ajouté la tâche « créer un groupe automatiquement dans les dm pour chaque lobby » à « Chat & DM sync »"
+    },
+    {
+      "id": "a_2026-09-14T14:28:10.592Z_f_mu1c5m8z9pu0rz_update",
+      "at": "2026-09-14T14:28:10.592Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "update",
+      "text": "a ajouté la tâche « fonctionnalité répondre au sein d'un chat » à « Chat & DM sync »"
     }
   ]
 }
