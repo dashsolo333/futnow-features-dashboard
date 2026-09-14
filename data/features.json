@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T15:09:12.715Z",
+  "updatedAt": "2026-09-14T15:26:25.009Z",
   "stages": [
     {
       "id": "idea",
@@ -68,51 +68,6 @@
         {
           "label": "app/src/components/league-v2",
           "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/components/league-v2"
-        }
-      ],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "",
-        "prodFinalPlanned": "",
-        "prodFinalActual": ""
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-09-04T18:15:26+02:00",
-      "createdBy": {
-        "login": "devhub",
-        "avatar": ""
-      },
-      "updatedAt": "2026-09-04T18:15:26+02:00",
-      "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
-      }
-    },
-    {
-      "id": "dh_league-v1",
-      "title": "Ligues",
-      "description": "Le système de ligue d'origine porté dans le DevHub : hub (invitations, mes ligues, mes équipes), classement V=3/N=1/D=0, calendrier par journée, création ligue/équipe. Store en mémoire — recharger repart du seed.\n\nTag DevHub : démo Ilyas · PR #4",
-      "icon": "🏆",
-      "family": "league",
-      "familyLabel": "Ligue",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "design",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "league-v1",
-      "links": [
-        {
-          "label": "app/src/screens/league",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/league"
-        },
-        {
-          "label": "app/src/components/league",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/components/league"
         }
       ],
       "dates": {
@@ -523,47 +478,6 @@
       }
     },
     {
-      "id": "dh_attack-direction",
-      "title": "Sens d'attaque",
-      "description": "Le VRAI écran AttackDirection — drague le ballon vers ta cage (remplace le choix haut/bas). Fond = terrain de démo tant qu'aucune capture réelle n'est fournie.\n\nTag DevHub : ballon à lancer",
-      "icon": "🎯",
-      "family": "flows",
-      "familyLabel": "Flux match",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "prod",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "attack-direction",
-      "links": [
-        {
-          "label": "app/src/screens/AttackDirectionScreen.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/AttackDirectionScreen.tsx"
-        }
-      ],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "2026-07-02",
-        "prodFinalPlanned": "",
-        "prodFinalActual": "2026-07-02"
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-07-02T14:00:16+02:00",
-      "createdBy": {
-        "login": "devhub",
-        "avatar": ""
-      },
-      "updatedAt": "2026-07-02T14:00:16+02:00",
-      "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
-      }
-    },
-    {
       "id": "dh_futstore",
       "title": "Futstore",
       "description": "La boutique aux gemmes. Deux monnaies aux rôles disjoints : l'XP dit où tu en es (wipée), la gemme dit ce que tu as accompli (rare, persistante, dépensable). Solde en tête, vitrine de la semaine (−25 %, roulement déterministe, jamais de tirage), rayons par emplacement — finitions de carte, anneaux d'avatar, titres, maillots, cérémonies, gel de série. Achat en deux taps, verrous par rang, éditions de saison. Économie décrite dans docs/brain/game-design/gd-economie-futstore.md.\n\nTag DevHub : gemmes · 3 portefeuilles",
@@ -733,47 +647,6 @@
         "prodTestActual": "2026-09-04",
         "prodFinalPlanned": "",
         "prodFinalActual": "2026-09-04"
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-09-04T18:15:26+02:00",
-      "createdBy": {
-        "login": "devhub",
-        "avatar": ""
-      },
-      "updatedAt": "2026-09-04T18:15:26+02:00",
-      "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
-      }
-    },
-    {
-      "id": "dh_sonar",
-      "title": "Mode Sonar",
-      "description": "Un joueur cherche une équipe, une équipe cherche son joueur. Bascule Équipe/Joueur, scan ~5 s (balayage + pings), résultats en cartes, Inviter/Rejoindre conclut.\n\nTag DevHub : matchmaking",
-      "icon": "📡",
-      "family": "brochure",
-      "familyLabel": "Brochure",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "design",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "sonar",
-      "links": [
-        {
-          "label": "app/src/screens/sonar",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/sonar"
-        }
-      ],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "",
-        "prodFinalPlanned": "",
-        "prodFinalActual": ""
       },
       "tests": [],
       "items": [],
@@ -1069,218 +942,6 @@
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      }
-    },
-    {
-      "id": "dh_skin-lab",
-      "title": "SkinLab",
-      "description": "La même tranche Activité en 3 finitions — S1 tonal, S2 glass, S3 éditorial. S2 a été retenue : gardé comme référence de la décision.\n\nTag DevHub : 3 finitions",
-      "icon": "🎨",
-      "family": "labs",
-      "familyLabel": "Labs",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "design",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "skin-lab",
-      "links": [
-        {
-          "label": "app/src/screens/skin-lab/SkinLab.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/skin-lab/SkinLab.tsx"
-        },
-        {
-          "label": "app/src/screens/skin-lab/SkinGlass.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/skin-lab/SkinGlass.tsx"
-        },
-        {
-          "label": "app/src/screens/skin-lab/SkinTonal.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/skin-lab/SkinTonal.tsx"
-        },
-        {
-          "label": "app/src/screens/skin-lab/SkinEditorial.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/skin-lab/SkinEditorial.tsx"
-        },
-        {
-          "label": "app/src/screens/skin-lab/skinLabShared.ts",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/skin-lab/skinLabShared.ts"
-        }
-      ],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "",
-        "prodFinalPlanned": "",
-        "prodFinalActual": ""
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-07-02T13:53:48+02:00",
-      "createdBy": {
-        "login": "devhub",
-        "avatar": ""
-      },
-      "updatedAt": "2026-07-02T13:53:48+02:00",
-      "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
-      }
-    },
-    {
-      "id": "dh_accent-lab",
-      "title": "AccentLab",
-      "description": "La tranche Activité avec 5 accents — mauve, volt, cyan, bleu électrique, blanc. Le quasi-blanc a gagné ; le volt est resté sur la seule jauge d'XP.\n\nTag DevHub : 5 candidats",
-      "icon": "🌈",
-      "family": "labs",
-      "familyLabel": "Labs",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "design",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "accent-lab",
-      "links": [
-        {
-          "label": "app/src/screens/skin-lab/AccentLab.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/skin-lab/AccentLab.tsx"
-        }
-      ],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "",
-        "prodFinalPlanned": "",
-        "prodFinalActual": ""
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-07-02T13:53:48+02:00",
-      "createdBy": {
-        "login": "devhub",
-        "avatar": ""
-      },
-      "updatedAt": "2026-07-02T13:53:48+02:00",
-      "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
-      }
-    },
-    {
-      "id": "dh_cta-lab",
-      "title": "CtaLab",
-      "description": "Le CTA du hero Activité sur son banc : la pilule PRIME des stats prêtes (halo qui respire, reflet unique, flèche en pastille), la pilule plate d'une action ordinaire, la pilule de verre pendant le match.\n\nTag DevHub : 3 traitements",
-      "icon": "✨",
-      "family": "labs",
-      "familyLabel": "Labs",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "design",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "cta-lab",
-      "links": [
-        {
-          "label": "app/src/screens/skin-lab/CtaLab.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/skin-lab/CtaLab.tsx"
-        },
-        {
-          "label": "app/src/components/ui/PrimeCta.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/components/ui/PrimeCta.tsx"
-        },
-        {
-          "label": "app/src/components/ui/sweep.ts",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/components/ui/sweep.ts"
-        },
-        {
-          "label": "app/src/components/ui/ShimmerText.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/components/ui/ShimmerText.tsx"
-        },
-        {
-          "label": "app/src/screens/activity-v2/NextMatchHero.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/screens/activity-v2/NextMatchHero.tsx"
-        }
-      ],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "",
-        "prodFinalPlanned": "",
-        "prodFinalActual": ""
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-09-10T11:33:04+02:00",
-      "createdBy": {
-        "login": "devhub",
-        "avatar": ""
-      },
-      "updatedAt": "2026-09-10T11:33:04+02:00",
-      "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
-      }
-    },
-    {
-      "id": "dh_prod-clone",
-      "title": "Clone de prod",
-      "description": "L'app de prod telle quelle, montée ici : copie figée de upstream/main, étanche (elle ne partage aucun fichier avec tes maquettes), sur un faux backend en mémoire — zéro réseau. Le mode RADAR y est greffé comme attribut du lobby : diode dans le header Activité, proposition d’activation à la création d’un match, panneau dans l’écran lobby, section dans les notifications. Parcours : Activité → organiser un match → lobby → « Activer le radar » → demandes des bots → acceptation → roster rempli. Le CTA « Obtenir mes stats » du héro Activité y est greffé en pilule PRIME (halo, lumière sous l'encre, wobble) — visible une fois un match terminé, et ouvre la cérémonie reward de la refonte (SimReward), pas celle de prod. Rafraîchir : npm run prod-clone:sync.\n\nTag DevHub : main @ fadc031 + radar",
-      "icon": "📦",
-      "family": "prod",
-      "familyLabel": "Prod",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "prod",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "prod-clone",
-      "links": [
-        {
-          "label": "prod-clone",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/prod-clone"
-        },
-        {
-          "label": "scripts/prod-clone-radar-patches.mjs",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/scripts/prod-clone-radar-patches.mjs"
-        },
-        {
-          "label": "app/src/dev/prodCloneBackend.ts",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/dev/prodCloneBackend.ts"
-        },
-        {
-          "label": "scripts/prod-clone-activity-patches.mjs",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/scripts/prod-clone-activity-patches.mjs"
-        },
-        {
-          "label": "app/src/components/ui/PrimeCta.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/components/ui/PrimeCta.tsx"
-        }
-      ],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "2026-09-04",
-        "prodFinalPlanned": "",
-        "prodFinalActual": "2026-09-04"
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-09-04T18:15:26+02:00",
-      "createdBy": {
-        "login": "devhub",
-        "avatar": ""
-      },
-      "updatedAt": "2026-09-04T18:15:26+02:00",
-      "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
       }
     },
     {
@@ -2018,6 +1679,83 @@
       "featureId": "f_mu1bs4rmkdzws9",
       "type": "delete",
       "text": "a supprimé « TEST »"
+    },
+    {
+      "id": "a_2026-09-14T15:26:25.009Z_dh_cta-lab_delete",
+      "at": "2026-09-14T15:26:25.009Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_cta-lab",
+      "type": "delete",
+      "text": "a supprimé « CtaLab »"
+    },
+    {
+      "id": "a_2026-09-14T15:26:25.009Z_dh_accent-lab_delete",
+      "at": "2026-09-14T15:26:25.009Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_accent-lab",
+      "type": "delete",
+      "text": "a supprimé « AccentLab »"
+    },
+    {
+      "id": "a_2026-09-14T15:26:25.009Z_dh_skin-lab_delete",
+      "at": "2026-09-14T15:26:25.009Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_skin-lab",
+      "type": "delete",
+      "text": "a supprimé « SkinLab »"
+    },
+    {
+      "id": "a_2026-09-14T15:26:25.009Z_dh_sonar_delete",
+      "at": "2026-09-14T15:26:25.009Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_sonar",
+      "type": "delete",
+      "text": "a supprimé « Mode Sonar »"
+    },
+    {
+      "id": "a_2026-09-14T15:26:25.009Z_dh_league-v1_delete",
+      "at": "2026-09-14T15:26:25.009Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_league-v1",
+      "type": "delete",
+      "text": "a supprimé « Ligues »"
+    },
+    {
+      "id": "a_2026-09-14T15:26:25.009Z_dh_prod-clone_delete",
+      "at": "2026-09-14T15:26:25.009Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_prod-clone",
+      "type": "delete",
+      "text": "a supprimé « Clone de prod »"
+    },
+    {
+      "id": "a_2026-09-14T15:26:25.009Z_dh_attack-direction_delete",
+      "at": "2026-09-14T15:26:25.009Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_attack-direction",
+      "type": "delete",
+      "text": "a supprimé « Sens d'attaque »"
     }
   ]
 }
