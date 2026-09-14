@@ -184,7 +184,7 @@
           "id": "i_mu1cowogzv00bv",
           "text": "Test PEP",
           "group": "design",
-          "due": "",
+          "due": "2026-09-16",
           "note": "",
           "status": "todo",
           "done": false,
@@ -202,7 +202,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:41:03.856Z",
+      "updatedAt": "2026-09-14T14:41:21.720Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
