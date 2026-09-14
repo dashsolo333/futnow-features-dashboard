@@ -1,4 +1,5 @@
-import { h, avatar, fmtDay, relTime, today } from './dom.js';
+import { h, icon, avatar, fmtDay, relTime, today } from './dom.js';
+import { PRIORITIES } from '../model/doc.js';
 import { gaugeOf, stageById } from '../model/stages.js';
 import { isLate } from '../model/features.js';
 import { verdictBadge } from './card.js';
@@ -25,9 +26,18 @@ export function renderList(ctx) {
     return (va > vb ? 1 : va < vb ? -1 : 0) * sort.dir;
   });
   const t = today();
-  return h('div', { class: 'table-wrap glass' },
+  const sel = ctx.selection;
+  const canSelect = ctx.canWrite();
+  const allSelected = feats.length > 0 && feats.every((f) => sel.has(f.id));
+  const someSelected = feats.some((f) => sel.has(f.id));
+  const selectAll = h('input', { type: 'checkbox', class: 'check', 'aria-label': 'Tout sélectionner', checked: allSelected, disabled: !canSelect,
+    onChange: (e) => ctx.setSelection(e.target.checked ? feats.map((f) => f.id) : []) });
+  selectAll.indeterminate = someSelected && !allSelected;
+  return h('div', {},
+    sel.size ? renderBulkBar(ctx, feats) : null,
+    h('div', { class: 'table-wrap glass' },
     h('table', { class: 'table' },
-      h('thead', {}, h('tr', {}, COLS.map((c) => h('th', {
+      h('thead', {}, h('tr', {}, h('th', { class: 'th-check', 'aria-label': 'Sélection' }, selectAll), COLS.map((c) => h('th', {
         scope: 'col', 'aria-sort': sort.col === c.id ? (sort.dir > 0 ? 'ascending' : 'descending') : null,
         onClick: () => ctx.setSort({ col: c.id, dir: sort.col === c.id ? -sort.dir : 1 }),
       }, c.label, sort.col === c.id ? (sort.dir > 0 ? ' ↑' : ' ↓') : '')))),
@@ -35,7 +45,11 @@ export function renderList(ctx) {
         const stage = stageById(doc, f.stageId);
         const g = gaugeOf(doc, f);
         const late = isLate(f, t);
-        return h('tr', { onClick: () => ctx.openFeature(f.id), tabindex: 0, onKeydown: (e) => { if (e.key === 'Enter') ctx.openFeature(f.id); } },
+        const selected = sel.has(f.id);
+        return h('tr', { class: selected ? 'is-selected' : '', onClick: (e) => { if (e.shiftKey && canSelect) { e.preventDefault(); ctx.toggleSelect(f.id); } else ctx.openFeature(f.id); }, tabindex: 0,
+          onKeydown: (e) => { if (e.key === 'Enter') ctx.openFeature(f.id); if (e.key === ' ' && canSelect) { e.preventDefault(); ctx.toggleSelect(f.id); } } },
+          h('td', { class: 'td-check', onClick: (e) => e.stopPropagation() },
+            h('input', { type: 'checkbox', class: 'check', 'aria-label': `Sélectionner ${f.title}`, checked: selected, disabled: !canSelect, onChange: (e) => ctx.toggleSelect(f.id, e.target.checked) })),
           h('td', {}, h('div', { class: 'cell-title' }, h('span', {}, f.icon || '•'), f.title)),
           h('td', { class: 'muted' }, f.familyLabel || f.family),
           h('td', {}, h('span', { class: 'chip chip-stage', style: { '--dot': stage?.color } }, h('i', { class: 'chip-dot' }), stage?.label)),
@@ -47,7 +61,24 @@ export function renderList(ctx) {
           h('td', {}, h('div', { style: { display: 'flex', alignItems: 'center', gap: '8px' } }, avatar(f.updatedBy, 20), h('span', { class: 'muted' }, relTime(f.updatedAt)))));
       })),
     ),
-    !feats.length ? h('div', { class: 'empty' }, h('b', {}, 'Aucune feature'), 'Change les filtres ou crée une feature.') : null);
+    !feats.length ? h('div', { class: 'empty' }, h('b', {}, 'Aucune feature'), 'Change les filtres ou crée une feature.') : null),
+    canSelect && !sel.size ? h('p', { class: 'hint', style: { marginTop: '10px' } }, 'Coche des features (ou Maj + clic sur une ligne) pour changer leur étape, leur version ou leur priorité d’un coup, ou les supprimer.') : null);
+}
+
+function renderBulkBar(ctx, feats) {
+  const doc = ctx.doc;
+  const ids = [...ctx.selection].filter((id) => doc.features.some((f) => f.id === id));
+  const n = ids.length;
+  const pick = (label, options, onPick) => h('select', { class: 'select select-pill', 'aria-label': label, onChange: (e) => { if (e.target.value) onPick(e.target.value); e.target.value = ''; } },
+    h('option', { value: '' }, label), options.map((o) => h('option', { value: o.id }, o.label)));
+  return h('div', { class: 'bulkbar glass', role: 'toolbar', 'aria-label': 'Actions groupées' },
+    h('b', { class: 'bulkbar-count' }, `${n} sélectionnée${n > 1 ? 's' : ''}`),
+    pick('Passer à l’étape…', doc.stages, (v) => ctx.bulkMove(ids, v)),
+    pick('Version…', [{ id: '__none', label: 'Sans version' }, ...doc.releases.map((r) => ({ id: r.id, label: r.version }))], (v) => ctx.bulkUpdate(ids, { releaseId: v === '__none' ? '' : v }, 'la version')),
+    pick('Priorité…', PRIORITIES, (v) => ctx.bulkUpdate(ids, { priority: v }, 'la priorité')),
+    h('button', { type: 'button', class: 'btn btn-sm btn-danger', onClick: () => ctx.bulkDelete(ids) }, icon('trash'), 'Supprimer'),
+    h('button', { type: 'button', class: 'btn btn-sm btn-ghost', style: { marginLeft: 'auto' }, onClick: ctx.clearSelection }, 'Tout désélectionner', h('span', { class: 'dim' }, ' · Échap')),
+    feats.length > n ? h('button', { type: 'button', class: 'btn btn-sm btn-ghost', onClick: () => ctx.setSelection(feats.map((f) => f.id)) }, `Sélectionner les ${feats.length} visibles`) : null);
 }
 
 function dateCell(planned, actual, late) {

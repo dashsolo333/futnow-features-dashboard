@@ -14,6 +14,7 @@ import { renderFocus, focusList, toggleFullscreen } from './ui/focus.js';
 import { renderCreate } from './ui/create.js';
 import { renderSettings } from './ui/settings.js';
 import { moveFeature, featureById } from './model/features.js';
+import { bulkMove, bulkUpdate, bulkDelete } from './model/bulk.js';
 import { stageById } from './model/stages.js';
 
 const store = createStore();
@@ -29,6 +30,7 @@ const ui = {
   backView: 'board',
   modal: null, // 'create' | 'settings'
   settingsTab: 'account',
+  selection: new Set(),
 };
 
 const ctx = {
@@ -42,12 +44,35 @@ const ctx = {
   get sort() { return ui.sort; },
   get journalType() { return ui.journalType; },
   get settingsTab() { return ui.settingsTab; },
+  get selection() { return ui.selection; },
+  toggleSelect(id, on = !ui.selection.has(id)) { const s = new Set(ui.selection); if (on) s.add(id); else s.delete(id); ui.selection = s; renderMain(); },
+  setSelection(ids) { ui.selection = new Set(ids); renderMain(); },
+  clearSelection() { if (ui.selection.size) { ui.selection = new Set(); renderMain(); } },
+  /** Déplace la sélection ; les features bloquées par la garde sont listées, avec option Forcer. */
+  bulkMove(ids, stageId, force = false) {
+    const stage = stageById(store.state.doc, stageId);
+    let result = null;
+    const ok = ctx.act(`a passé ${ids.length} features en ${stage.label}${force ? ' (forcé)' : ''}`, (d) => { result = bulkMove(d, ids, stageId, { ...ctx.meta(), force }); return result.doc; });
+    if (!ok || !result) return;
+    const n = result.moved.length; const b = result.blocked.length;
+    if (b) {
+      toast(`${n} déplacée${n > 1 ? 's' : ''} · ${b} bloquée${b > 1 ? 's' : ''} : ${result.blocked[0].reason}`, { kind: 'error', action: { label: `Forcer les ${b}`, onClick: () => ctx.bulkMove(result.blocked.map((x) => x.id), stageId, true) } });
+    } else toast(`${n} feature${n > 1 ? 's' : ''} passée${n > 1 ? 's' : ''} en ${stage.label}`, { kind: 'ok' });
+    ctx.clearSelection();
+  },
+  bulkUpdate(ids, patch, label) {
+    if (ctx.act(`a modifié ${label} de ${ids.length} features`, (d) => bulkUpdate(d, ids, patch, ctx.meta()).doc)) { toast(`${ids.length} feature${ids.length > 1 ? 's' : ''} mise${ids.length > 1 ? 's' : ''} à jour`, { kind: 'ok' }); ctx.clearSelection(); }
+  },
+  bulkDelete(ids) {
+    if (!confirm(`Supprimer ${ids.length} feature${ids.length > 1 ? 's' : ''} ? Les suppressions sont journalisées.`)) return;
+    if (ctx.act(`a supprimé ${ids.length} features`, (d) => bulkDelete(d, ids, ctx.meta()).doc)) { toast(`${ids.length} feature${ids.length > 1 ? 's' : ''} supprimée${ids.length > 1 ? 's' : ''}`, { kind: 'ok' }); ctx.clearSelection(); }
+  },
   canWrite: () => store.canWrite(),
   meta: () => ({ by: store.state.user ? { login: store.state.user.login, avatar: store.state.user.avatar } : { login: 'anonyme', avatar: '' }, at: new Date().toISOString() }),
   toast,
   rerender: () => render(),
   retry: () => store.retry(),
-  setView(v) { ui.view = v; ui.featureId = null; localStorage.setItem(CONFIG.viewKey, v); writeHash(); render(); },
+  setView(v) { ui.view = v; ui.featureId = null; ui.selection = new Set(); localStorage.setItem(CONFIG.viewKey, v); writeHash(); render(); },
   setFilter(patch, { silent = false } = {}) { ui.filters = { ...ui.filters, ...patch }; if (silent) renderMain(); else render(); },
   toggleKpi(key, filter) {
     ui.filters = ui.filters.kpi === key ? {} : { q: ui.filters.q, family: ui.filters.family, kpi: key, ...filter };
@@ -165,7 +190,7 @@ function renderAll() {
 
 document.addEventListener('keydown', (e) => {
   const typing = ['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName);
-  if (e.key === 'Escape') { if (ui.modal) ctx.closeModal(); else if (ui.featureId && !typing) ctx.closeFeature(); return; }
+  if (e.key === 'Escape') { if (ui.modal) ctx.closeModal(); else if (ui.featureId && !typing) ctx.closeFeature(); else if (ui.selection.size) ctx.clearSelection(); return; }
   if (typing) return;
   if (e.key === '/') { e.preventDefault(); $('search-input')?.focus(); }
   if (e.key === 'n') ctx.openCreate();
