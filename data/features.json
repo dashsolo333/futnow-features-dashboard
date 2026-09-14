@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:47:23.670Z",
+  "updatedAt": "2026-09-14T15:08:07.789Z",
   "stages": [
     {
       "id": "idea",
@@ -1480,6 +1480,42 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
+    },
+    {
+      "id": "f_mu1dnppp557kq3",
+      "title": "Equilibrage XP GD",
+      "description": "",
+      "icon": "",
+      "family": "other",
+      "familyLabel": "Autre",
+      "priority": "p1",
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "stageId": "idea",
+      "stepProgress": 0,
+      "releaseId": "",
+      "devhubId": "",
+      "links": [],
+      "dates": {
+        "prodTestPlanned": "",
+        "prodTestActual": "",
+        "prodFinalPlanned": "",
+        "prodFinalActual": ""
+      },
+      "tests": [],
+      "items": [],
+      "createdAt": "2026-09-14T15:08:07.789Z",
+      "createdBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "updatedAt": "2026-09-14T15:08:07.789Z",
+      "updatedBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      }
     }
   ],
   "activity": [
@@ -2021,6 +2057,17 @@
       "featureId": "dh_pronos",
       "type": "update",
       "text": "a modifié stepProgress de « Pronos sans stats ballon »"
+    },
+    {
+      "id": "a_2026-09-14T15:08:07.789Z_f_mu1dnppp557kq3_create",
+      "at": "2026-09-14T15:08:07.789Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1dnppp557kq3",
+      "type": "create",
+      "text": "a créé « Equilibrage XP GD »"
     }
   ]
 }
