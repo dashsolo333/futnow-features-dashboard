@@ -9,8 +9,13 @@ au nom de la personne connectée.
 
 ## Ce que ça fait
 
-- **Tableau** kanban par étape (glisser-déposer), **Liste** triable, **Roadmap**
-  semaine par semaine, **Versions** (trains de release), **Journal** d'activité.
+- **Six vues** : **Tableau** kanban par étape (glisser-déposer), **Avancement** (plein
+  écran, une feature à la fois, flèches ← → et touche `f`), **Liste** triable avec
+  sélection multiple, **Roadmap** semaine par semaine, **Versions** (trains de release),
+  **Journal** d'activité.
+- **Actions groupées** dans la Liste : cocher des features (ou Maj + clic), puis changer
+  d'étape, de version, de priorité ou supprimer en un seul commit. La garde prod final
+  s'applique par feature, avec « Forcer » pour celles bloquées.
 - **Jauge** par feature = position dans le pipeline + avancement dans l'étape.
 - **Pipeline modulable** (réglages → Pipeline) : renommer, recolorer, réordonner,
   ajouter des étapes. Deux étapes portent une garde :
@@ -52,7 +57,7 @@ npm run serve          # http://127.0.0.1:4173/?dev=1  (utilisateur simulé, rie
 npm run seed -- ../futnow-app --force   # régénérer data/features.json depuis le DevHub
 ```
 
-Raccourcis : `n` nouvelle feature · `/` recherche · `1`–`5` vues · `Échap` fermer.
+Raccourcis : `n` nouvelle feature · `/` recherche · `1`–`6` vues · `← →` feature suivante en Avancement · `f` plein écran · `Échap` fermer / désélectionner.
 
 ## Structure
 
