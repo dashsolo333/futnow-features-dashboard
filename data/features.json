@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:26:19.323Z",
+  "updatedAt": "2026-09-14T14:26:51.449Z",
   "stages": [
     {
       "id": "idea",
@@ -1376,7 +1376,7 @@
         "android"
       ],
       "stageId": "idea",
-      "stepProgress": 40,
+      "stepProgress": 70,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1393,7 +1393,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-14T14:26:19.323Z",
+      "updatedAt": "2026-09-14T14:26:51.449Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1569,6 +1569,17 @@
     {
       "id": "a_2026-09-14T14:26:19.323Z_f_mu1c5m8z9pu0rz_update",
       "at": "2026-09-14T14:26:19.323Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "update",
+      "text": "a modifié stepProgress de « Chat & DM sync »"
+    },
+    {
+      "id": "a_2026-09-14T14:26:51.449Z_f_mu1c5m8z9pu0rz_update",
+      "at": "2026-09-14T14:26:51.449Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
