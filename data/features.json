@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T15:27:12.090Z",
+  "updatedAt": "2026-09-14T15:27:24.875Z",
   "stages": [
     {
       "id": "idea",
@@ -502,7 +502,7 @@
         "ios",
         "android"
       ],
-      "stageId": "design",
+      "stageId": "spec",
       "stepProgress": 0,
       "releaseId": "",
       "devhubId": "futstore",
@@ -529,10 +529,10 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-10T11:33:04+02:00",
+      "updatedAt": "2026-09-14T15:27:24.875Z",
       "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
     },
     {
@@ -1813,6 +1813,17 @@
       "featureId": "dh_join-game",
       "type": "move",
       "text": "a passé « JoinGame » en Prod final"
+    },
+    {
+      "id": "a_2026-09-14T15:27:24.875Z_dh_futstore_move",
+      "at": "2026-09-14T15:27:24.875Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_futstore",
+      "type": "move",
+      "text": "a passé « Futstore » en Spec"
     }
   ]
 }
