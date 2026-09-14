@@ -1,5 +1,5 @@
 import { createStore } from './store.js';
-import { CONFIG } from './config.js';
+import { CONFIG, DEV_MODE } from './config.js';
 import { h, clear } from './ui/dom.js';
 import { toast } from './ui/toast.js';
 import { renderHeader, renderBanner, VIEWS } from './ui/header.js';
@@ -159,31 +159,74 @@ function measureChrome() {
   document.documentElement.style.setProperty('--chrome', `${px}px`);
 }
 
-// Un rendu peut être déclenché pendant un rendu (un champ perd le focus quand
-// la vue est vidée → change → sauvegarde → emit). On sérialise.
+// ---------- Rendu stable ----------
+// La vue est reconstruite à chaque changement de données. Pour que ça reste
+// invisible pour la personne qui tape :
+//  1. un champ texte en cours de saisie (focus + modifié) garde son texte, son
+//     curseur et son focus à travers le rendu, grâce à son data-key ;
+//  2. aucun rendu pendant un clic (entre pointerdown et pointerup), sinon le
+//     clic tombe sur un nœud remplacé et se perd ;
+//  3. un rendu demandé pendant un rendu est rejoué après ;
+//  4. la position de défilement est conservée.
+const TEXT_TYPES = new Set(['text', 'search', 'url', 'email', 'number', 'date', 'password']);
+const isTextField = (el) => el && (el.tagName === 'TEXTAREA' || (el.tagName === 'INPUT' && TEXT_TYPES.has(el.type)));
+let pointerDown = false;
 let rendering = false;
 let queued = null;
-function guarded(fn) {
-  return () => {
-    if (rendering) { queued = queued === render ? render : fn; return; }
-    rendering = true;
-    try { fn(); } finally {
-      rendering = false;
-      if (queued) { const next = queued; queued = null; next(); }
-    }
-  };
+
+document.addEventListener('input', (e) => { if (isTextField(e.target)) e.target.dataset.dirty = '1'; }, true);
+document.addEventListener('pointerdown', () => { pointerDown = true; }, true);
+document.addEventListener('pointerup', () => { pointerDown = false; if (queued) setTimeout(flushQueued, 0); }, true);
+document.addEventListener('pointercancel', () => { pointerDown = false; if (queued) setTimeout(flushQueued, 0); }, true);
+
+function flushQueued() { if (!queued || rendering || pointerDown) return; const next = queued; queued = null; next(); }
+
+function snapshotFocus() {
+  const el = document.activeElement;
+  if (!isTextField(el) || !el.dataset.key) return null;
+  return { key: el.dataset.key, dirty: el.dataset.dirty === '1', value: el.value, start: el.selectionStart, end: el.selectionEnd };
+}
+function restoreFocus(snap) {
+  if (!snap) return;
+  const el = document.querySelector(`[data-key="${snap.key.replace(/"/g, '\\"')}"]`);
+  if (!el) return;
+  if (snap.dirty) { el.value = snap.value; el.dataset.dirty = '1'; }
+  el.focus({ preventScroll: true });
+  try { if (snap.start !== null && snap.start !== undefined && el.setSelectionRange) el.setSelectionRange(snap.start, snap.end); } catch { /* type date */ }
 }
 
-const render = guarded(renderAll);
-const renderMain = guarded(renderMainNow);
+function guarded(fn, weight) {
+  const run = () => {
+    if (rendering || pointerDown) { queued = queued && queued.weight > weight ? queued : Object.assign(() => run(), { weight }); return; }
+    rendering = true;
+    const snap = snapshotFocus();
+    const y = window.scrollY;
+    try { fn(); } finally {
+      rendering = false;
+      restoreFocus(snap);
+      if (Math.abs(window.scrollY - y) > 1) window.scrollTo({ top: y });
+      if (queued) setTimeout(flushQueued, 0);
+    }
+  };
+  return run;
+}
 
-function renderAll() {
+const renderChrome = guarded(renderChromeNow, 1);
+const renderMain = guarded(renderMainNow, 2);
+const render = guarded(renderAll, 3);
+
+function renderChromeNow() {
   const top = clear($('topbar'));
   top.append(renderHeader(ctx));
   const banner = clear($('banner'));
   const b = renderBanner(ctx);
   if (b) banner.append(b);
-  renderMain();
+  measureChrome();
+}
+
+function renderAll() {
+  renderChromeNow();
+  renderMainNow();
   renderLayer();
   measureChrome();
 }
@@ -210,12 +253,13 @@ document.addEventListener('visibilitychange', () => { if (!document.hidden) stor
 window.addEventListener('beforeunload', (e) => { if (store.state.pending.length) { e.preventDefault(); e.returnValue = ''; } });
 
 let lastStatus = '';
-store.subscribe((s) => {
+store.subscribe((s, kind) => {
   if (s.status === 'error' && lastStatus !== 'error' && s.error) toast(s.error, { kind: 'error' });
   if (s.status === 'conflict' && lastStatus !== 'conflict') toast('Conflit avec une modification distante. Recharge pour voir la version à jour.', { kind: 'error', action: { label: 'Recharger', onClick: () => location.reload() } });
   lastStatus = s.status;
-  render();
+  if (kind === 'doc') render(); else renderChrome();
 });
 render();
-new ResizeObserver(measureChrome).observe($('topbar'));
+new ResizeObserver(() => measureChrome()).observe($('topbar'));
+if (DEV_MODE) window.__store = store;
 store.boot();

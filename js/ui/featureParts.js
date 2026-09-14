@@ -102,7 +102,7 @@ export function renderTests(ctx, feature, ro) {
       h('div', { class: 'field' }, h('span', { class: 'field-label' }, 'Plateforme'), h('div', { class: 'toggle-row' }, platformBtns)),
       h('div', { class: 'field' }, h('span', { class: 'field-label' }, 'Verdict'), h('div', { class: 'toggle-row' }, verdictBtns))),
     h('div', { class: 'grid-2' },
-      h('div', { class: 'field' }, h('label', { for: 'test-build' }, 'Build / version testée'), buildEl = h('input', { id: 'test-build', class: 'input', placeholder: '1.7.0 (42), TestFlight…' })),
-      h('div', { class: 'field' }, h('label', { for: 'test-notes' }, 'Notes & feedback'), notesEl = h('textarea', { id: 'test-notes', class: 'textarea', placeholder: 'Ce qui marche, ce qui casse, sur quel appareil…', style: { minHeight: '38px' } }))),
+      h('div', { class: 'field' }, h('label', { for: 'test-build' }, 'Build / version testée'), buildEl = h('input', { id: 'test-build', class: 'input', placeholder: '1.7.0 (42), TestFlight…', dataset: { key: `build:${feature.id}` } })),
+      h('div', { class: 'field' }, h('label', { for: 'test-notes' }, 'Notes & feedback'), notesEl = h('textarea', { id: 'test-notes', class: 'textarea', placeholder: 'Ce qui marche, ce qui casse, sur quel appareil…', style: { minHeight: '38px' }, dataset: { key: `tnotes:${feature.id}` } }))),
     h('div', { style: { display: 'flex', justifyContent: 'flex-end' } }, h('button', { type: 'submit', class: 'btn btn-cta btn-sm' }, icon('check'), 'Enregistrer le test'))));
 }

@@ -23,8 +23,9 @@ export function createStore() {
   let saveTimer = null;
   let pollTimer = null;
 
-  const emit = () => listeners.forEach((l) => l(state));
-  const set = (patch) => { Object.assign(state, patch); emit(); };
+  const emit = (kind) => listeners.forEach((l) => l(state, kind));
+  // kind = 'doc' si les données changent, 'status' pour la pastille de synchro seule.
+  const set = (patch) => { Object.assign(state, patch); emit('doc' in patch ? 'doc' : 'status'); };
 
   async function boot() {
     try {

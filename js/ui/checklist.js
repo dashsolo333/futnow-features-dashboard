@@ -17,7 +17,9 @@ export function renderChecklist(ctx, feature, ro) {
   const add = () => {
     const text = input.value.trim();
     if (!text) { input.focus(); return; }
-    if (ctx.act(`a ajouté une tâche à « ${feature.title} »`, (d) => addChecklistItem(d, feature.id, { id: newId('i'), text, group: groupSel.value, ...ctx.meta() }))) { input.value = ''; input.focus(); }
+    input.value = ''; delete input.dataset.dirty;
+    if (!ctx.act(`a ajouté une tâche à « ${feature.title} »`, (d) => addChecklistItem(d, feature.id, { id: newId('i'), text, group: groupSel.value, ...ctx.meta() }))) input.value = text;
+    input.focus();
   };
   const groupOptions = [{ id: '', label: 'Sans étape' }, ...doc.stages.map((s) => ({ id: s.id, label: s.label }))];
 
@@ -59,7 +61,7 @@ export function renderChecklist(ctx, feature, ro) {
 
     ro ? null : h('div', { class: 'check-add' },
       h('span', { class: 'check-box is-ghost', 'aria-hidden': 'true' }),
-      input = h('input', { class: 'input check-add-input', placeholder: 'Nouvelle tâche… puis Entrée', 'aria-label': 'Nouvelle tâche', onKeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); add(); } } }),
+      input = h('input', { class: 'input check-add-input', placeholder: 'Nouvelle tâche… puis Entrée', 'aria-label': 'Nouvelle tâche', dataset: { key: `add:${feature.id}` }, onKeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); add(); } } }),
       groupSel = h('select', { class: 'select select-pill-sm', 'aria-label': 'Étape de la tâche' }, groupOptions.map((o) => h('option', { value: o.id, selected: o.id === feature.stageId }, o.label))),
       h('button', { type: 'button', class: 'btn btn-cta btn-sm', onClick: add }, icon('plus'), 'Ajouter')),
     ro || st.total >= 13 ? null : h('div', { style: { marginTop: '10px' } },
@@ -84,14 +86,14 @@ function renderItem(ctx, feature, it, { ro, t, groupOptions }) {
   };
   const setStatus = (s) => ctx.act(`a mis à jour une tâche de « ${feature.title} »`, (d) => setChecklistStatus(d, feature.id, it.id, s, meta()));
   const noteBox = h('div', { class: 'check-note', hidden: !noteOpen },
-    noteEl = h('textarea', { class: 'textarea check-note-input', placeholder: 'Note : contexte, blocage, lien…', disabled: ro, rows: 2,
+    noteEl = h('textarea', { class: 'textarea check-note-input', placeholder: 'Note : contexte, blocage, lien…', disabled: ro, rows: 2, dataset: { key: `note:${it.id}` },
       onChange: (e) => ctx.act(`a annoté une tâche de « ${feature.title} »`, (d) => updateChecklistItem(d, feature.id, it.id, { note: e.target.value.trim() }, meta())) }, it.note || ''));
 
   return h('li', { class: `check-item is-${it.status}${late ? ' is-late' : ''}` },
     h('button', { type: 'button', class: 'check-box', role: 'checkbox', 'aria-checked': it.status === 'done' ? 'true' : 'false', disabled: ro, 'aria-label': it.text,
       onClick: () => setStatus(it.status === 'done' ? 'todo' : 'done') }, it.status === 'done' ? icon('check') : null),
     h('div', { class: 'check-main' },
-      textEl = h('input', { class: 'check-text', value: it.text, disabled: ro, 'aria-label': 'Texte de la tâche', onChange: saveText, onKeydown: (e) => { if (e.key === 'Enter') e.currentTarget.blur(); } }),
+      textEl = h('input', { class: 'check-text', value: it.text, disabled: ro, 'aria-label': 'Texte de la tâche', dataset: { key: `text:${it.id}` }, onChange: saveText, onKeydown: (e) => { if (e.key === 'Enter') e.currentTarget.blur(); } }),
       h('div', { class: 'check-sub' },
         it.status === 'done'
           ? h('span', { class: 'check-done' }, icon('check'), 'faite ', fmtDay(it.doneAt), it.doneBy ? [' par ', avatar(it.doneBy, 16), ` ${it.doneBy.login}`] : null)

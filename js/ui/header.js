@@ -31,7 +31,7 @@ export function renderHeader(ctx) {
       h('label', { class: 'search' },
         icon('search'),
         h('span', { class: 'sr-only' }, 'Rechercher'),
-        h('input', { class: 'input', type: 'search', placeholder: 'Rechercher…', title: 'Raccourci : /', value: ctx.filters.q || '', id: 'search-input',
+        h('input', { class: 'input', type: 'search', placeholder: 'Rechercher…', title: 'Raccourci : /', value: ctx.filters.q || '', id: 'search-input', dataset: { key: 'search' },
           onInput: (e) => ctx.setFilter({ q: e.target.value }, { silent: true }) })),
       h('select', { class: 'select select-pill', 'aria-label': 'Famille', onChange: (e) => ctx.setFilter({ family: e.target.value }) },
         h('option', { value: '' }, 'Familles'),
