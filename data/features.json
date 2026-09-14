@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T12:52:31.650Z",
+  "updatedAt": "2026-09-14T12:48:29.157Z",
   "stages": [
     {
       "id": "idea",
@@ -46,9 +46,10 @@
   "features": [
     {
       "id": "dh_league-v2",
+      "devhubId": "league-v2",
+      "icon": "🏆",
       "title": "Ligues v2",
       "description": "La feature d'Ilyas repensée : hub narratif (ta position, ton mouvement ▲▼, ta prochaine rencontre), classement qui se réordonne en direct, calendrier paginé par journée, création en 3 étapes + cérémonie du tirage, planification en feuille de verre. Mêmes données mock que la v1 (reset partagé).\n\nTag DevHub : refonte UX",
-      "icon": "🏆",
       "family": "league",
       "familyLabel": "Ligue",
       "priority": "p2",
@@ -59,7 +60,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "league-v2",
       "links": [
         {
           "label": "app/src/screens/league-v2",
@@ -90,9 +90,10 @@
     },
     {
       "id": "dh_league-v1",
+      "devhubId": "league-v1",
+      "icon": "🏆",
       "title": "Ligues",
       "description": "Le système de ligue d'origine porté dans le DevHub : hub (invitations, mes ligues, mes équipes), classement V=3/N=1/D=0, calendrier par journée, création ligue/équipe. Store en mémoire — recharger repart du seed.\n\nTag DevHub : démo Ilyas · PR #4",
-      "icon": "🏆",
       "family": "league",
       "familyLabel": "Ligue",
       "priority": "p2",
@@ -103,7 +104,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "league-v1",
       "links": [
         {
           "label": "app/src/screens/league",
@@ -134,9 +134,10 @@
     },
     {
       "id": "dh_radar",
+      "devhubId": "radar",
+      "icon": "🛰",
       "title": "Mode RADAR",
       "description": "RADAR est un attribut du lobby, pas un écran parallèle. L’écran, c’est le radar : platine 2.5D plein écran (chaque blip = un lobby réel), un gros bouton ON/OFF qui est la diode elle-même (couleur = nature, rythme = urgence), les lobbies en cartes au pouce, réglages derrière une roue crantée (« Quand » : dispo tout le temps, une fenêtre de la semaine, ou une date précise), bloc « Tes dispos » sous la barre (L M M J V S D en grand : un tap coche un jour ; deux molettes 17 – 23 h qu’on fait défiler au doigt, verticalement, pour l’amplitude 9 → 23 h, sans rien ouvrir ; hors fenêtre, les blips s’enfoncent dans le verre), tap sur une carte = sa fiche (radar depuis quand, créé quand, dernière activité, coup d’envoi ou expiration, demande en cours), onboarding en 3 slides à la première ouverture. Bots + bascule d’identité. Même magasin que le clone de prod.\n\nTag DevHub : plein écran",
-      "icon": "🛰",
       "family": "flows",
       "familyLabel": "Flux match",
       "priority": "p2",
@@ -147,7 +148,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "radar",
       "links": [
         {
           "label": "app/src/radar",
@@ -174,9 +174,10 @@
     },
     {
       "id": "dh_activity-v2",
+      "devhubId": "activity-v2",
+      "icon": "📅",
       "title": "Activité v2",
       "description": "La tranche Activité refondue, un état par variante — de l'anticipation du prochain match à la réactivation après une longue absence. Le héro page les matchs au calendrier (le plus proche d'abord) ; dessous, le panneau des quatre portes (jouer, organiser, joueurs, ligues), toujours là.\n\nTag DevHub : 7 états · pager",
-      "icon": "📅",
       "family": "activity",
       "familyLabel": "Activité",
       "priority": "p2",
@@ -187,7 +188,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "activity-v2",
       "links": [
         {
           "label": "app/src/screens/activity-v2/ActivityV2Screen.tsx",
@@ -258,9 +258,10 @@
     },
     {
       "id": "dh_activite-prod",
+      "devhubId": "activite-prod",
+      "icon": "📱",
       "title": "Tab Activité",
       "description": "L'écran prod réel — structure visible, aucun backend branché.\n\nTag DevHub : prod, sans données",
-      "icon": "📱",
       "family": "activity",
       "familyLabel": "Activité",
       "priority": "p2",
@@ -271,7 +272,6 @@
       "stageId": "prod",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "activite-prod",
       "links": [
         {
           "label": "app/src/screens/MyMatchesScreen.tsx",
@@ -298,9 +298,10 @@
     },
     {
       "id": "dh_lobby",
+      "devhubId": "lobby",
+      "icon": "⚽",
       "title": "Lobby",
       "description": "UpcomingGame refondu : compte à rebours, compo 3D, choix d'équipe local, invitation. Deux onglets dans le bandeau : Match, et Discussion — le faux chat de la partie en plein écran (saisie collée en bas, clavier géré ; badge + capsules quand ça parle pendant qu'on regarde le match). Aussi accessible via JoinGame → créneau futur. Les pronos (cotes sur les cartes, carte PRONOS, feuille, chat) y sont à défaut en mode design — voir 🎰 Pronos.\n\nTag DevHub : match à venir · v2",
-      "icon": "⚽",
       "family": "flows",
       "familyLabel": "Flux match",
       "priority": "p2",
@@ -311,7 +312,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "lobby",
       "links": [
         {
           "label": "app/src/components/lobby",
@@ -346,9 +346,10 @@
     },
     {
       "id": "dh_match-detail",
+      "devhubId": "match-detail",
+      "icon": "🏁",
       "title": "Détail match",
       "description": "MatchDetail refondu : score 6–4, onglets stats / compo / classement / replay / discussion. Stats vides → états verrouillés réels. La discussion reprend le fil du lobby (avant-match, coup de sifflet, après-match). Aussi accessible depuis le héro et l'historique. Le verdict des pronos est sur la Compo — voir 🎰 Pronos.\n\nTag DevHub : joué hier · v2",
-      "icon": "🏁",
       "family": "flows",
       "familyLabel": "Flux match",
       "priority": "p2",
@@ -359,7 +360,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "match-detail",
       "links": [
         {
           "label": "app/src/components/lobby",
@@ -394,9 +394,10 @@
     },
     {
       "id": "dh_join-game",
+      "devhubId": "join-game",
+      "icon": "➕",
       "title": "JoinGame",
       "description": "Le flux du bouton + refondu : code ou créneau, centres et créneaux mockés (terminé / à venir / libre / verrouillé). Aussi accessible via le + de la Home prod.\n\nTag DevHub : le bouton + · v2",
-      "icon": "➕",
       "family": "flows",
       "familyLabel": "Flux match",
       "priority": "p2",
@@ -407,7 +408,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "join-game",
       "links": [
         {
           "label": "app/src/screens/JoinGameScreen.tsx",
@@ -434,9 +434,10 @@
     },
     {
       "id": "dh_inbox",
+      "devhubId": "inbox",
+      "icon": "✉",
       "title": "Inbox",
       "description": "Conversations et fil de messages mockés — bulles, composer en verre. Aussi accessible via la bulle chat des headers.\n\nTag DevHub : messagerie · v2",
-      "icon": "✉",
       "family": "flows",
       "familyLabel": "Flux match",
       "priority": "p2",
@@ -447,7 +448,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "inbox",
       "links": [
         {
           "label": "app/src/screens/InboxScreen.tsx",
@@ -482,9 +482,10 @@
     },
     {
       "id": "dh_attack-direction",
+      "devhubId": "attack-direction",
+      "icon": "🎯",
       "title": "Sens d'attaque",
       "description": "Le VRAI écran AttackDirection — drague le ballon vers ta cage (remplace le choix haut/bas). Fond = terrain de démo tant qu'aucune capture réelle n'est fournie.\n\nTag DevHub : ballon à lancer",
-      "icon": "🎯",
       "family": "flows",
       "familyLabel": "Flux match",
       "priority": "p2",
@@ -495,7 +496,6 @@
       "stageId": "prod",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "attack-direction",
       "links": [
         {
           "label": "app/src/screens/AttackDirectionScreen.tsx",
@@ -522,9 +522,10 @@
     },
     {
       "id": "dh_futstore",
+      "devhubId": "futstore",
+      "icon": "💎",
       "title": "Futstore",
       "description": "La boutique aux gemmes. Deux monnaies aux rôles disjoints : l'XP dit où tu en es (wipée), la gemme dit ce que tu as accompli (rare, persistante, dépensable). Solde en tête, vitrine de la semaine (−25 %, roulement déterministe, jamais de tirage), rayons par emplacement — finitions de carte, anneaux d'avatar, titres, maillots, cérémonies, gel de série. Achat en deux taps, verrous par rang, éditions de saison. Économie décrite dans docs/brain/game-design/gd-economie-futstore.md.\n\nTag DevHub : gemmes · 3 portefeuilles",
-      "icon": "💎",
       "family": "reward",
       "familyLabel": "Reward",
       "priority": "p2",
@@ -535,7 +536,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "futstore",
       "links": [
         {
           "label": "app/src/screens/futstore",
@@ -566,9 +566,10 @@
     },
     {
       "id": "dh_kit-nolt",
+      "devhubId": "kit-nolt",
+      "icon": "👕",
       "title": "Maillot NOLT",
       "description": "Le maillot NOLT comme objet de progression (brief sept. 2026) : achat libre, jauges propres, un niveau qui monte avec les matchs. Dans la Fiche, sous le header XP, le bloc Carte montre la rank card avec sa particule (feu, éclair, glace) et ce qu'il reste avant le prochain état. La fiche maillot est la même avant et après achat, façon battle pass : la carte en grand, le cran de niveau qu'on glisse pour prévisualiser la particule, la famille, les six paliers avec le buff d'XP sur victoire. On JOUE : créer le maillot (49 €), puis « Jouer un match » fait monter la jauge et densifie la particule ; chrome au niveau 5, holo au max. Modèle pur testé. GD : docs/brain/game-design/gd-maillot-nolt.md.\n\nTag DevHub : progression · 4 états",
-      "icon": "👕",
       "family": "labs",
       "familyLabel": "Labs",
       "priority": "p2",
@@ -579,7 +580,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "kit-nolt",
       "links": [
         {
           "label": "app/src/screens/kit",
@@ -610,9 +610,10 @@
     },
     {
       "id": "dh_reward",
+      "devhubId": "reward",
+      "icon": "✨",
       "title": "Reward",
       "description": "La cérémonie stats → rang, en takeover. Trois issues selon la progression du palier.\n\nTag DevHub : 3 scénarios",
-      "icon": "✨",
       "family": "reward",
       "familyLabel": "Reward",
       "priority": "p2",
@@ -623,7 +624,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "reward",
       "links": [
         {
           "label": "app/src/sim/screens/SimRewardScreen.tsx",
@@ -654,9 +654,10 @@
     },
     {
       "id": "dh_reward-prod",
+      "devhubId": "reward-prod",
+      "icon": "🎁",
       "title": "Reward prod",
       "description": "La cérémonie telle qu'elle tourne EN PROD aujourd'hui (dernier état du reward côté upstream/main, 2 juil.) : intro slam, page des stats face au monde (top X %), page du rang — avance manuelle, un tap par page. La carte forgée a été retirée du flux (décision équipe du 1er juil., code gardé inactif). Le code vient de prod-clone/, étanche : à comparer avec la carte Reward juste à côté, qui est la version refondue de la branche. Rafraîchir : npm run prod-clone:sync.\n\nTag DevHub : main @ fadc031",
-      "icon": "🎁",
       "family": "reward",
       "familyLabel": "Reward",
       "priority": "p2",
@@ -667,7 +668,6 @@
       "stageId": "prod",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "reward-prod",
       "links": [
         {
           "label": "app/src/dev/prodRewardFlow.tsx",
@@ -702,9 +702,10 @@
     },
     {
       "id": "dh_sonar",
+      "devhubId": "sonar",
+      "icon": "📡",
       "title": "Mode Sonar",
       "description": "Un joueur cherche une équipe, une équipe cherche son joueur. Bascule Équipe/Joueur, scan ~5 s (balayage + pings), résultats en cartes, Inviter/Rejoindre conclut.\n\nTag DevHub : matchmaking",
-      "icon": "📡",
       "family": "brochure",
       "familyLabel": "Brochure",
       "priority": "p2",
@@ -715,7 +716,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "sonar",
       "links": [
         {
           "label": "app/src/screens/sonar",
@@ -742,9 +742,10 @@
     },
     {
       "id": "dh_replay-feed",
+      "devhubId": "replay-feed",
+      "icon": "🎞",
       "title": "Feed replay",
       "description": "Une vraie frame de captation en plein écran avec la grammaire d'un feed vertical — rail de réactions en verre, caption, son, progression.\n\nTag DevHub : façon TikTok",
-      "icon": "🎞",
       "family": "brochure",
       "familyLabel": "Brochure",
       "priority": "p2",
@@ -755,7 +756,6 @@
       "stageId": "spec",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "replay-feed",
       "links": [
         {
           "label": "app/src/screens/replay-feed/ReplayFeedScreen.tsx",
@@ -782,9 +782,10 @@
     },
     {
       "id": "dh_gerant-dash",
+      "devhubId": "gerant-dash",
+      "icon": "📊",
       "title": "Dashboard gérant",
       "description": "Le dashboard Metristor côté gérant en mobile : Central Five en direct (3 terrains), occupation et heures de jeu en hausse, journée heure par heure, demandes entrantes via l'API réservation.\n\nTag DevHub : affluence",
-      "icon": "📊",
       "family": "brochure",
       "familyLabel": "Brochure",
       "priority": "p2",
@@ -795,7 +796,6 @@
       "stageId": "spec",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "gerant-dash",
       "links": [
         {
           "label": "app/src/screens/gerant/GerantDashScreen.tsx",
@@ -822,9 +822,10 @@
     },
     {
       "id": "dh_revanche",
+      "devhubId": "revanche",
+      "icon": "🔁",
       "title": "Revanche",
       "description": "La vue Activité façon lobby de fin de partie : score perdu en pleine face, top 5 noté /10 (le MVP est chez l'adversaire, toi 4ᵉ), une seule sortie — réserver le créneau de jeudi.\n\nTag DevHub : activité, lendemain de défaite",
-      "icon": "🔁",
       "family": "brochure",
       "familyLabel": "Brochure",
       "priority": "p2",
@@ -835,7 +836,6 @@
       "stageId": "spec",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "revanche",
       "links": [
         {
           "label": "app/src/screens/activity-v2/RevancheScreen.tsx",
@@ -862,9 +862,10 @@
     },
     {
       "id": "dh_pitch3d-full",
+      "devhubId": "pitch3d-full",
+      "icon": "🎬",
       "title": "Compo 3D",
       "description": "La 3D du lobby en full-bleed, sans HUD ni panneau — pour les exports haute résolution (fonds, planches).\n\nTag DevHub : scène pure, plein écran",
-      "icon": "🎬",
       "family": "brochure",
       "familyLabel": "Brochure",
       "priority": "p2",
@@ -875,7 +876,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "pitch3d-full",
       "links": [
         {
           "label": "app/src/dev/Pitch3DFullScreen.tsx",
@@ -906,9 +906,10 @@
     },
     {
       "id": "dh_annonces-verdict",
+      "devhubId": "annonces-verdict",
+      "icon": "🎯",
       "title": "Annonces & Verdict",
       "description": "On JOUE la boucle sur le terrain 3D du lobby, guidé pas à pas. Mise : chaque carte porte sa cote (×1,8…), tu poses ton jeton d'un tap sur ton homme du match, tu mises sur l'équipe qui gagne, le coup d'envoi scelle, le verdict paie base × cote (jamais d'XP en moins). Défis : tu tapes un adversaire, tu choisis la stat du duel (le choix compte : vitesse = perdu, sprints = gagné), il relève, le match tranche. Classes : tu choisis ton contrat (Moteur, Flèche, Pressing, Capitaine), le match vérifie top 3. Tout : les trois enchaînés. Les mots vivent dans le guide et en étiquettes au-dessus des cartes, les jetons portent les initiales de qui les a posés, la révélation va carte par carte. Modèle pur testé, XP des annonces plafonné à 40. GD : docs/brain/game-design/gd-terrain-annonces-verdict.md.\n\nTag DevHub : 4 labos jouables · avant / après",
-      "icon": "🎯",
       "family": "labs",
       "familyLabel": "Labs",
       "priority": "p2",
@@ -919,7 +920,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "annonces-verdict",
       "links": [
         {
           "label": "app/src/screens/annonces",
@@ -958,9 +958,10 @@
     },
     {
       "id": "dh_pronos",
+      "devhubId": "pronos",
+      "icon": "🎰",
       "title": "Pronos",
       "description": "Le ticket d'avant-match façon Winamax, mais gratuit. Deux niveaux. V1 « sans stats ballon » : la feuille de score décide — vainqueur, score exact, buts (total des deux équipes, tranches calées sur 59 fives réels : moins de 25 · 25 à 34 · 35 et +), écart (0 à 3 · 4 à 6 · 7 et +) ; pas de cotes, leur case reste grisée à sa place, homme du match et buteur visibles mais verrouillés, XP à plat, pas de combiné. Final « avec stats ballon » : tout se joue, cotes sur les cartes 3D et dans la feuille, combiné sans plafond. Feuille compacte = trois panneaux (Résultat, Buts, Joueurs avec onglets + roster 5v5 une colonne par équipe), boutons de cote en grille, ticket replié en bas (un tap l'ouvre : capsules, combiné). Un pari se voit deux fois : dans la discussion à la mise (une carte par joueur, push au visé) et au verdict — seulement s'il passe. Le verdict vit sur la Compo 3D du détail de match. GD : docs/brain/game-design/gd-pronos.md.\n\nTag DevHub : ticket gratuit · V1 score / final stats",
-      "icon": "🎰",
       "family": "labs",
       "familyLabel": "Labs",
       "priority": "p2",
@@ -971,7 +972,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "pronos",
       "links": [
         {
           "label": "app/src/components/match/pronos",
@@ -1002,9 +1002,10 @@
     },
     {
       "id": "dh_skin-lab",
+      "devhubId": "skin-lab",
+      "icon": "🎨",
       "title": "SkinLab",
       "description": "La même tranche Activité en 3 finitions — S1 tonal, S2 glass, S3 éditorial. S2 a été retenue : gardé comme référence de la décision.\n\nTag DevHub : 3 finitions",
-      "icon": "🎨",
       "family": "labs",
       "familyLabel": "Labs",
       "priority": "p2",
@@ -1015,7 +1016,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "skin-lab",
       "links": [
         {
           "label": "app/src/screens/skin-lab/SkinLab.tsx",
@@ -1058,9 +1058,10 @@
     },
     {
       "id": "dh_accent-lab",
+      "devhubId": "accent-lab",
+      "icon": "🌈",
       "title": "AccentLab",
       "description": "La tranche Activité avec 5 accents — mauve, volt, cyan, bleu électrique, blanc. Le quasi-blanc a gagné ; le volt est resté sur la seule jauge d'XP.\n\nTag DevHub : 5 candidats",
-      "icon": "🌈",
       "family": "labs",
       "familyLabel": "Labs",
       "priority": "p2",
@@ -1071,7 +1072,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "accent-lab",
       "links": [
         {
           "label": "app/src/screens/skin-lab/AccentLab.tsx",
@@ -1098,9 +1098,10 @@
     },
     {
       "id": "dh_cta-lab",
+      "devhubId": "cta-lab",
+      "icon": "✨",
       "title": "CtaLab",
       "description": "Le CTA du hero Activité sur son banc : la pilule PRIME des stats prêtes (halo qui respire, reflet unique, flèche en pastille), la pilule plate d'une action ordinaire, la pilule de verre pendant le match.\n\nTag DevHub : 3 traitements",
-      "icon": "✨",
       "family": "labs",
       "familyLabel": "Labs",
       "priority": "p2",
@@ -1111,7 +1112,6 @@
       "stageId": "design",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "cta-lab",
       "links": [
         {
           "label": "app/src/screens/skin-lab/CtaLab.tsx",
@@ -1154,9 +1154,10 @@
     },
     {
       "id": "dh_prod-clone",
+      "devhubId": "prod-clone",
+      "icon": "📦",
       "title": "Clone de prod",
       "description": "L'app de prod telle quelle, montée ici : copie figée de upstream/main, étanche (elle ne partage aucun fichier avec tes maquettes), sur un faux backend en mémoire — zéro réseau. Le mode RADAR y est greffé comme attribut du lobby : diode dans le header Activité, proposition d’activation à la création d’un match, panneau dans l’écran lobby, section dans les notifications. Parcours : Activité → organiser un match → lobby → « Activer le radar » → demandes des bots → acceptation → roster rempli. Le CTA « Obtenir mes stats » du héro Activité y est greffé en pilule PRIME (halo, lumière sous l'encre, wobble) — visible une fois un match terminé, et ouvre la cérémonie reward de la refonte (SimReward), pas celle de prod. Rafraîchir : npm run prod-clone:sync.\n\nTag DevHub : main @ fadc031 + radar",
-      "icon": "📦",
       "family": "prod",
       "familyLabel": "Prod",
       "priority": "p2",
@@ -1167,7 +1168,6 @@
       "stageId": "prod",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "prod-clone",
       "links": [
         {
           "label": "prod-clone",
@@ -1210,9 +1210,10 @@
     },
     {
       "id": "dh_home-prod",
+      "devhubId": "home-prod",
+      "icon": "🏠",
       "title": "Home",
       "description": "Le shell réel — barre d'onglets complète (Fil · Activité · + · Fiche · Compte). ⚠️ l'onglet Activité monte ActivityV2Screen, pas l'écran de prod : ce n'est donc pas le home d'aujourd'hui mais la base de refonte. Le vrai home actuel se regarde dans le worktree /home/nadir/futnow-prod.\n\nTag DevHub : shell prod + Activité v2",
-      "icon": "🏠",
       "family": "prod",
       "familyLabel": "Prod",
       "priority": "p2",
@@ -1223,7 +1224,6 @@
       "stageId": "prod",
       "stepProgress": 0,
       "releaseId": "",
-      "devhubId": "home-prod",
       "links": [
         {
           "label": "app/src/navigation/TabNavigator.tsx",
@@ -1247,54 +1247,7 @@
         "login": "devhub",
         "avatar": ""
       }
-    },
-    {
-      "id": "f_mu18tbttqic85a",
-      "title": "Test d’écriture réelle",
-      "description": "",
-      "icon": "",
-      "family": "other",
-      "familyLabel": "Autre",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "idea",
-      "stepProgress": 0,
-      "releaseId": "",
-      "devhubId": "",
-      "links": [],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "",
-        "prodFinalPlanned": "",
-        "prodFinalActual": ""
-      },
-      "tests": [],
-      "createdAt": "2026-09-14T12:52:31.650Z",
-      "createdBy": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "updatedAt": "2026-09-14T12:52:31.650Z",
-      "updatedBy": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      }
     }
   ],
-  "activity": [
-    {
-      "id": "a_2026-09-14T12:52:31.650Z_f_mu18tbttqic85a_create",
-      "at": "2026-09-14T12:52:31.650Z",
-      "by": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "featureId": "f_mu18tbttqic85a",
-      "type": "create",
-      "text": "a créé « Test d’écriture réelle »"
-    }
-  ]
+  "activity": []
 }
