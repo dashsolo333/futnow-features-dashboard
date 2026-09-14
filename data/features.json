@@ -167,7 +167,7 @@
         {
           "group": "dev",
           "due": "",
-          "note": "",
+          "note": "Pas donner à francois tant que test pep pas fait",
           "doneAt": "",
           "doneBy": null,
           "id": "i_mu1cmd58oyilmg",
@@ -202,7 +202,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:41:59.738Z",
+      "updatedAt": "2026-09-14T14:43:46.509Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
