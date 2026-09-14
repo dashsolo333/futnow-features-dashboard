@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:14:09.755Z",
+  "updatedAt": "2026-09-14T14:14:15.025Z",
   "stages": [
     {
       "id": "idea",
@@ -242,7 +242,7 @@
         }
       ],
       "dates": {
-        "prodTestPlanned": "",
+        "prodTestPlanned": "2026-10-01",
         "prodTestActual": "",
         "prodFinalPlanned": "2026-10-09",
         "prodFinalActual": ""
@@ -254,7 +254,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:14:09.755Z",
+      "updatedAt": "2026-09-14T14:14:15.025Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1354,6 +1354,17 @@
     {
       "id": "a_2026-09-14T14:14:09.755Z_dh_activity-v2_update",
       "at": "2026-09-14T14:14:09.755Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "update",
+      "text": "a modifié dates de « Activité v2 »"
+    },
+    {
+      "id": "a_2026-09-14T14:14:15.025Z_dh_activity-v2_update",
+      "at": "2026-09-14T14:14:15.025Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
