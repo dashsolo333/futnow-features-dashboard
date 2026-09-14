@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:18:59.050Z",
+  "updatedAt": "2026-09-14T14:19:27.164Z",
   "stages": [
     {
       "id": "idea",
@@ -314,7 +314,7 @@
         "android"
       ],
       "stageId": "prodtest",
-      "stepProgress": 0,
+      "stepProgress": 40,
       "releaseId": "",
       "devhubId": "lobby",
       "links": [
@@ -344,7 +344,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:18:59.050Z",
+      "updatedAt": "2026-09-14T14:19:27.164Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1496,6 +1496,17 @@
       "featureId": "dh_lobby",
       "type": "move",
       "text": "a passé « Lobby » en Prod test"
+    },
+    {
+      "id": "a_2026-09-14T14:19:27.164Z_dh_lobby_update",
+      "at": "2026-09-14T14:19:27.164Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a modifié stepProgress de « Lobby »"
     }
   ]
 }
