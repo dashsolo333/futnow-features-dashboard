@@ -21,6 +21,9 @@ export function renderDrawer(ctx, feature) {
           select([{ id: '', label: 'Sans version' }, ...doc.releases.map((r) => ({ id: r.id, label: `${r.version}${r.name ? ` · ${r.name}` : ''}` }))], feature.releaseId, ro, (v) => patch({ releaseId: v })),
           feature.devhubId ? h('span', { class: 'chip', title: 'Surface du DevHub' }, `DevHub · ${feature.devhubId}`) : null)),
       h('button', { type: 'button', class: 'btn btn-ghost btn-icon', 'aria-label': 'Fermer', onClick: ctx.closeDrawer }, icon('close'))),
+    ro ? h('div', { class: 'readonly-bar', style: { margin: '16px 0 -8px', borderRadius: '12px', border: '1px solid rgba(245,158,11,.25)' } },
+      icon('warn'), h('span', { style: { flex: 1 } }, 'Lecture seule : connecte ton token GitHub pour modifier cette fiche.'),
+      h('button', { type: 'button', onClick: () => ctx.openSettings() }, 'Se connecter')) : null,
 
     h('section', { class: 'section' },
       bigGauge(doc, feature),
