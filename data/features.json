@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T14:44:47.864Z",
+  "updatedAt": "2026-09-14T14:44:54.870Z",
   "stages": [
     {
       "id": "idea",
@@ -146,8 +146,8 @@
         "ios",
         "android"
       ],
-      "stageId": "design",
-      "stepProgress": 40,
+      "stageId": "dev",
+      "stepProgress": 0,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -202,7 +202,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:44:47.864Z",
+      "updatedAt": "2026-09-14T14:44:54.870Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1779,6 +1779,17 @@
       "featureId": "dh_radar",
       "type": "update",
       "text": "a modifié stepProgress de « Mode RADAR »"
+    },
+    {
+      "id": "a_2026-09-14T14:44:54.870Z_dh_radar_move",
+      "at": "2026-09-14T14:44:54.870Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "move",
+      "text": "a passé « Mode RADAR » en Dev"
     }
   ]
 }
