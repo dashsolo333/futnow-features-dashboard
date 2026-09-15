@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:57:00.687Z",
+  "updatedAt": "2026-09-15T14:57:03.098Z",
   "stages": [
     {
       "id": "idea",
@@ -691,7 +691,7 @@
         "ios",
         "android"
       ],
-      "stageId": "review",
+      "stageId": "idea",
       "stepProgress": 0,
       "releaseId": "",
       "devhubId": "reward-prod",
@@ -722,7 +722,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:57:00.687Z",
+      "updatedAt": "2026-09-15T14:57:03.098Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2362,6 +2362,50 @@
       "featureId": "dh_reward-prod",
       "type": "move",
       "text": "a passé « Reward prod » en Review"
+    },
+    {
+      "id": "a_2026-09-15T14:57:01.224Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:57:01.224Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "move",
+      "text": "a passé « Reward prod » en Dev"
+    },
+    {
+      "id": "a_2026-09-15T14:57:01.651Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:57:01.651Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "move",
+      "text": "a passé « Reward prod » en Design"
+    },
+    {
+      "id": "a_2026-09-15T14:57:02.168Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:57:02.168Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "move",
+      "text": "a passé « Reward prod » en Spec"
+    },
+    {
+      "id": "a_2026-09-15T14:57:03.098Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:57:03.098Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "move",
+      "text": "a passé « Reward prod » en Idée"
     }
   ]
 }
