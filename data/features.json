@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:46:43.490Z",
+  "updatedAt": "2026-09-15T14:46:45.000Z",
   "stages": [
     {
       "id": "idea",
@@ -274,7 +274,7 @@
         "prodTestPlanned": "2026-09-21",
         "prodTestActual": "",
         "prodFinalPlanned": "2026-09-25",
-        "prodFinalActual": "2026-07-02"
+        "prodFinalActual": ""
       },
       "tests": [
         {
@@ -337,7 +337,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:46:43.490Z",
+      "updatedAt": "2026-09-15T14:46:45.000Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2223,6 +2223,17 @@
     {
       "id": "a_2026-09-15T14:46:43.490Z_dh_activite-prod_update",
       "at": "2026-09-15T14:46:43.490Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activite-prod",
+      "type": "update",
+      "text": "a modifié dates de « Tab Activité »"
+    },
+    {
+      "id": "a_2026-09-15T14:46:45.000Z_dh_activite-prod_update",
+      "at": "2026-09-15T14:46:45.000Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
