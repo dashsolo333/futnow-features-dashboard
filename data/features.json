@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:57:30.137Z",
+  "updatedAt": "2026-09-15T14:57:34.713Z",
   "stages": [
     {
       "id": "idea",
@@ -692,7 +692,7 @@
         "android"
       ],
       "stageId": "spec",
-      "stepProgress": 80,
+      "stepProgress": 0,
       "releaseId": "",
       "devhubId": "reward-prod",
       "links": [
@@ -722,7 +722,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:57:30.137Z",
+      "updatedAt": "2026-09-15T14:57:34.713Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2520,6 +2520,17 @@
     {
       "id": "a_2026-09-15T14:57:30.137Z_dh_reward-prod_update",
       "at": "2026-09-15T14:57:30.137Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "update",
+      "text": "a modifié stepProgress de « Reward prod »"
+    },
+    {
+      "id": "a_2026-09-15T14:57:34.713Z_dh_reward-prod_update",
+      "at": "2026-09-15T14:57:34.713Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
