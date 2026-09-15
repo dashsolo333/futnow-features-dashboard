@@ -5,6 +5,9 @@ import { gaugeOf, stageById, stageIndex } from '../model/stages.js';
 import { isLate, lastVerdict, checklistProgress } from '../model/features.js';
 import { visibleFeatures } from './filters.js';
 
+// Descriptions dépliées (par id) : survit au re-rendu, pas au rechargement.
+const expandedDesc = new Set();
+
 export function focusList(ctx) {
   return [...visibleFeatures(ctx.doc, ctx.filters)].sort((a, b) => {
     const ga = gaugeOf(ctx.doc, a); const gb = gaugeOf(ctx.doc, b);
@@ -37,7 +40,7 @@ export function renderFocus(ctx) {
       h('span', { class: 'muted' }, f.familyLabel || f.family),
       release ? [h('span', { class: 'dim' }, '·'), h('span', { class: 'chip' }, release.version)] : null,
       h('div', { style: { marginLeft: 'auto', display: 'flex', gap: '8px' } },
-        h('button', { type: 'button', class: 'btn btn-sm', onClick: () => ctx.openFeature(f.id) }, 'Ouvrir la fiche'),
+        h('button', { type: 'button', class: 'btn btn-sm', title: 'Ouvrir la fiche (Entrée)', onClick: () => ctx.openFeature(f.id) }, 'Ouvrir la fiche'),
         h('button', { type: 'button', class: 'btn btn-sm btn-icon', title: 'Plein écran (f)', 'aria-label': 'Plein écran', onClick: toggleFullscreen }, icon('expand')))),
 
     h('div', { class: 'focus-body' },
@@ -45,7 +48,7 @@ export function renderFocus(ctx) {
         h('div', { class: 'focus-ring-center' }, h('div', { class: 'focus-value' }, value, h('span', {}, '%')), h('div', { class: 'focus-stage' }, stage?.label || '—'))),
       h('div', { class: 'focus-info' },
         h('h1', { class: 'focus-title' }, f.icon ? h('span', { class: 'focus-icon' }, f.icon) : null, f.title),
-        f.description ? h('p', { class: 'focus-desc' }, f.description.split('\n')[0]) : null,
+        f.description ? renderDesc(ctx, f) : null,
         h('ol', { class: 'focus-steps' }, doc.stages.map((s, k) => h('li', {
           class: `focus-step${k < idx ? ' is-done' : ''}${k === idx ? ' is-current' : ''}`, style: { '--sc': s.color },
         }, h('span', { class: 'focus-step-bar' }), h('span', { class: 'focus-step-label' }, s.label)))),
@@ -64,6 +67,16 @@ export function renderFocus(ctx) {
         style: { '--sc': stageById(doc, x.stageId)?.color }, onClick: () => ctx.setFocus(x.id),
       }))),
       h('button', { type: 'button', class: 'btn btn-icon', 'aria-label': 'Suivante', onClick: () => go(1) }, icon('right'))));
+}
+
+/** Une ligne tronquée par défaut ; clic (ou Entrée/Espace dessus) pour déplier. */
+function renderDesc(ctx, f) {
+  const open = expandedDesc.has(f.id);
+  const toggle = () => { if (open) expandedDesc.delete(f.id); else expandedDesc.add(f.id); ctx.setFocus(f.id); };
+  return h('p', { class: `focus-desc${open ? ' is-open' : ''}`, role: 'button', tabindex: 0, title: open ? 'Replier' : 'Déplier',
+    'aria-expanded': open ? 'true' : 'false', onClick: toggle,
+    onKeydown: (e) => { if (e.key === ' ') { e.preventDefault(); e.stopPropagation(); toggle(); } } },
+  open ? f.description : f.description.replace(/\s*\n+\s*/g, ' · '));
 }
 
 function fact(label, value, tone = '') {

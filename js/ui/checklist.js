@@ -35,19 +35,6 @@ export function renderChecklist(ctx, feature, ro) {
           h('i', { class: 'seg seg-doing', style: { width: `${st.total ? (st.doing / st.total) * 100 : 0}%` }, title: `${st.doing} en cours` }),
           h('i', { class: 'seg seg-blocked', style: { width: `${st.total ? (st.blocked / st.total) * 100 : 0}%` }, title: `${st.blocked} bloquées` })))),
 
-    st.total ? h('div', { class: 'check-stats' },
-      stat('Faites', st.done, '#b5f03a'),
-      stat('En cours', st.doing, '#4f8cff'),
-      stat('Bloquées', st.blocked, '#f87171', st.blocked > 0),
-      stat('À faire', st.todo, '#8b97ad'),
-      stat('En retard', st.late, '#f87171', st.late > 0),
-      h('div', { class: 'check-stat check-stat-wide' },
-        h('span', { class: 'check-stat-label' }, 'Prochaine échéance'),
-        st.nextDue ? h('b', {}, `${fmtDay(st.nextDue.due)} · ${milestoneStatus({ planned: st.nextDue.due, actual: '' }, t).label}`, h('span', { class: 'muted' }, ` — ${st.nextDue.text}`)) : h('b', { class: 'dim' }, 'aucune')),
-      h('div', { class: 'check-stat check-stat-wide' },
-        h('span', { class: 'check-stat-label' }, 'Dernière tâche faite'),
-        st.lastDone ? h('b', {}, avatar(st.lastDone.doneBy, 18), ` ${st.lastDone.doneBy?.login || ''} · ${relTime(st.lastDone.doneAt)}`, h('span', { class: 'muted' }, ` — ${st.lastDone.text}`)) : h('b', { class: 'dim' }, 'aucune'))) : null,
-
     groups.length ? h('div', { class: 'check-groups' }, groups.map((g) => h('section', { class: 'check-group', style: { '--gc': g.color } },
       h('header', { class: 'check-group-head' },
         h('span', { class: 'check-group-dot' }),
@@ -66,12 +53,6 @@ export function renderChecklist(ctx, feature, ro) {
       h('button', { type: 'button', class: 'btn btn-cta btn-sm', onClick: add }, icon('plus'), 'Ajouter')),
     ro || st.total >= 13 ? null : h('div', { style: { marginTop: '10px' } },
       h('button', { type: 'button', class: 'btn btn-ghost btn-sm', onClick: () => ctx.act(`a ajouté la checklist type à « ${feature.title} »`, (d) => applyTemplate(d, feature.id, ctx.meta())) }, icon('check'), 'Insérer la checklist type (spec → stores)')));
-}
-
-function stat(label, value, color, alert = false) {
-  return h('div', { class: `check-stat${alert ? ' is-alert' : ''}`, style: { '--sc': color } },
-    h('span', { class: 'check-stat-label' }, h('i', { class: 'check-stat-dot' }), label),
-    h('b', { class: 'check-stat-value' }, value));
 }
 
 function renderItem(ctx, feature, it, { ro, t, groupOptions }) {

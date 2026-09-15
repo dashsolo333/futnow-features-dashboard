@@ -42,6 +42,16 @@ export function updateFeature(doc, id, patch, { by, at }) {
   return journal(out, { type: 'update', featureId: id, text: `a modifié ${changed.join(', ')} de « ${f.title} »`, by, at });
 }
 
+/** Statut libre (une ligne, lisible d'un coup d'œil) avec sa propre horodate. */
+export function setStatus(doc, id, status, { by, at }) {
+  const f = requireFeature(doc, id);
+  const clean = String(status || '').trim();
+  if (clean === f.status) return doc;
+  const next = { ...f, status: clean, statusAt: at, statusBy: by, updatedAt: at, updatedBy: by };
+  const text = clean ? `a mis à jour le statut de « ${f.title} » : ${clean}` : `a effacé le statut de « ${f.title} »`;
+  return journal(replaceFeature(doc, next), { type: 'status', featureId: id, text, by, at });
+}
+
 export function moveFeature(doc, id, stageId, { by, at, force = false }) {
   const f = requireFeature(doc, id);
   const target = stageById(doc, stageId);

@@ -2,7 +2,7 @@ import { h, avatar, fmtDayFull, fmtTime, today } from './dom.js';
 
 const TYPES = [
   { id: '', label: 'Tout' }, { id: 'move', label: 'Déplacements' }, { id: 'test', label: 'Tests' },
-  { id: 'create', label: 'Créations' }, { id: 'update', label: 'Modifications' }, { id: 'delete', label: 'Suppressions' },
+  { id: 'create', label: 'Créations' }, { id: 'update', label: 'Modifications' }, { id: 'status', label: 'Statuts' }, { id: 'delete', label: 'Suppressions' },
 ];
 
 export function renderJournal(ctx, { featureId = null, limit = 300, compact = false } = {}) {

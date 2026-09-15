@@ -245,6 +245,11 @@ document.addEventListener('keydown', (e) => {
       ctx.setFocus(list[(i + (e.key === 'ArrowRight' ? 1 : -1) + list.length) % list.length].id);
     }
     if (e.key === 'f') toggleFullscreen();
+    if (e.key === 'Enter' && !['BUTTON', 'A'].includes(document.activeElement?.tagName)) {
+      const list = focusList(ctx); if (!list.length) return;
+      const cur = list.find((f) => f.id === ui.focusId) || list[0];
+      e.preventDefault(); ctx.openFeature(cur.id);
+    }
   }
 });
 window.addEventListener('hashchange', () => { const hsh = readHash(); if (hsh.view) ui.view = hsh.view; ui.featureId = hsh.feature; if (hsh.focus) ui.focusId = hsh.focus; render(); });

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { emptyDoc } from '../js/model/doc.js';
 import {
   createFeature, updateFeature, moveFeature, addTestSession, deleteFeature,
-  lastVerdict, isLate, featureById,
+  lastVerdict, isLate, featureById, setStatus,
 } from '../js/model/features.js';
 
 const who = { login: 'nadir', avatar: 'https://x/y.png' };
@@ -101,4 +101,38 @@ test('activity journal is capped', () => {
   }
   assert.ok(d.activity.length <= 500);
   assert.equal(d.activity.at(-1).featureId, 'f619');
+});
+
+test('setStatus stores the free-text status with its own timestamp and journals it', () => {
+  const d = setStatus(withOne(), 'f1', '  En attente du retour d’Ilyas ', { by: who, at: '2026-09-15T09:00:00Z' });
+  const f = featureById(d, 'f1');
+  assert.equal(f.status, 'En attente du retour d’Ilyas');
+  assert.equal(f.statusAt, '2026-09-15T09:00:00Z');
+  assert.equal(f.statusBy.login, 'nadir');
+  assert.equal(f.updatedAt, '2026-09-15T09:00:00Z');
+  const last = d.activity.at(-1);
+  assert.equal(last.type, 'status');
+  assert.match(last.text, /statut de « Pronos » : En attente du retour d’Ilyas/);
+});
+
+test('setStatus with an unchanged status returns the doc untouched', () => {
+  const d1 = setStatus(withOne(), 'f1', 'Bloqué', { by: who, at: '2026-09-15T09:00:00Z' });
+  const d2 = setStatus(d1, 'f1', 'Bloqué', { by: who, at: '2026-09-15T10:00:00Z' });
+  assert.equal(d2, d1);
+});
+
+test('setStatus with an empty text clears the status and journals it', () => {
+  const d1 = setStatus(withOne(), 'f1', 'Bloqué', { by: who, at: '2026-09-15T09:00:00Z' });
+  const d2 = setStatus(d1, 'f1', '   ', { by: who, at: '2026-09-15T10:00:00Z' });
+  const f = featureById(d2, 'f1');
+  assert.equal(f.status, '');
+  assert.equal(f.statusAt, '2026-09-15T10:00:00Z');
+  assert.match(d2.activity.at(-1).text, /a effacé le statut de « Pronos »/);
+});
+
+test('normalizeFeature defaults status fields for legacy features', () => {
+  const f = featureById(withOne(), 'f1');
+  assert.equal(f.status, '');
+  assert.equal(f.statusAt, '');
+  assert.equal(f.statusBy, null);
 });

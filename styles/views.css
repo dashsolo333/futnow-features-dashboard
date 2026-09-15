@@ -105,7 +105,11 @@
 .fact-label { font-size: 13px; color: var(--ink-3); }
 .fact b { font-weight: 600; font-size: 14.5px; }
 .fact b.is-late { color: #ff9b9b; }
-.fpage-next { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 18px; }
+.fpage-status { margin-top: 18px; }
+.fpage-status-input { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; font-size: 17px; font-weight: 500; color: var(--ink); letter-spacing: 0; min-height: 46px; padding: 0 14px; }
+.fpage-status-input::placeholder { color: var(--ink-3); font-weight: 400; }
+.fpage-status-meta { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; font-size: 14px; color: var(--ink-2); }
+.fpage-status-meta b { color: var(--ink); font-weight: 600; }
 .fpage-cols { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 16px; align-items: start; }
 .fpage-main, .fpage-side { display: grid; gap: 16px; min-width: 0; }
 .panel { padding: 18px 20px; border-radius: var(--r-lg); }
@@ -148,7 +152,9 @@
 .focus-info { display: grid; gap: 22px; min-width: 0; }
 .focus-title { font-size: clamp(30px, 4.2vw, 56px); font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; display: flex; align-items: center; gap: 16px; }
 .focus-icon { font-size: .8em; }
-.focus-desc { font-size: 16px; color: var(--ink-2); max-width: 64ch; }
+.focus-desc { font-size: 16px; color: var(--ink-2); max-width: 64ch; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; border-radius: 6px; transition: color var(--dur-fast); }
+.focus-desc:hover, .focus-desc:focus-visible { color: var(--ink); outline: none; }
+.focus-desc.is-open { white-space: pre-line; overflow: visible; text-overflow: clip; }
 .focus-steps { display: flex; gap: 6px; }
 .focus-step { flex: 1; display: grid; gap: 8px; min-width: 0; }
 .focus-step-bar { height: 8px; border-radius: 4px; background: rgba(255,255,255,.08); transition: background var(--dur), box-shadow var(--dur); }

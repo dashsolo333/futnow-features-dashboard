@@ -2,9 +2,9 @@
 import { h, icon, avatar, fmtDay, fmtDayFull, relTime, today } from './dom.js';
 import { bigGauge, stageStepper } from './gauge.js';
 import { FAMILIES, PRIORITIES, PLATFORMS, newId } from '../model/doc.js';
-import { updateFeature, deleteFeature, isLate, lastVerdict } from '../model/features.js';
+import { updateFeature, deleteFeature, isLate, lastVerdict, setStatus } from '../model/features.js';
 import { renderChecklist } from './checklist.js';
-import { stageIndex, canMoveTo } from '../model/stages.js';
+
 import { featureTimeline } from '../model/timeline.js';
 import { renderJournal } from './journal.js';
 import { pillSelect, milestone, renderLinks, renderTests } from './featureParts.js';
@@ -15,9 +15,6 @@ export function renderFeaturePage(ctx, feature) {
   const patch = (p, label) => ctx.act(label || `a modifié « ${feature.title} »`, (d) => updateFeature(d, feature.id, p, ctx.meta()));
   const t = today();
   const late = isLate(feature, t);
-  const idx = stageIndex(doc, feature.stageId);
-  const nextStage = doc.stages[idx + 1] || null;
-  const gate = nextStage ? canMoveTo(doc, feature, nextStage.id) : { ok: false };
   const release = doc.releases.find((r) => r.id === feature.releaseId);
 
   return h('article', { class: 'fpage' },
@@ -55,14 +52,7 @@ export function renderFeaturePage(ctx, feature) {
           fact('Version', release ? `${release.version}${release.plannedAt ? ` · ${fmtDay(release.plannedAt)}` : ''}` : 'aucune'))),
       h('div', { class: 'fpage-hero-right' },
         stageStepper(doc, feature, (id) => ctx.move(feature.id, id)),
-        feature.stageId !== doc.gates.finalStageId ? h('div', { class: 'field', style: { marginTop: '16px' } },
-          h('label', { for: 'step-range' }, `Avancement dans l’étape · ${feature.stepProgress || 0} %`),
-          h('input', { id: 'step-range', class: 'range', type: 'range', min: 0, max: 100, step: 5, value: feature.stepProgress || 0, disabled: ro,
-            onInput: (e) => { e.target.previousSibling.textContent = `Avancement dans l’étape · ${e.target.value} %`; },
-            onChange: (e) => patch({ stepProgress: Number(e.target.value) }, `a réglé l’avancement de « ${feature.title} » à ${e.target.value} %`) })) : null,
-        nextStage && !ro ? h('div', { class: 'fpage-next' },
-          h('button', { type: 'button', class: 'btn btn-cta', onClick: () => ctx.move(feature.id, nextStage.id) }, `Passer en ${nextStage.label}`, icon('arrow')),
-          !gate.ok ? h('span', { class: 'hint' }, gate.reason) : null) : null)),
+        statusField(ctx, feature, ro))),
 
     renderChecklist(ctx, feature, ro),
 
@@ -95,6 +85,18 @@ export function renderFeaturePage(ctx, feature) {
               if (ctx.act(`a supprimé « ${feature.title} »`, (d) => deleteFeature(d, feature.id, ctx.meta()))) ctx.closeFeature();
             }
           } }, icon('trash'), 'Supprimer la feature')))));
+}
+
+/** Statut libre : police standard, bien lisible, avec sa dernière mise à jour. */
+function statusField(ctx, feature, ro) {
+  const at = feature.statusAt || feature.updatedAt;
+  const by = feature.statusBy || feature.updatedBy;
+  return h('div', { class: 'field fpage-status' },
+    h('label', { for: 'feature-status' }, 'Statut'),
+    h('input', { id: 'feature-status', class: 'input fpage-status-input', type: 'text', value: feature.status || '', placeholder: 'Où en est-on ? (une ligne)', maxlength: 140, disabled: ro,
+      dataset: { key: `status:${feature.id}` },
+      onChange: (e) => ctx.act(`a mis à jour le statut de « ${feature.title} »`, (d) => setStatus(d, feature.id, e.target.value, ctx.meta())) }),
+    h('div', { class: 'fpage-status-meta' }, 'Dernière update · ', h('b', {}, at ? relTime(at) : '—'), by?.login ? ` par ${by.login}` : ''));
 }
 
 function fact(label, value, late = false) {

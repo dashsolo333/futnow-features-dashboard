@@ -7,7 +7,6 @@ import { visibleFeatures } from './filters.js';
 
 const COLS = [
   { id: 'title', label: 'Feature', get: (f) => f.title.toLowerCase() },
-  { id: 'family', label: 'Famille', get: (f) => f.familyLabel },
   { id: 'stage', label: 'Étape', get: (f, doc) => doc.stages.findIndex((s) => s.id === f.stageId) },
   { id: 'gauge', label: 'Avancement', get: (f, doc) => gaugeOf(doc, f) },
   { id: 'test', label: 'Prod test', get: (f) => f.dates.prodTestActual || f.dates.prodTestPlanned || '9999' },
@@ -20,7 +19,7 @@ const COLS = [
 export function renderList(ctx) {
   const doc = ctx.doc;
   const sort = ctx.sort || { col: 'stage', dir: -1 };
-  const col = COLS.find((c) => c.id === sort.col) || COLS[2];
+  const col = COLS.find((c) => c.id === sort.col) || COLS[1];
   const feats = [...visibleFeatures(doc, ctx.filters)].sort((a, b) => {
     const va = col.get(a, doc); const vb = col.get(b, doc);
     return (va > vb ? 1 : va < vb ? -1 : 0) * sort.dir;
@@ -51,7 +50,6 @@ export function renderList(ctx) {
           h('td', { class: 'td-check', onClick: (e) => e.stopPropagation() },
             h('input', { type: 'checkbox', class: 'check', 'aria-label': `Sélectionner ${f.title}`, checked: selected, disabled: !canSelect, onChange: (e) => ctx.toggleSelect(f.id, e.target.checked) })),
           h('td', {}, h('div', { class: 'cell-title' }, h('span', {}, f.icon || '•'), f.title)),
-          h('td', { class: 'muted' }, f.familyLabel || f.family),
           h('td', {}, h('span', { class: 'chip chip-stage', style: { '--dot': stage?.color } }, h('i', { class: 'chip-dot' }), stage?.label)),
           h('td', {}, h('div', { class: 'cell-gauge' }, h('div', { class: 'bar', style: { '--bar': stage?.color } }, h('i', { style: { width: `${g}%` } })), h('b', {}, `${g} %`))),
           h('td', {}, dateCell(f.dates.prodTestPlanned, f.dates.prodTestActual, late.prodTest)),
