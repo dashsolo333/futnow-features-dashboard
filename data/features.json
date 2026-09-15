@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:57:16.048Z",
+  "updatedAt": "2026-09-15T14:57:17.814Z",
   "stages": [
     {
       "id": "idea",
@@ -691,8 +691,8 @@
         "ios",
         "android"
       ],
-      "stageId": "idea",
-      "stepProgress": 100,
+      "stageId": "spec",
+      "stepProgress": 0,
       "releaseId": "",
       "devhubId": "reward-prod",
       "links": [
@@ -722,7 +722,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:57:16.048Z",
+      "updatedAt": "2026-09-15T14:57:17.814Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2364,30 +2364,8 @@
       "text": "a passé « Reward prod » en Review"
     },
     {
-      "id": "a_2026-09-15T14:57:04.438Z_dh_reward-prod_move",
-      "at": "2026-09-15T14:57:04.438Z",
-      "by": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "featureId": "dh_reward-prod",
-      "type": "move",
-      "text": "a passé « Reward prod » en Dev"
-    },
-    {
-      "id": "a_2026-09-15T14:57:04.438Z_dh_reward-prod_move",
-      "at": "2026-09-15T14:57:04.438Z",
-      "by": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "featureId": "dh_reward-prod",
-      "type": "move",
-      "text": "a passé « Reward prod » en Design"
-    },
-    {
-      "id": "a_2026-09-15T14:57:04.438Z_dh_reward-prod_move",
-      "at": "2026-09-15T14:57:04.438Z",
+      "id": "a_2026-09-15T14:57:04.958Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:57:04.958Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2397,8 +2375,41 @@
       "text": "a passé « Reward prod » en Spec"
     },
     {
-      "id": "a_2026-09-15T14:57:04.438Z_dh_reward-prod_move",
-      "at": "2026-09-15T14:57:04.438Z",
+      "id": "a_2026-09-15T14:57:08.144Z_dh_reward-prod_update",
+      "at": "2026-09-15T14:57:08.144Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "update",
+      "text": "a modifié stepProgress de « Reward prod »"
+    },
+    {
+      "id": "a_2026-09-15T14:57:09.319Z_dh_reward-prod_update",
+      "at": "2026-09-15T14:57:09.319Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "update",
+      "text": "a modifié stepProgress de « Reward prod »"
+    },
+    {
+      "id": "a_2026-09-15T14:57:17.556Z_dh_reward-prod_update",
+      "at": "2026-09-15T14:57:17.556Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "update",
+      "text": "a modifié stepProgress de « Reward prod »"
+    },
+    {
+      "id": "a_2026-09-15T14:57:17.556Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:57:17.556Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2408,8 +2419,30 @@
       "text": "a passé « Reward prod » en Idée"
     },
     {
-      "id": "a_2026-09-15T14:57:04.573Z_dh_reward-prod_move",
-      "at": "2026-09-15T14:57:04.573Z",
+      "id": "a_2026-09-15T14:57:17.556Z_dh_reward-prod_update",
+      "at": "2026-09-15T14:57:17.556Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "update",
+      "text": "a modifié stepProgress de « Reward prod »"
+    },
+    {
+      "id": "a_2026-09-15T14:57:17.556Z_dh_reward-prod_update",
+      "at": "2026-09-15T14:57:17.556Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "update",
+      "text": "a modifié stepProgress de « Reward prod »"
+    },
+    {
+      "id": "a_2026-09-15T14:57:17.814Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:57:17.814Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2417,72 +2450,6 @@
       "featureId": "dh_reward-prod",
       "type": "move",
       "text": "a passé « Reward prod » en Spec"
-    },
-    {
-      "id": "a_2026-09-15T14:57:16.048Z_dh_reward-prod_update",
-      "at": "2026-09-15T14:57:16.048Z",
-      "by": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "featureId": "dh_reward-prod",
-      "type": "update",
-      "text": "a modifié stepProgress de « Reward prod »"
-    },
-    {
-      "id": "a_2026-09-15T14:57:16.048Z_dh_reward-prod_update",
-      "at": "2026-09-15T14:57:16.048Z",
-      "by": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "featureId": "dh_reward-prod",
-      "type": "update",
-      "text": "a modifié stepProgress de « Reward prod »"
-    },
-    {
-      "id": "a_2026-09-15T14:57:16.048Z_dh_reward-prod_update",
-      "at": "2026-09-15T14:57:16.048Z",
-      "by": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "featureId": "dh_reward-prod",
-      "type": "update",
-      "text": "a modifié stepProgress de « Reward prod »"
-    },
-    {
-      "id": "a_2026-09-15T14:57:16.048Z_dh_reward-prod_move",
-      "at": "2026-09-15T14:57:16.048Z",
-      "by": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "featureId": "dh_reward-prod",
-      "type": "move",
-      "text": "a passé « Reward prod » en Idée"
-    },
-    {
-      "id": "a_2026-09-15T14:57:16.048Z_dh_reward-prod_update",
-      "at": "2026-09-15T14:57:16.048Z",
-      "by": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "featureId": "dh_reward-prod",
-      "type": "update",
-      "text": "a modifié stepProgress de « Reward prod »"
-    },
-    {
-      "id": "a_2026-09-15T14:57:16.048Z_dh_reward-prod_update",
-      "at": "2026-09-15T14:57:16.048Z",
-      "by": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      },
-      "featureId": "dh_reward-prod",
-      "type": "update",
-      "text": "a modifié stepProgress de « Reward prod »"
     }
   ]
 }
