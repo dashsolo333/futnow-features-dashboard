@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:44:38.704Z",
+  "updatedAt": "2026-09-15T14:45:00.428Z",
   "stages": [
     {
       "id": "idea",
@@ -276,14 +276,27 @@
         "prodFinalPlanned": "",
         "prodFinalActual": "2026-07-02"
       },
-      "tests": [],
+      "tests": [
+        {
+          "id": "t_mu2s9tvwr5qurc",
+          "at": "2026-09-15T14:45:00.428Z",
+          "by": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
+          "platform": "ios",
+          "verdict": "ok",
+          "notes": "j'ai fait test a gigan il aimbe bien",
+          "build": ""
+        }
+      ],
       "items": [],
       "createdAt": "2026-07-02T13:29:45+02:00",
       "createdBy": {
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:44:38.704Z",
+      "updatedAt": "2026-09-15T14:45:00.428Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2077,6 +2090,17 @@
       "featureId": "dh_activite-prod",
       "type": "move",
       "text": "a passé « Tab Activité » en Prod test"
+    },
+    {
+      "id": "a_2026-09-15T14:45:00.428Z_dh_activite-prod_test",
+      "at": "2026-09-15T14:45:00.428Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activite-prod",
+      "type": "test",
+      "text": "a testé « Tab Activité » sur ios : OK — j'ai fait test a gigan il aimbe bien"
     }
   ]
 }
