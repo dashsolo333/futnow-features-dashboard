@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:52:13.861Z",
+  "updatedAt": "2026-09-15T14:52:56.454Z",
   "stages": [
     {
       "id": "idea",
@@ -691,7 +691,7 @@
         "ios",
         "android"
       ],
-      "stageId": "prod",
+      "stageId": "prodtest",
       "stepProgress": 0,
       "releaseId": "",
       "devhubId": "reward-prod",
@@ -722,7 +722,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:52:13.861Z",
+      "updatedAt": "2026-09-15T14:52:56.454Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2274,6 +2274,28 @@
       "featureId": "dh_reward-prod",
       "type": "move",
       "text": "a passé « Reward prod » en Prod final (forcé, sans test OK)"
+    },
+    {
+      "id": "a_2026-09-15T14:52:55.633Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:52:55.633Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "move",
+      "text": "a passé « Reward prod » en Dev"
+    },
+    {
+      "id": "a_2026-09-15T14:52:56.454Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:52:56.454Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "move",
+      "text": "a passé « Reward prod » en Prod test"
     }
   ]
 }
