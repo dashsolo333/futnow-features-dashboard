@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:42:02.694Z",
+  "updatedAt": "2026-09-15T14:42:06.681Z",
   "stages": [
     {
       "id": "idea",
@@ -260,7 +260,7 @@
         "ios",
         "android"
       ],
-      "stageId": "prodtest",
+      "stageId": "idea",
       "stepProgress": 0,
       "releaseId": "",
       "devhubId": "activite-prod",
@@ -283,7 +283,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:42:02.694Z",
+      "updatedAt": "2026-09-15T14:42:06.681Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2055,6 +2055,17 @@
       "featureId": "dh_activite-prod",
       "type": "move",
       "text": "a passé « Tab Activité » en Prod test"
+    },
+    {
+      "id": "a_2026-09-15T14:42:06.681Z_dh_activite-prod_move",
+      "at": "2026-09-15T14:42:06.681Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activite-prod",
+      "type": "move",
+      "text": "a passé « Tab Activité » en Idée"
     }
   ]
 }
