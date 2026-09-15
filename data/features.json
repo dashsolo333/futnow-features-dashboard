@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:41:46.458Z",
+  "updatedAt": "2026-09-15T14:41:58.233Z",
   "stages": [
     {
       "id": "idea",
@@ -260,8 +260,8 @@
         "ios",
         "android"
       ],
-      "stageId": "idea",
-      "stepProgress": 100,
+      "stageId": "spec",
+      "stepProgress": 0,
       "releaseId": "",
       "devhubId": "activite-prod",
       "links": [
@@ -283,7 +283,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:41:46.458Z",
+      "updatedAt": "2026-09-15T14:41:58.233Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2000,6 +2000,17 @@
       "featureId": "dh_activite-prod",
       "type": "update",
       "text": "a modifié stepProgress de « Tab Activité »"
+    },
+    {
+      "id": "a_2026-09-15T14:41:58.233Z_dh_activite-prod_move",
+      "at": "2026-09-15T14:41:58.233Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activite-prod",
+      "type": "move",
+      "text": "a passé « Tab Activité » en Spec"
     }
   ]
 }
