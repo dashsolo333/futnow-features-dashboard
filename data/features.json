@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:40:53.234Z",
+  "updatedAt": "2026-09-15T14:40:56.214Z",
   "stages": [
     {
       "id": "idea",
@@ -261,7 +261,7 @@
         "android"
       ],
       "stageId": "prodtest",
-      "stepProgress": 100,
+      "stepProgress": 60,
       "releaseId": "",
       "devhubId": "activite-prod",
       "links": [
@@ -283,7 +283,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:40:53.234Z",
+      "updatedAt": "2026-09-15T14:40:56.214Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1883,6 +1883,17 @@
     {
       "id": "a_2026-09-15T14:40:53.234Z_dh_activite-prod_update",
       "at": "2026-09-15T14:40:53.234Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activite-prod",
+      "type": "update",
+      "text": "a modifié stepProgress de « Tab Activité »"
+    },
+    {
+      "id": "a_2026-09-15T14:40:56.214Z_dh_activite-prod_update",
+      "at": "2026-09-15T14:40:56.214Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
