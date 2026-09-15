@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:45:14.536Z",
+  "updatedAt": "2026-09-15T14:45:24.728Z",
   "stages": [
     {
       "id": "idea",
@@ -314,13 +314,30 @@
           "build": ""
         }
       ],
-      "items": [],
+      "items": [
+        {
+          "id": "i_mu2sacmwpf0f2k",
+          "text": "ok",
+          "group": "spec",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-15T14:45:24.728Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        }
+      ],
       "createdAt": "2026-07-02T13:29:45+02:00",
       "createdBy": {
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:45:14.536Z",
+      "updatedAt": "2026-09-15T14:45:24.728Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2158,6 +2175,17 @@
       "featureId": "dh_activite-prod",
       "type": "move",
       "text": "a passé « Tab Activité » en Prod final"
+    },
+    {
+      "id": "a_2026-09-15T14:45:24.728Z_dh_activite-prod_update",
+      "at": "2026-09-15T14:45:24.728Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activite-prod",
+      "type": "update",
+      "text": "a ajouté la tâche « ok » à « Tab Activité »"
     }
   ]
 }
