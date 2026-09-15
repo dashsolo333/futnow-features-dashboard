@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:46:45.000Z",
+  "updatedAt": "2026-09-15T14:49:23.332Z",
   "stages": [
     {
       "id": "idea",
@@ -733,8 +733,8 @@
       "title": "Feed replay",
       "description": "Une vraie frame de captation en plein écran avec la grammaire d'un feed vertical — rail de réactions en verre, caption, son, progression.\n\nTag DevHub : façon TikTok",
       "icon": "🎞",
-      "family": "brochure",
-      "familyLabel": "Brochure",
+      "family": "prod",
+      "familyLabel": "Prod",
       "priority": "p2",
       "platforms": [
         "ios",
@@ -763,10 +763,10 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-04T18:15:26+02:00",
+      "updatedAt": "2026-09-15T14:49:23.332Z",
       "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
     },
     {
@@ -2241,6 +2241,17 @@
       "featureId": "dh_activite-prod",
       "type": "update",
       "text": "a modifié dates de « Tab Activité »"
+    },
+    {
+      "id": "a_2026-09-15T14:49:23.332Z_dh_replay-feed_update",
+      "at": "2026-09-15T14:49:23.332Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_replay-feed",
+      "type": "update",
+      "text": "a modifié family, familyLabel de « Feed replay »"
     }
   ]
 }
