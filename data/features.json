@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:45:02.996Z",
+  "updatedAt": "2026-09-15T14:45:08.920Z",
   "stages": [
     {
       "id": "idea",
@@ -300,6 +300,18 @@
           "verdict": "ko",
           "notes": "",
           "build": ""
+        },
+        {
+          "id": "t_mu2sa0fsnbd8ck",
+          "at": "2026-09-15T14:45:08.920Z",
+          "by": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
+          "platform": "ios",
+          "verdict": "ok",
+          "notes": "",
+          "build": ""
         }
       ],
       "items": [],
@@ -308,7 +320,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:45:02.996Z",
+      "updatedAt": "2026-09-15T14:45:08.920Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2124,6 +2136,17 @@
       "featureId": "dh_activite-prod",
       "type": "test",
       "text": "a testé « Tab Activité » sur ios : KO"
+    },
+    {
+      "id": "a_2026-09-15T14:45:08.920Z_dh_activite-prod_test",
+      "at": "2026-09-15T14:45:08.920Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activite-prod",
+      "type": "test",
+      "text": "a testé « Tab Activité » sur ios : OK"
     }
   ]
 }
