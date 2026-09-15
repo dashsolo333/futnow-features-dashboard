@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:49:23.332Z",
+  "updatedAt": "2026-09-15T14:52:09.048Z",
   "stages": [
     {
       "id": "idea",
@@ -691,7 +691,7 @@
         "ios",
         "android"
       ],
-      "stageId": "prod",
+      "stageId": "dev",
       "stepProgress": 0,
       "releaseId": "",
       "devhubId": "reward-prod",
@@ -722,10 +722,10 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-04T18:15:26+02:00",
+      "updatedAt": "2026-09-15T14:52:09.048Z",
       "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
     },
     {
@@ -2252,6 +2252,17 @@
       "featureId": "dh_replay-feed",
       "type": "update",
       "text": "a modifié family, familyLabel de « Feed replay »"
+    },
+    {
+      "id": "a_2026-09-15T14:52:09.048Z_dh_reward-prod_move",
+      "at": "2026-09-15T14:52:09.048Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward-prod",
+      "type": "move",
+      "text": "a passé « Reward prod » en Dev"
     }
   ]
 }
