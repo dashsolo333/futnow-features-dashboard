@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:20:44.542Z",
+  "updatedAt": "2026-09-17T14:20:53.595Z",
   "stages": [
     {
       "id": "idea",
@@ -179,7 +179,7 @@
     },
     {
       "id": "dh_activity-v2",
-      "title": "Activité v2",
+      "title": "Activité",
       "description": "La tranche Activité refondue, un état par variante — de l'anticipation du prochain match à la réactivation après une longue absence. Le héro page les matchs au calendrier (le plus proche d'abord) ; dessous, le panneau des quatre portes (jouer, organiser, joueurs, ligues), toujours là.\n\nTag DevHub : 7 états · pager",
       "icon": "📅",
       "family": "activity",
@@ -272,15 +272,15 @@
           }
         },
         {
-          "id": "i_mu5m9g34ax3c1q",
-          "text": "Virer le terme lobby",
           "group": "prod",
           "due": "",
           "note": "",
-          "status": "todo",
-          "done": false,
           "doneAt": "",
           "doneBy": null,
+          "id": "i_mu5m9g34ax3c1q",
+          "text": "Virer le terme lobby",
+          "status": "todo",
+          "done": false,
           "createdAt": "2026-09-17T14:20:03.376Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -288,15 +288,15 @@
           }
         },
         {
-          "id": "i_mu5mabumxb0v6m",
-          "text": "Changer texte de notif push \"stats disponibles\" plus d'émoji ballon",
           "group": "prod",
           "due": "",
           "note": "",
-          "status": "todo",
-          "done": false,
           "doneAt": "",
           "doneBy": null,
+          "id": "i_mu5mabumxb0v6m",
+          "text": "Changer texte de notif push \"stats disponibles\" plus d'émoji ballon",
+          "status": "todo",
+          "done": false,
           "createdAt": "2026-09-17T14:20:44.542Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -309,7 +309,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:20:44.542Z",
+      "updatedAt": "2026-09-17T14:20:53.595Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3214,6 +3214,17 @@
       "featureId": "dh_activity-v2",
       "type": "update",
       "text": "a ajouté la tâche « Changer texte de notif push \"stats disponibles\" plus d'émoji ballon » à « Activité v2 »"
+    },
+    {
+      "id": "a_2026-09-17T14:20:53.595Z_dh_activity-v2_update",
+      "at": "2026-09-17T14:20:53.595Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "update",
+      "text": "a modifié title de « Activité v2 »"
     }
   ]
 }
