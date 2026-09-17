@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:22:05.745Z",
+  "updatedAt": "2026-09-17T14:22:15.121Z",
   "stages": [
     {
       "id": "idea",
@@ -372,6 +372,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu5mc9qo0bhknt",
+          "text": "Créateur de blason",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T14:22:15.121Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-11T09:17:33.180Z",
@@ -379,7 +395,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:22:05.745Z",
+      "updatedAt": "2026-09-17T14:22:15.121Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3253,6 +3269,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a ajouté la tâche « Réfléchir à possibilité de faire des presets blasons » à « Lobby »"
+    },
+    {
+      "id": "a_2026-09-17T14:22:15.121Z_dh_lobby_update",
+      "at": "2026-09-17T14:22:15.121Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a ajouté la tâche « Créateur de blason » à « Lobby »"
     }
   ]
 }
