@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:57:01.557Z",
+  "updatedAt": "2026-09-17T13:57:14.975Z",
   "stages": [
     {
       "id": "idea",
@@ -1182,8 +1182,8 @@
         "ios",
         "android"
       ],
-      "stageId": "idea",
-      "stepProgress": 70,
+      "stageId": "prodtest",
+      "stepProgress": 0,
       "status": "",
       "statusAt": "",
       "statusBy": null,
@@ -1193,7 +1193,7 @@
       "links": [],
       "dates": {
         "prodTestPlanned": "",
-        "prodTestActual": "",
+        "prodTestActual": "2026-09-17",
         "prodFinalPlanned": "",
         "prodFinalActual": ""
       },
@@ -1275,7 +1275,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T13:42:10.774Z",
+      "updatedAt": "2026-09-17T13:57:14.975Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3078,6 +3078,17 @@
       "featureId": null,
       "type": "update",
       "text": "a réordonné la liste"
+    },
+    {
+      "id": "a_2026-09-17T13:57:14.975Z_f_mu1c5m8z9pu0rz_move",
+      "at": "2026-09-17T13:57:14.975Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "move",
+      "text": "a passé « Chat & DM sync » en Prod test"
     }
   ]
 }
