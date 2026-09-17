@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:57:20.529Z",
+  "updatedAt": "2026-09-17T13:57:44.175Z",
   "stages": [
     {
       "id": "idea",
@@ -1184,9 +1184,12 @@
       ],
       "stageId": "prodtest",
       "stepProgress": 0,
-      "status": "",
-      "statusAt": "",
-      "statusBy": null,
+      "status": "Discuter ensemble d",
+      "statusAt": "2026-09-17T13:57:44.175Z",
+      "statusBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
       "rank": 70,
       "releaseId": "",
       "devhubId": "",
@@ -1275,7 +1278,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T13:57:14.975Z",
+      "updatedAt": "2026-09-17T13:57:44.175Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3100,6 +3103,17 @@
       "featureId": null,
       "type": "update",
       "text": "a réordonné la liste"
+    },
+    {
+      "id": "a_2026-09-17T13:57:44.175Z_f_mu1c5m8z9pu0rz_status",
+      "at": "2026-09-17T13:57:44.175Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "status",
+      "text": "a mis à jour le statut de « Chat & DM sync » : Discuter ensemble d"
     }
   ]
 }
