@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:20:53.595Z",
+  "updatedAt": "2026-09-17T14:22:05.745Z",
   "stages": [
     {
       "id": "idea",
@@ -356,13 +356,30 @@
         "prodFinalActual": "2026-09-14"
       },
       "tests": [],
-      "items": [],
+      "items": [
+        {
+          "id": "i_mu5mc2i9dexqt4",
+          "text": "Réfléchir à possibilité de faire des presets blasons",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T14:22:05.745Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        }
+      ],
       "createdAt": "2026-09-11T09:17:33.180Z",
       "createdBy": {
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:19:29.714Z",
+      "updatedAt": "2026-09-17T14:22:05.745Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3225,6 +3242,17 @@
       "featureId": "dh_activity-v2",
       "type": "update",
       "text": "a modifié title de « Activité v2 »"
+    },
+    {
+      "id": "a_2026-09-17T14:22:05.745Z_dh_lobby_update",
+      "at": "2026-09-17T14:22:05.745Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a ajouté la tâche « Réfléchir à possibilité de faire des presets blasons » à « Lobby »"
     }
   ]
 }
