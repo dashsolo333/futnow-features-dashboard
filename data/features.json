@@ -1176,7 +1176,7 @@
         {
           "group": "idea",
           "due": "",
-          "note": "Garder le shortcut vers lobby ou par défaut laisser dans",
+          "note": "Garder le shortcut vers lobby ou par défaut laisser dans dm et mettre un lien cliquable ?",
           "doneAt": "",
           "doneBy": null,
           "id": "i_mu1c7jenacsjsn",
@@ -1233,7 +1233,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T13:39:00.971Z",
+      "updatedAt": "2026-09-17T13:39:35.609Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
