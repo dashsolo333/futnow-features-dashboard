@@ -375,7 +375,7 @@
         },
         {
           "id": "i_mu5mc9qo0bhknt",
-          "text": "Créateur de blason",
+          "text": "Créateur de blason à voir",
           "group": "prod",
           "due": "",
           "note": "",
@@ -395,7 +395,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:22:32.711Z",
+      "updatedAt": "2026-09-17T14:22:39.241Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
