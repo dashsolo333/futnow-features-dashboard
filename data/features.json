@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:36:13.536Z",
+  "updatedAt": "2026-09-17T13:36:35.993Z",
   "stages": [
     {
       "id": "idea",
@@ -99,7 +99,7 @@
       "icon": "🛰",
       "family": "flows",
       "familyLabel": "Flux match",
-      "priority": "p1",
+      "priority": "p0",
       "platforms": [
         "ios",
         "android"
@@ -166,7 +166,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:36:13.536Z",
+      "updatedAt": "2026-09-17T13:36:35.993Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2790,6 +2790,17 @@
     {
       "id": "a_2026-09-17T13:36:13.536Z_dh_radar_update",
       "at": "2026-09-17T13:36:13.536Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "update",
+      "text": "a modifié priority de « Mode RADAR »"
+    },
+    {
+      "id": "a_2026-09-17T13:36:35.993Z_dh_radar_update",
+      "at": "2026-09-17T13:36:35.993Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
