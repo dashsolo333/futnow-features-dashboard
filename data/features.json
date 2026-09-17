@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T14:57:34.713Z",
+  "updatedAt": "2026-09-17T08:46:17.032Z",
   "stages": [
     {
       "id": "idea",
@@ -58,6 +58,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "league-v2",
       "links": [
@@ -103,6 +106,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -177,6 +183,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "activity-v2",
       "links": [
@@ -262,6 +271,9 @@
       ],
       "stageId": "prod",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "activite-prod",
       "links": [
@@ -357,6 +369,9 @@
       ],
       "stageId": "prod",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "lobby",
       "links": [
@@ -406,6 +421,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "match-detail",
       "links": [
@@ -455,6 +473,9 @@
       ],
       "stageId": "prod",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "join-game",
       "links": [
@@ -509,6 +530,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "inbox",
       "links": [
@@ -558,6 +582,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "futstore",
       "links": [
@@ -603,6 +630,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "kit-nolt",
       "links": [
@@ -648,6 +678,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "reward",
       "links": [
@@ -693,6 +726,9 @@
       ],
       "stageId": "spec",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "reward-prod",
       "links": [
@@ -742,6 +778,9 @@
       ],
       "stageId": "spec",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "replay-feed",
       "links": [
@@ -783,6 +822,9 @@
       ],
       "stageId": "spec",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "gerant-dash",
       "links": [
@@ -824,6 +866,9 @@
       ],
       "stageId": "spec",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "revanche",
       "links": [
@@ -865,6 +910,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "pitch3d-full",
       "links": [
@@ -910,6 +958,9 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "annonces-verdict",
       "links": [
@@ -963,6 +1014,9 @@
       ],
       "stageId": "design",
       "stepProgress": 75,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "pronos",
       "links": [
@@ -1025,6 +1079,9 @@
       ],
       "stageId": "prod",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "home-prod",
       "links": [
@@ -1066,6 +1123,9 @@
       ],
       "stageId": "idea",
       "stepProgress": 70,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1151,6 +1211,9 @@
       ],
       "stageId": "idea",
       "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1168,6 +1231,45 @@
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
       "updatedAt": "2026-09-14T15:08:07.789Z",
+      "updatedBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      }
+    },
+    {
+      "id": "f_mu5ac7nrdphiea",
+      "title": "Design des rangs",
+      "description": "",
+      "icon": "",
+      "family": "other",
+      "familyLabel": "Autre",
+      "priority": "p2",
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "stageId": "idea",
+      "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
+      "releaseId": "",
+      "devhubId": "",
+      "links": [],
+      "dates": {
+        "prodTestPlanned": "",
+        "prodTestActual": "",
+        "prodFinalPlanned": "",
+        "prodFinalActual": ""
+      },
+      "tests": [],
+      "items": [],
+      "createdAt": "2026-09-17T08:46:17.032Z",
+      "createdBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "updatedAt": "2026-09-17T08:46:17.032Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2538,6 +2640,17 @@
       "featureId": "dh_reward-prod",
       "type": "update",
       "text": "a modifié stepProgress de « Reward prod »"
+    },
+    {
+      "id": "a_2026-09-17T08:46:17.032Z_f_mu5ac7nrdphiea_create",
+      "at": "2026-09-17T08:46:17.032Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu5ac7nrdphiea",
+      "type": "create",
+      "text": "a créé « Design des rangs »"
     }
   ]
 }
