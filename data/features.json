@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:39:52.012Z",
+  "updatedAt": "2026-09-17T13:48:44.282Z",
   "stages": [
     {
       "id": "idea",
@@ -184,7 +184,7 @@
         "ios",
         "android"
       ],
-      "stageId": "design",
+      "stageId": "prod",
       "stepProgress": 0,
       "status": "",
       "statusAt": "",
@@ -245,7 +245,7 @@
         "prodTestPlanned": "2026-10-01",
         "prodTestActual": "",
         "prodFinalPlanned": "2026-10-09",
-        "prodFinalActual": ""
+        "prodFinalActual": "2026-09-17"
       },
       "tests": [],
       "items": [],
@@ -254,7 +254,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:14:55.168Z",
+      "updatedAt": "2026-09-17T13:48:44.282Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2863,6 +2863,17 @@
       "featureId": "f_mu1c5m8z9pu0rz",
       "type": "update",
       "text": "a ajouté la tâche « ajouter le double tap pour réaction coeur » à « Chat & DM sync »"
+    },
+    {
+      "id": "a_2026-09-17T13:48:44.282Z_dh_activity-v2_move",
+      "at": "2026-09-17T13:48:44.282Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "move",
+      "text": "a passé « Activité v2 » en Prod final (forcé, sans test OK)"
     }
   ]
 }
