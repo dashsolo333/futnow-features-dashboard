@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:12:18.338Z",
+  "updatedAt": "2026-09-17T14:14:11.125Z",
   "stages": [
     {
       "id": "idea",
@@ -879,7 +879,7 @@
       "icon": "🔁",
       "family": "brochure",
       "familyLabel": "Brochure",
-      "priority": "p2",
+      "priority": "p0",
       "platforms": [
         "ios",
         "android"
@@ -963,7 +963,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:13:44.288Z",
+      "updatedAt": "2026-09-17T14:14:11.125Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3152,6 +3152,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a ajouté la tâche « Linker avec le centre » à « CTA / Revanche prochain créneau »"
+    },
+    {
+      "id": "a_2026-09-17T14:14:11.125Z_dh_revanche_update",
+      "at": "2026-09-17T14:14:11.125Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a modifié priority de « CTA / Revanche prochain créneau »"
     }
   ]
 }
