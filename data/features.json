@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:20:03.376Z",
+  "updatedAt": "2026-09-17T14:20:44.542Z",
   "stages": [
     {
       "id": "idea",
@@ -286,6 +286,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu5mabumxb0v6m",
+          "text": "Changer texte de notif push \"stats disponibles\" plus d'émoji ballon",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T14:20:44.542Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-10T11:33:04+02:00",
@@ -293,7 +309,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:20:03.376Z",
+      "updatedAt": "2026-09-17T14:20:44.542Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3187,6 +3203,17 @@
       "featureId": "dh_activity-v2",
       "type": "update",
       "text": "a ajouté la tâche « Virer le terme lobby » à « Activité v2 »"
+    },
+    {
+      "id": "a_2026-09-17T14:20:44.542Z_dh_activity-v2_update",
+      "at": "2026-09-17T14:20:44.542Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "update",
+      "text": "a ajouté la tâche « Changer texte de notif push \"stats disponibles\" plus d'émoji ballon » à « Activité v2 »"
     }
   ]
 }
