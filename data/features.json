@@ -258,7 +258,7 @@
         {
           "group": "prod",
           "due": "",
-          "note": "suite modif",
+          "note": "suite modif IA",
           "doneAt": "",
           "doneBy": null,
           "id": "i_mu5l6guclb22n6",
@@ -277,7 +277,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:49:50.441Z",
+      "updatedAt": "2026-09-17T14:19:56.706Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
