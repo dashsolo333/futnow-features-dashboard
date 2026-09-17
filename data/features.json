@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:36:35.993Z",
+  "updatedAt": "2026-09-17T13:37:08.695Z",
   "stages": [
     {
       "id": "idea",
@@ -1193,12 +1193,15 @@
           "group": "idea",
           "due": "",
           "note": "",
-          "doneAt": "",
-          "doneBy": null,
+          "doneAt": "2026-09-17T13:37:08.695Z",
+          "doneBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
           "id": "i_mu1c8c0wc1yk0b",
           "text": "fonctionnalité répondre au sein d'un chat",
-          "status": "todo",
-          "done": false,
+          "status": "done",
+          "done": true,
           "createdAt": "2026-09-14T14:28:10.592Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1227,7 +1230,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-14T14:29:21.065Z",
+      "updatedAt": "2026-09-17T13:37:08.695Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2808,6 +2811,17 @@
       "featureId": "dh_radar",
       "type": "update",
       "text": "a modifié priority de « Mode RADAR »"
+    },
+    {
+      "id": "a_2026-09-17T13:37:08.695Z_f_mu1c5m8z9pu0rz_update",
+      "at": "2026-09-17T13:37:08.695Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "update",
+      "text": "a passé « fonctionnalité répondre au sein d'un chat » faite sur « Chat & DM sync »"
     }
   ]
 }
