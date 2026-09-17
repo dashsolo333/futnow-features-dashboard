@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T08:46:45.610Z",
+  "updatedAt": "2026-09-17T08:47:54.794Z",
   "stages": [
     {
       "id": "idea",
@@ -884,16 +884,33 @@
         "prodFinalActual": ""
       },
       "tests": [],
-      "items": [],
+      "items": [
+        {
+          "id": "i_mu5aeb3ezhfkqx",
+          "text": "Benchmarker une méthode pour laisser à l'user la possibilité d'appeler le centre",
+          "group": "spec",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T08:47:54.794Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        }
+      ],
       "createdAt": "2026-09-04T18:15:26+02:00",
       "createdBy": {
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-04T18:15:26+02:00",
+      "updatedAt": "2026-09-17T08:47:54.794Z",
       "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
     },
     {
@@ -2673,6 +2690,17 @@
       "featureId": "f_mu5ack6z4n6rnb",
       "type": "delete",
       "text": "a supprimé « Equilibrage XP GD »"
+    },
+    {
+      "id": "a_2026-09-17T08:47:54.794Z_dh_revanche_update",
+      "at": "2026-09-17T08:47:54.794Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a ajouté la tâche « Benchmarker une méthode pour laisser à l'user la possibilité d'appeler le centre » à « Revanche »"
     }
   ]
 }
