@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:31:09.440Z",
+  "updatedAt": "2026-09-17T14:44:15.063Z",
   "stages": [
     {
       "id": "idea",
@@ -1163,51 +1163,6 @@
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-      }
-    },
-    {
-      "id": "dh_home-prod",
-      "title": "Home",
-      "description": "Le shell réel — barre d'onglets complète (Fil · Activité · + · Fiche · Compte). ⚠️ l'onglet Activité monte ActivityV2Screen, pas l'écran de prod : ce n'est donc pas le home d'aujourd'hui mais la base de refonte. Le vrai home actuel se regarde dans le worktree /home/nadir/futnow-prod.\n\nTag DevHub : shell prod + Activité v2",
-      "icon": "🏠",
-      "family": "prod",
-      "familyLabel": "Prod",
-      "priority": "p2",
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "stageId": "prod",
-      "stepProgress": 0,
-      "status": "",
-      "statusAt": "",
-      "statusBy": null,
-      "rank": 110,
-      "releaseId": "",
-      "devhubId": "home-prod",
-      "links": [
-        {
-          "label": "app/src/navigation/TabNavigator.tsx",
-          "url": "https://github.com/serstyle/futnow-app/tree/design/refonte-ui/app/src/navigation/TabNavigator.tsx"
-        }
-      ],
-      "dates": {
-        "prodTestPlanned": "",
-        "prodTestActual": "2026-07-02",
-        "prodFinalPlanned": "",
-        "prodFinalActual": "2026-07-02"
-      },
-      "tests": [],
-      "items": [],
-      "createdAt": "2026-07-02T13:43:04+02:00",
-      "createdBy": {
-        "login": "devhub",
-        "avatar": ""
-      },
-      "updatedAt": "2026-07-02T13:43:04+02:00",
-      "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
       }
     },
     {
@@ -3319,6 +3274,17 @@
       "featureId": "dh_pitch3d-full",
       "type": "status",
       "text": "a mis à jour le statut de « Compo 3D » : Bouton retour pixel"
+    },
+    {
+      "id": "a_2026-09-17T14:44:15.063Z_dh_home-prod_delete",
+      "at": "2026-09-17T14:44:15.063Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_home-prod",
+      "type": "delete",
+      "text": "a supprimé « Home »"
     }
   ]
 }
