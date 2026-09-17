@@ -1,7 +1,7 @@
 import { h, icon, avatar, fmtDay, relTime, today } from './dom.js';
 import { PRIORITIES } from '../model/doc.js';
 import { gaugeOf, stageById } from '../model/stages.js';
-import { isLate, byRank } from '../model/features.js';
+import { isLate, byRank, checklistProgress } from '../model/features.js';
 import { verdictBadge } from './card.js';
 import { visibleFeatures } from './filters.js';
 
@@ -11,6 +11,7 @@ const COLS = [
   { id: 'stage', label: 'Étape', get: (f, doc) => doc.stages.findIndex((s) => s.id === f.stageId) },
   { id: 'status', label: 'Dernier statut', get: (f) => (f.status ? f.statusAt || f.updatedAt : '') },
   { id: 'gauge', label: 'Avancement', get: (f, doc) => gaugeOf(doc, f) },
+  { id: 'tasks', label: 'Checklist', get: (f) => { const p = checklistProgress(f); return p.total ? p.done / p.total : -1; } },
   { id: 'test', label: 'Prod test', get: (f) => f.dates.prodTestActual || f.dates.prodTestPlanned || '9999' },
   { id: 'prod', label: 'Prod final', get: (f) => f.dates.prodFinalActual || f.dates.prodFinalPlanned || '9999' },
   { id: 'verdict', label: 'Dernier test', get: (f) => (f.tests.at(-1)?.verdict || 'zz') },
@@ -69,6 +70,7 @@ export function renderList(ctx) {
           h('td', {}, h('span', { class: 'chip chip-stage', style: { '--dot': stage?.color } }, h('i', { class: 'chip-dot' }), stage?.label)),
           h('td', {}, statusCell(f)),
           h('td', {}, h('div', { class: 'cell-gauge' }, h('div', { class: 'bar', style: { '--bar': stage?.color } }, h('i', { style: { width: `${g}%` } })), h('b', {}, `${g} %`))),
+          h('td', {}, tasksCell(checklistProgress(f))),
           h('td', {}, dateCell(f.dates.prodTestPlanned, f.dates.prodTestActual, late.prodTest)),
           h('td', {}, dateCell(f.dates.prodFinalPlanned, f.dates.prodFinalActual, late.prodFinal)),
           h('td', {}, verdictBadge(f) || h('span', { class: 'dim' }, '—')),
@@ -105,6 +107,14 @@ function statusCell(f) {
   return h('div', { class: 'cell-status', title: f.status },
     h('span', { class: 'cell-status-text' }, f.status),
     h('small', {}, at ? relTime(at) : '', by?.login ? ` · ${by.login}` : ''));
+}
+
+function tasksCell({ done, total }) {
+  if (!total) return h('span', { class: 'dim' }, '—');
+  const pct = Math.round((done / total) * 100);
+  return h('div', { class: 'cell-tasks', title: `${done} tâche${done > 1 ? 's' : ''} faite${done > 1 ? 's' : ''} sur ${total}` },
+    h('b', { class: done === total ? 'is-done' : '' }, `${done}/${total}`),
+    h('div', { class: 'bar bar-tasks' }, h('i', { style: { width: `${pct}%` } })));
 }
 
 function dateCell(planned, actual, late) {

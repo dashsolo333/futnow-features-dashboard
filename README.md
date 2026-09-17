@@ -11,7 +11,7 @@ au nom de la personne connectée.
 
 - **Six vues** : **Tableau** kanban par étape (glisser-déposer, colonnes de même largeur),
   **Avancement** (plein écran, une feature à la fois, flèches ← → et touche `f`), **Liste**
-  triable avec sélection multiple, une ligne par feature (titre + famille, **dernier statut**
+  triable avec sélection multiple, une ligne par feature (titre + famille, checklist `x/x`, **dernier statut**
   avec quand et par qui), **ordre manuel** en glissant les lignes par leur poignée (enregistré
   pour toute l'équipe, tri mémorisé dans le navigateur), **Roadmap** semaine par semaine,
   **Versions** (trains de release), **Journal** d'activité.
