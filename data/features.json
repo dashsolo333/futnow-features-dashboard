@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:51:30.676Z",
+  "updatedAt": "2026-09-17T13:53:03.467Z",
   "stages": [
     {
       "id": "idea",
@@ -538,7 +538,7 @@
         "ios",
         "android"
       ],
-      "stageId": "design",
+      "stageId": "prod",
       "stepProgress": 0,
       "status": "",
       "statusAt": "",
@@ -564,7 +564,7 @@
         "prodTestPlanned": "",
         "prodTestActual": "",
         "prodFinalPlanned": "",
-        "prodFinalActual": ""
+        "prodFinalActual": "2026-09-17"
       },
       "tests": [],
       "items": [],
@@ -573,10 +573,10 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-07-02T15:25:45+02:00",
+      "updatedAt": "2026-09-17T13:53:03.467Z",
       "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
     },
     {
@@ -689,7 +689,7 @@
         "ios",
         "android"
       ],
-      "stageId": "design",
+      "stageId": "prod",
       "stepProgress": 0,
       "status": "",
       "statusAt": "",
@@ -711,7 +711,7 @@
         "prodTestPlanned": "",
         "prodTestActual": "",
         "prodFinalPlanned": "",
-        "prodFinalActual": ""
+        "prodFinalActual": "2026-09-17"
       },
       "tests": [],
       "items": [],
@@ -720,10 +720,10 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-04T18:15:26+02:00",
+      "updatedAt": "2026-09-17T13:53:03.467Z",
       "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
     },
     {
@@ -959,7 +959,7 @@
         "ios",
         "android"
       ],
-      "stageId": "design",
+      "stageId": "prod",
       "stepProgress": 0,
       "status": "",
       "statusAt": "",
@@ -981,7 +981,7 @@
         "prodTestPlanned": "",
         "prodTestActual": "",
         "prodFinalPlanned": "",
-        "prodFinalActual": ""
+        "prodFinalActual": "2026-09-17"
       },
       "tests": [],
       "items": [],
@@ -990,10 +990,10 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-10T11:33:04+02:00",
+      "updatedAt": "2026-09-17T13:53:03.467Z",
       "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
     },
     {
@@ -2918,6 +2918,39 @@
       "featureId": "dh_radar",
       "type": "status",
       "text": "a mis à jour le statut de « Mode RADAR » : Bloqué tant que test pas fait [Nadir]"
+    },
+    {
+      "id": "a_2026-09-17T13:53:03.467Z_dh_inbox_move",
+      "at": "2026-09-17T13:53:03.467Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_inbox",
+      "type": "move",
+      "text": "a passé « Inbox » en Prod final (forcé, sans test OK)"
+    },
+    {
+      "id": "a_2026-09-17T13:53:03.467Z_dh_reward_move",
+      "at": "2026-09-17T13:53:03.467Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_reward",
+      "type": "move",
+      "text": "a passé « Reward » en Prod final (forcé, sans test OK)"
+    },
+    {
+      "id": "a_2026-09-17T13:53:03.467Z_dh_pitch3d-full_move",
+      "at": "2026-09-17T13:53:03.467Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_pitch3d-full",
+      "type": "move",
+      "text": "a passé « Compo 3D » en Prod final (forcé, sans test OK)"
     }
   ]
 }
