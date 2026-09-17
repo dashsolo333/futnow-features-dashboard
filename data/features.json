@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:55:23.437Z",
+  "updatedAt": "2026-09-17T13:55:31.230Z",
   "stages": [
     {
       "id": "idea",
@@ -116,7 +116,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 100,
+      "rank": 110,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -382,7 +382,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 40,
+      "rank": 50,
       "releaseId": "",
       "devhubId": "lobby",
       "links": [
@@ -435,7 +435,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 110,
+      "rank": 120,
       "releaseId": "",
       "devhubId": "match-detail",
       "links": [
@@ -488,7 +488,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 50,
+      "rank": 60,
       "releaseId": "",
       "devhubId": "join-game",
       "links": [
@@ -546,7 +546,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 60,
+      "rank": 70,
       "releaseId": "",
       "devhubId": "inbox",
       "links": [
@@ -697,7 +697,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 70,
+      "rank": 80,
       "releaseId": "",
       "devhubId": "reward",
       "links": [
@@ -889,7 +889,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 120,
+      "rank": 40,
       "releaseId": "",
       "devhubId": "revanche",
       "links": [
@@ -967,7 +967,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 80,
+      "rank": 90,
       "releaseId": "",
       "devhubId": "pitch3d-full",
       "links": [
@@ -1139,7 +1139,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 90,
+      "rank": 100,
       "releaseId": "",
       "devhubId": "home-prod",
       "links": [
@@ -2980,6 +2980,17 @@
     {
       "id": "a_2026-09-17T13:55:23.437Z_null_update",
       "at": "2026-09-17T13:55:23.437Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": null,
+      "type": "update",
+      "text": "a réordonné la liste"
+    },
+    {
+      "id": "a_2026-09-17T13:55:31.230Z_null_update",
+      "at": "2026-09-17T13:55:31.230Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
