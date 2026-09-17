@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T08:47:54.794Z",
+  "updatedAt": "2026-09-17T08:48:34.258Z",
   "stages": [
     {
       "id": "idea",
@@ -886,8 +886,24 @@
       "tests": [],
       "items": [
         {
+          "group": "spec",
+          "due": "",
+          "note": "",
+          "doneAt": "",
+          "doneBy": null,
           "id": "i_mu5aeb3ezhfkqx",
           "text": "Benchmarker une méthode pour laisser à l'user la possibilité d'appeler le centre",
+          "status": "todo",
+          "done": false,
+          "createdAt": "2026-09-17T08:47:54.794Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_mu5af5jmjd786v",
+          "text": "Paramétrer un after call \"le centre a répondu ?\" ..",
           "group": "spec",
           "due": "",
           "note": "",
@@ -895,7 +911,7 @@
           "done": false,
           "doneAt": "",
           "doneBy": null,
-          "createdAt": "2026-09-17T08:47:54.794Z",
+          "createdAt": "2026-09-17T08:48:34.258Z",
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -907,7 +923,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T08:47:54.794Z",
+      "updatedAt": "2026-09-17T08:48:34.258Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2701,6 +2717,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a ajouté la tâche « Benchmarker une méthode pour laisser à l'user la possibilité d'appeler le centre » à « Revanche »"
+    },
+    {
+      "id": "a_2026-09-17T08:48:34.258Z_dh_revanche_update",
+      "at": "2026-09-17T08:48:34.258Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a ajouté la tâche « Paramétrer un after call \"le centre a répondu ?\" .. » à « Revanche »"
     }
   ]
 }
