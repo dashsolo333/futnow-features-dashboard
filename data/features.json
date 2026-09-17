@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:56:06.241Z",
+  "updatedAt": "2026-09-17T13:56:13.016Z",
   "stages": [
     {
       "id": "idea",
@@ -886,8 +886,8 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
-      "status": "Mockup centre préféré à faire",
-      "statusAt": "2026-09-17T13:56:06.241Z",
+      "status": "Mockup centre préféré à faire +",
+      "statusAt": "2026-09-17T13:56:13.016Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -947,7 +947,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:56:06.241Z",
+      "updatedAt": "2026-09-17T13:56:13.016Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3034,6 +3034,17 @@
       "featureId": "dh_revanche",
       "type": "status",
       "text": "a mis à jour le statut de « CTA / Revanche prochain créneau » : Mockup centre préféré à faire"
+    },
+    {
+      "id": "a_2026-09-17T13:56:13.016Z_dh_revanche_status",
+      "at": "2026-09-17T13:56:13.016Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "status",
+      "text": "a mis à jour le statut de « CTA / Revanche prochain créneau » : Mockup centre préféré à faire +"
     }
   ]
 }
