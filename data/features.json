@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:23:42.347Z",
+  "updatedAt": "2026-09-17T14:31:09.440Z",
   "stages": [
     {
       "id": "idea",
@@ -1004,9 +1004,12 @@
       ],
       "stageId": "prod",
       "stepProgress": 0,
-      "status": "",
-      "statusAt": "",
-      "statusBy": null,
+      "status": "Bouton retour pixel",
+      "statusAt": "2026-09-17T14:31:09.440Z",
+      "statusBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
       "rank": 100,
       "releaseId": "",
       "devhubId": "pitch3d-full",
@@ -1033,7 +1036,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:53:03.467Z",
+      "updatedAt": "2026-09-17T14:31:09.440Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3305,6 +3308,17 @@
       "featureId": "dh_lobby",
       "type": "status",
       "text": "a mis à jour le statut de « Lobby » : Petites améliorations"
+    },
+    {
+      "id": "a_2026-09-17T14:31:09.440Z_dh_pitch3d-full_status",
+      "at": "2026-09-17T14:31:09.440Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_pitch3d-full",
+      "type": "status",
+      "text": "a mis à jour le statut de « Compo 3D » : Bouton retour pixel"
     }
   ]
 }
