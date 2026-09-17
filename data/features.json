@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:48:44.282Z",
+  "updatedAt": "2026-09-17T13:49:44.772Z",
   "stages": [
     {
       "id": "idea",
@@ -248,13 +248,30 @@
         "prodFinalActual": "2026-09-17"
       },
       "tests": [],
-      "items": [],
+      "items": [
+        {
+          "id": "i_mu5l6guclb22n6",
+          "text": "Vérifier incohérence chemin UX match terminé \"ajouter un match\"",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T13:49:44.772Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        }
+      ],
       "createdAt": "2026-09-10T11:33:04+02:00",
       "createdBy": {
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:48:44.282Z",
+      "updatedAt": "2026-09-17T13:49:44.772Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2874,6 +2891,17 @@
       "featureId": "dh_activity-v2",
       "type": "move",
       "text": "a passé « Activité v2 » en Prod final (forcé, sans test OK)"
+    },
+    {
+      "id": "a_2026-09-17T13:49:44.772Z_dh_activity-v2_update",
+      "at": "2026-09-17T13:49:44.772Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "update",
+      "text": "a ajouté la tâche « Vérifier incohérence chemin UX match terminé \"ajouter un match\" » à « Activité v2 »"
     }
   ]
 }
