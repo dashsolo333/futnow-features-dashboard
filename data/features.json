@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:49:44.772Z",
+  "updatedAt": "2026-09-17T13:51:30.676Z",
   "stages": [
     {
       "id": "idea",
@@ -107,8 +107,8 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
-      "status": "test à faire",
-      "statusAt": "2026-09-17T13:35:56.073Z",
+      "status": "Bloqué tant que test pas fait [Nadir]",
+      "statusAt": "2026-09-17T13:51:30.676Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -168,7 +168,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:36:35.993Z",
+      "updatedAt": "2026-09-17T13:51:30.676Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2907,6 +2907,17 @@
       "featureId": "dh_activity-v2",
       "type": "update",
       "text": "a ajouté la tâche « Vérifier incohérence chemin UX match terminé \"ajouter un match\" » à « Activité v2 »"
+    },
+    {
+      "id": "a_2026-09-17T13:51:30.676Z_dh_radar_status",
+      "at": "2026-09-17T13:51:30.676Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "status",
+      "text": "a mis à jour le statut de « Mode RADAR » : Bloqué tant que test pas fait [Nadir]"
     }
   ]
 }
