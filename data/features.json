@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:14:11.125Z",
+  "updatedAt": "2026-09-17T14:14:16.396Z",
   "stages": [
     {
       "id": "idea",
@@ -913,12 +913,15 @@
           "group": "spec",
           "due": "",
           "note": "",
-          "doneAt": "",
-          "doneBy": null,
+          "doneAt": "2026-09-17T14:14:16.396Z",
+          "doneBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
           "id": "i_mu5aeb3ezhfkqx",
           "text": "Benchmarker une méthode pour laisser à l'user la possibilité d'appeler le centre",
-          "status": "todo",
-          "done": false,
+          "status": "done",
+          "done": true,
           "createdAt": "2026-09-17T08:47:54.794Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -963,7 +966,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:14:11.125Z",
+      "updatedAt": "2026-09-17T14:14:16.396Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3163,6 +3166,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a modifié priority de « CTA / Revanche prochain créneau »"
+    },
+    {
+      "id": "a_2026-09-17T14:14:16.396Z_dh_revanche_update",
+      "at": "2026-09-17T14:14:16.396Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a passé « Benchmarker une méthode pour laisser à l'user la possibilité d'appeler le centre » faite sur « CTA / Revanche prochain créneau »"
     }
   ]
 }
