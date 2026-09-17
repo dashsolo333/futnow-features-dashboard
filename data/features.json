@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:53:45.208Z",
+  "updatedAt": "2026-09-17T13:55:23.437Z",
   "stages": [
     {
       "id": "idea",
@@ -64,7 +64,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": null,
+      "rank": 10,
       "releaseId": "",
       "devhubId": "league-v2",
       "links": [
@@ -116,7 +116,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": null,
+      "rank": 100,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -194,7 +194,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 20,
       "releaseId": "",
       "devhubId": "activity-v2",
       "links": [
@@ -300,7 +300,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 30,
       "releaseId": "",
       "devhubId": "activite-prod",
       "links": [
@@ -382,7 +382,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 40,
       "releaseId": "",
       "devhubId": "lobby",
       "links": [
@@ -435,7 +435,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 110,
       "releaseId": "",
       "devhubId": "match-detail",
       "links": [
@@ -488,7 +488,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 50,
       "releaseId": "",
       "devhubId": "join-game",
       "links": [
@@ -546,7 +546,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 60,
       "releaseId": "",
       "devhubId": "inbox",
       "links": [
@@ -599,7 +599,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 130,
       "releaseId": "",
       "devhubId": "futstore",
       "links": [
@@ -648,7 +648,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 140,
       "releaseId": "",
       "devhubId": "kit-nolt",
       "links": [
@@ -697,7 +697,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 70,
       "releaseId": "",
       "devhubId": "reward",
       "links": [
@@ -746,7 +746,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 170,
       "releaseId": "",
       "devhubId": "reward-prod",
       "links": [
@@ -799,7 +799,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 180,
       "releaseId": "",
       "devhubId": "replay-feed",
       "links": [
@@ -844,7 +844,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 190,
       "releaseId": "",
       "devhubId": "gerant-dash",
       "links": [
@@ -889,7 +889,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 120,
       "releaseId": "",
       "devhubId": "revanche",
       "links": [
@@ -967,7 +967,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 80,
       "releaseId": "",
       "devhubId": "pitch3d-full",
       "links": [
@@ -1016,7 +1016,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 150,
       "releaseId": "",
       "devhubId": "annonces-verdict",
       "links": [
@@ -1073,7 +1073,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 160,
       "releaseId": "",
       "devhubId": "pronos",
       "links": [
@@ -1139,7 +1139,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 90,
       "releaseId": "",
       "devhubId": "home-prod",
       "links": [
@@ -1184,7 +1184,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 200,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1295,7 +1295,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 210,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1335,7 +1335,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 220,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -2976,6 +2976,17 @@
       "featureId": "dh_league-v2",
       "type": "status",
       "text": "a mis à jour le statut de « Ligues v2 » : UI à remodeler"
+    },
+    {
+      "id": "a_2026-09-17T13:55:23.437Z_null_update",
+      "at": "2026-09-17T13:55:23.437Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": null,
+      "type": "update",
+      "text": "a réordonné la liste"
     }
   ]
 }
