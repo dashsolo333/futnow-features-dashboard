@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:17:45.753Z",
+  "updatedAt": "2026-09-17T14:18:42.602Z",
   "stages": [
     {
       "id": "idea",
@@ -961,16 +961,32 @@
           }
         },
         {
-          "id": "i_mu5m6hw9qc5o2g",
-          "text": "Design intégration chip dans activité",
           "group": "design",
           "due": "2026-09-18",
+          "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mu5m6hw9qc5o2g",
+          "text": "Design intégration chip dans activité",
+          "status": "todo",
+          "done": false,
+          "createdAt": "2026-09-17T14:17:45.753Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_mu5m7prel1dnua",
+          "text": "link avec radar",
+          "group": "design",
+          "due": "",
           "note": "",
           "status": "todo",
           "done": false,
           "doneAt": "",
           "doneBy": null,
-          "createdAt": "2026-09-17T14:17:45.753Z",
+          "createdAt": "2026-09-17T14:18:42.602Z",
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -982,7 +998,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:17:56.154Z",
+      "updatedAt": "2026-09-17T14:18:42.602Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3204,6 +3220,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a ajouté la tâche « Design intégration chip dans activité » à « CTA / Revanche prochain créneau »"
+    },
+    {
+      "id": "a_2026-09-17T14:18:42.602Z_dh_revanche_update",
+      "at": "2026-09-17T14:18:42.602Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a ajouté la tâche « link avec radar » à « CTA / Revanche prochain créneau »"
     }
   ]
 }
