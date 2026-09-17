@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T08:52:39.870Z",
+  "updatedAt": "2026-09-17T13:35:56.073Z",
   "stages": [
     {
       "id": "idea",
@@ -106,9 +106,12 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
-      "status": "",
-      "statusAt": "",
-      "statusBy": null,
+      "status": "test à faire",
+      "statusAt": "2026-09-17T13:35:56.073Z",
+      "statusBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -163,7 +166,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:45:12.337Z",
+      "updatedAt": "2026-09-17T13:35:56.073Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2772,6 +2775,17 @@
       "featureId": "dh_kit-nolt",
       "type": "update",
       "text": "a modifié title de « GD Maillot »"
+    },
+    {
+      "id": "a_2026-09-17T13:35:56.073Z_dh_radar_status",
+      "at": "2026-09-17T13:35:56.073Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "status",
+      "text": "a mis à jour le statut de « Mode RADAR » : test à faire"
     }
   ]
 }
