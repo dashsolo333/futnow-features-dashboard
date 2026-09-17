@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:23:22.977Z",
+  "updatedAt": "2026-09-17T14:23:42.347Z",
   "stages": [
     {
       "id": "idea",
@@ -329,8 +329,8 @@
       ],
       "stageId": "prod",
       "stepProgress": 0,
-      "status": "Perfectionnement",
-      "statusAt": "2026-09-17T14:23:22.977Z",
+      "status": "Petites améliorations",
+      "statusAt": "2026-09-17T14:23:42.347Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -398,7 +398,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:23:22.977Z",
+      "updatedAt": "2026-09-17T14:23:42.347Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3294,6 +3294,17 @@
       "featureId": "dh_lobby",
       "type": "status",
       "text": "a mis à jour le statut de « Lobby » : Perfectionnement"
+    },
+    {
+      "id": "a_2026-09-17T14:23:42.347Z_dh_lobby_status",
+      "at": "2026-09-17T14:23:42.347Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "status",
+      "text": "a mis à jour le statut de « Lobby » : Petites améliorations"
     }
   ]
 }
