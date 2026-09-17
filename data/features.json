@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:55:36.120Z",
+  "updatedAt": "2026-09-17T13:55:44.352Z",
   "stages": [
     {
       "id": "idea",
@@ -884,7 +884,7 @@
         "ios",
         "android"
       ],
-      "stageId": "idea",
+      "stageId": "design",
       "stepProgress": 0,
       "status": "",
       "statusAt": "",
@@ -944,7 +944,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:55:36.120Z",
+      "updatedAt": "2026-09-17T13:55:44.352Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3009,6 +3009,17 @@
       "featureId": "dh_revanche",
       "type": "move",
       "text": "a passé « CTA / Revanche prochain créneau » en Idée"
+    },
+    {
+      "id": "a_2026-09-17T13:55:44.352Z_dh_revanche_move",
+      "at": "2026-09-17T13:55:44.352Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "move",
+      "text": "a passé « CTA / Revanche prochain créneau » en Design"
     }
   ]
 }
