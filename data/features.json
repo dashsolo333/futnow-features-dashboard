@@ -1176,7 +1176,7 @@
         {
           "group": "idea",
           "due": "",
-          "note": "Garder le shortcut vers lobby ou par défaut laisser dans dm et mettre un lien cliquable ?",
+          "note": "Garder le shortcut vers lobby ou par défaut laisser dans dm et mettre un lien cliquable vers MDS ?",
           "doneAt": "",
           "doneBy": null,
           "id": "i_mu1c7jenacsjsn",
@@ -1228,15 +1228,15 @@
           }
         },
         {
-          "id": "i_mu5ktrgsl5k1um",
-          "text": "ajouter le double tap pour réaction coeur",
           "group": "idea",
           "due": "",
           "note": "",
-          "status": "todo",
-          "done": false,
           "doneAt": "",
           "doneBy": null,
+          "id": "i_mu5ktrgsl5k1um",
+          "text": "ajouter le double tap pour réaction coeur",
+          "status": "todo",
+          "done": false,
           "createdAt": "2026-09-17T13:39:52.012Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1249,7 +1249,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T13:39:52.012Z",
+      "updatedAt": "2026-09-17T13:42:10.774Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
