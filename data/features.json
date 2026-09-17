@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:57:14.975Z",
+  "updatedAt": "2026-09-17T13:57:20.529Z",
   "stages": [
     {
       "id": "idea",
@@ -116,7 +116,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 110,
+      "rank": 120,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -546,7 +546,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 70,
+      "rank": 80,
       "releaseId": "",
       "devhubId": "inbox",
       "links": [
@@ -697,7 +697,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 80,
+      "rank": 90,
       "releaseId": "",
       "devhubId": "reward",
       "links": [
@@ -970,7 +970,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 90,
+      "rank": 100,
       "releaseId": "",
       "devhubId": "pitch3d-full",
       "links": [
@@ -1142,7 +1142,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 100,
+      "rank": 110,
       "releaseId": "",
       "devhubId": "home-prod",
       "links": [
@@ -1187,7 +1187,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 120,
+      "rank": 70,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -3089,6 +3089,17 @@
       "featureId": "f_mu1c5m8z9pu0rz",
       "type": "move",
       "text": "a passé « Chat & DM sync » en Prod test"
+    },
+    {
+      "id": "a_2026-09-17T13:57:20.529Z_null_update",
+      "at": "2026-09-17T13:57:20.529Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": null,
+      "type": "update",
+      "text": "a réordonné la liste"
     }
   ]
 }
