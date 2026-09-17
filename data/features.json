@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:57:47.549Z",
+  "updatedAt": "2026-09-17T14:12:18.338Z",
   "stages": [
     {
       "id": "idea",
@@ -940,6 +940,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu5lzh9ey88j8c",
+          "text": "Linker avec le centre",
+          "group": "design",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T14:12:18.338Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-04T18:15:26+02:00",
@@ -947,7 +963,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:56:25.538Z",
+      "updatedAt": "2026-09-17T14:12:18.338Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3125,6 +3141,17 @@
       "featureId": "f_mu1c5m8z9pu0rz",
       "type": "status",
       "text": "a mis à jour le statut de « Chat & DM sync » : Discuter ensemble du merge"
+    },
+    {
+      "id": "a_2026-09-17T14:12:18.338Z_dh_revanche_update",
+      "at": "2026-09-17T14:12:18.338Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a ajouté la tâche « Linker avec le centre » à « CTA / Revanche prochain créneau »"
     }
   ]
 }
