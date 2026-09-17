@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { emptyDoc } from '../js/model/doc.js';
 import {
   createFeature, updateFeature, moveFeature, addTestSession, deleteFeature,
-  lastVerdict, isLate, featureById, setStatus,
+  lastVerdict, isLate, featureById, setStatus, setOrder, byRank,
 } from '../js/model/features.js';
 
 const who = { login: 'nadir', avatar: 'https://x/y.png' };
@@ -135,4 +135,32 @@ test('normalizeFeature defaults status fields for legacy features', () => {
   assert.equal(f.status, '');
   assert.equal(f.statusAt, '');
   assert.equal(f.statusBy, null);
+});
+
+test('setOrder assigns manual ranks in the given order and journals once', () => {
+  let d = withOne();
+  d = createFeature(d, { id: 'f2', title: 'Deux', by: who, at: '2026-09-14T13:00:00.000Z' });
+  d = createFeature(d, { id: 'f3', title: 'Trois', by: who, at: '2026-09-14T14:00:00.000Z' });
+  const before = d.activity.length;
+  d = setOrder(d, ['f3', 'f1', 'ghost'], { by: who, at: now });
+  assert.equal(featureById(d, 'f3').rank, 10);
+  assert.equal(featureById(d, 'f1').rank, 20);
+  assert.equal(featureById(d, 'f2').rank, null);
+  assert.equal(d.activity.length, before + 1);
+  assert.match(d.activity.at(-1).text, /réordonné/);
+  assert.deepEqual([...d.features].sort(byRank).map((f) => f.id), ['f3', 'f1', 'f2']);
+  // Idempotent : même ordre → même document, pas de nouvelle entrée
+  assert.equal(setOrder(d, ['f3', 'f1'], { by: who, at: now }), d);
+});
+
+test('setOrder ignores unknown ids and leaves the doc untouched when nothing matches', () => {
+  const d = withOne();
+  assert.equal(setOrder(d, ['ghost'], { by: who, at: now }), d);
+  assert.equal(featureById(d, 'f1').rank, null);
+});
+
+test('byRank puts ranked features first, then the others by creation date', () => {
+  const mk = (id, rank, createdAt) => ({ id, rank, createdAt });
+  const list = [mk('a', null, '2026-09-03'), mk('b', 30, ''), mk('c', null, '2026-09-01'), mk('d', 10, '')];
+  assert.deepEqual([...list].sort(byRank).map((f) => f.id), ['d', 'b', 'c', 'a']);
 });

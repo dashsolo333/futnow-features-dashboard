@@ -2,7 +2,7 @@
 // Une opération est une fonction pure (doc) => doc ; on l'applique tout de
 // suite localement, puis on pousse. En cas de conflit de sha on recharge et
 // on rejoue les opérations en attente sur la version distante.
-import { CONFIG } from './config.js';
+import { CONFIG, DEV_MODE } from './config.js';
 import { loadDoc, saveDoc, isConflict, whoAmI } from './github.js';
 import { normalizeDoc } from './model/doc.js';
 import { replayOps, stripMeta } from './model/merge.js';
@@ -13,7 +13,7 @@ export function createStore() {
   const listeners = new Set();
   const state = {
     doc: null, sha: '', etag: '',
-    token: readLocal(CONFIG.tokenKey, ''),
+    token: readLocal(CONFIG.tokenKey, DEV_MODE ? 'dev' : ''),
     user: readJson(CONFIG.userKey, null),
     status: 'loading', // loading | ready | saving | offline | error | conflict
     error: '',

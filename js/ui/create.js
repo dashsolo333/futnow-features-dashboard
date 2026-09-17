@@ -1,16 +1,17 @@
 import { h, icon } from './dom.js';
+import { emojiPicker } from './emoji.js';
 import { FAMILIES, PRIORITIES, newId } from '../model/doc.js';
 import { createFeature } from '../model/features.js';
 
 /** Fiche vierge : une feature créée à la main, au stade idée. */
 export function renderCreate(ctx) {
-  let title; let family; let priority; let iconEl; let desc; let stage;
+  let title; let family; let priority; let iconValue = ''; let desc; let stage;
   const submit = (e) => {
     e.preventDefault();
     const id = newId('f');
     const fam = FAMILIES.find((f) => f.id === family.value);
     const ok = ctx.act(`a créé « ${title.value.trim()} »`, (d) => createFeature(d, {
-      id, title: title.value, description: desc.value.trim(), icon: iconEl.value.trim(), family: fam.id, familyLabel: fam.label,
+      id, title: title.value, description: desc.value.trim(), icon: iconValue, family: fam.id, familyLabel: fam.label,
       priority: priority.value, stageId: stage.value, ...ctx.meta(),
     }));
     if (ok) { ctx.closeModal(); ctx.openFeature(id); }
@@ -20,7 +21,7 @@ export function renderCreate(ctx) {
       h('div', { class: 'modal-head' }, h('h2', { id: 'create-title' }, 'Nouvelle feature'), h('button', { type: 'button', class: 'btn btn-ghost btn-icon', 'aria-label': 'Fermer', onClick: ctx.closeModal }, icon('close'))),
       h('p', { class: 'hint', style: { marginBottom: '16px' } }, 'Une fiche vierge, au stade idée par défaut. Tu pourras tout compléter ensuite : dates, version, liens, tests.'),
       h('div', { style: { display: 'grid', gridTemplateColumns: '64px 1fr', gap: '12px' } },
-        h('div', { class: 'field' }, h('label', { for: 'c-icon' }, 'Icône'), iconEl = h('input', { id: 'c-icon', class: 'input', placeholder: '✦', maxlength: 4, style: { textAlign: 'center', fontSize: '18px' } })),
+        h('div', { class: 'field' }, h('span', { class: 'field-label' }, 'Icône'), emojiPicker({ value: iconValue, size: 'md', onPick: (v) => { iconValue = v; } })),
         h('div', { class: 'field' }, h('label', { for: 'c-title' }, 'Titre'), title = h('input', { id: 'c-title', class: 'input', required: true, placeholder: 'Ex. Mode Sonar, Pronos, Maillot NOLT…', autofocus: true }))),
       h('div', { class: 'modal-grid', style: { marginTop: '12px' } },
         h('div', { class: 'field' }, h('label', { for: 'c-family' }, 'Famille'), family = h('select', { id: 'c-family', class: 'select' }, FAMILIES.map((f) => h('option', { value: f.id, selected: f.id === 'other' }, f.label)))),

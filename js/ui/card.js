@@ -38,7 +38,7 @@ export function renderCard(ctx, feature) {
     onDragend: () => el.classList.remove('is-dragging'),
   },
   h('div', { class: 'card-top' },
-    h('span', { class: 'card-icon' }, feature.icon || '•'),
+    feature.icon ? h('span', { class: 'card-icon' }, feature.icon) : null,
     h('div', { style: { flex: 1, minWidth: 0 } },
       h('div', { class: 'card-title' }, feature.title),
       h('div', { class: 'card-sub' }, feature.familyLabel || feature.family, feature.priority === 'p0' || feature.priority === 'p1' ? h('span', { class: 'badge badge-soon' }, feature.priority === 'p0' ? 'Critique' : 'Haute') : null))),

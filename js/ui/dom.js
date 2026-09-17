@@ -104,6 +104,7 @@ export function icon(name) {
     left: 'M15 18l-6-6 6-6',
     note: 'M4 4h16v12l-4 4H4zM8 9h8M8 13h5',
     right: 'M9 6l6 6-6 6',
+    grip: 'M9 6h.01M9 12h.01M9 18h.01M15 6h.01M15 12h.01M15 18h.01',
   };
   return svg('svg', { class: `ico ico-${name}`, viewBox: '0 0 24 24', width: 16, height: 16, fill: 'none', stroke: 'currentColor', 'stroke-width': 1.8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true' },
     svg('path', { d: paths[name] || '' }));

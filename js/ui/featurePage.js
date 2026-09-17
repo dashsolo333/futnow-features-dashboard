@@ -1,13 +1,14 @@
 // Page pleine largeur d'une feature.
 import { h, icon, avatar, fmtDay, fmtDayFull, relTime, today } from './dom.js';
 import { bigGauge, stageStepper } from './gauge.js';
+import { emojiPicker } from './emoji.js';
 import { FAMILIES, PRIORITIES, PLATFORMS, newId } from '../model/doc.js';
 import { updateFeature, deleteFeature, isLate, lastVerdict, setStatus } from '../model/features.js';
 import { renderChecklist } from './checklist.js';
 
 import { featureTimeline } from '../model/timeline.js';
 import { renderJournal } from './journal.js';
-import { pillSelect, milestone, renderLinks, renderTests } from './featureParts.js';
+import { pillSelect, inlineText, milestone, renderLinks, renderTests } from './featureParts.js';
 
 export function renderFeaturePage(ctx, feature) {
   const doc = ctx.doc;
@@ -29,7 +30,7 @@ export function renderFeaturePage(ctx, feature) {
       h('button', { type: 'button', onClick: () => ctx.openSettings() }, 'Se connecter')) : null,
 
     h('header', { class: 'fpage-head' },
-      h('div', { class: 'drawer-icon fpage-icon' }, h('input', { 'aria-label': 'Icône', value: feature.icon || '', maxlength: 4, placeholder: '✦', disabled: ro, onChange: (e) => patch({ icon: e.target.value.trim() }) })),
+      emojiPicker({ value: feature.icon || '', size: 'lg', disabled: ro, onPick: (v) => patch({ icon: v }, v ? `a donné l’icône ${v} à « ${feature.title} »` : `a retiré l’icône de « ${feature.title} »`) }),
       h('div', { class: 'fpage-title' },
         h('input', { class: 'input input-title fpage-title-input', value: feature.title, 'aria-label': 'Titre', disabled: ro, dataset: { key: `title:${feature.id}` },
           onChange: (e) => { if (e.target.value.trim()) patch({ title: e.target.value.trim() }, `a renommé « ${feature.title} » en « ${e.target.value.trim()} »`); else e.target.value = feature.title; } }),
@@ -59,8 +60,9 @@ export function renderFeaturePage(ctx, feature) {
     h('div', { class: 'fpage-cols' },
       h('div', { class: 'fpage-main' },
         h('section', { class: 'panel glass' },
-          h('div', { class: 'section-head' }, h('h3', {}, 'Description')),
-          h('textarea', { class: 'textarea fpage-desc', placeholder: 'Intention, périmètre, ce qui reste à trancher…', disabled: ro, dataset: { key: `desc:${feature.id}` }, onChange: (e) => patch({ description: e.target.value }) }, feature.description)),
+          h('div', { class: 'section-head' }, h('h3', {}, 'Description'), ro ? null : h('span', { class: 'hint' }, 'cliquer pour modifier')),
+          inlineText({ key: `desc:${feature.id}`, value: feature.description, placeholder: 'Intention, périmètre, ce qui reste à trancher…', disabled: ro, className: 'fpage-desc',
+            onSave: (v) => patch({ description: v }, `a modifié la description de « ${feature.title} »`) })),
         renderTests(ctx, feature, ro),
         h('section', { class: 'panel glass' },
           h('div', { class: 'section-head' }, h('h3', {}, 'Historique complet')),

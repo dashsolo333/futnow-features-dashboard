@@ -52,6 +52,24 @@ export function setStatus(doc, id, status, { by, at }) {
   return journal(replaceFeature(doc, next), { type: 'status', featureId: id, text, by, at });
 }
 
+/** Ordre manuel : les features citées prennent les rangs 10, 20, 30… dans cet ordre ; les autres gardent le leur. */
+export function setOrder(doc, ids, { by, at }) {
+  const wanted = ids.filter((id) => doc.features.some((f) => f.id === id));
+  if (!wanted.length) return doc;
+  const rankOf = new Map(wanted.map((id, i) => [id, (i + 1) * 10]));
+  const features = doc.features.map((f) => (rankOf.has(f.id) && f.rank !== rankOf.get(f.id) ? { ...f, rank: rankOf.get(f.id) } : f));
+  if (features.every((f, i) => f === doc.features[i])) return doc;
+  return journal({ ...doc, features }, { type: 'update', featureId: null, text: 'a réordonné la liste', by, at });
+}
+
+/** Tri par rang manuel : les features classées d'abord, puis les autres par date de création. */
+export function byRank(a, b) {
+  if (a.rank !== null && b.rank !== null) return a.rank - b.rank;
+  if (a.rank !== null) return -1;
+  if (b.rank !== null) return 1;
+  return String(a.createdAt).localeCompare(String(b.createdAt));
+}
+
 export function moveFeature(doc, id, stageId, { by, at, force = false }) {
   const f = requireFeature(doc, id);
   const target = stageById(doc, stageId);

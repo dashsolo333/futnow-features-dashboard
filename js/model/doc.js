@@ -71,6 +71,7 @@ export function normalizeFeature(f) {
     status: typeof f.status === 'string' ? f.status : '',
     statusAt: f.statusAt || '',
     statusBy: f.statusBy || null,
+    rank: Number.isFinite(f.rank) ? f.rank : null, // ordre manuel de la liste (null = jamais classée)
     releaseId: f.releaseId || '',
     devhubId: f.devhubId || '',
     links: Array.isArray(f.links) ? f.links : [],

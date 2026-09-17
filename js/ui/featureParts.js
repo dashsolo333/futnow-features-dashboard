@@ -14,6 +14,44 @@ export function pillSelect(options, value, disabled, onChange) {
     options.map((o) => h('option', { value: o.id, selected: o.id === value }, o.label)));
 }
 
+// Clés des textes en cours d'édition : survivent aux rendus (sondage GitHub,
+// autre champ modifié) pour que la zone de texte ne redevienne pas du texte figé.
+const editingKeys = new Set();
+
+/** Texte long affiché en clair ; devient une zone de texte au clic, redevient du texte à la sortie. */
+export function inlineText({ key, value = '', placeholder = '', disabled = false, className = '', onSave }) {
+  const wrap = h('div', { class: 'inline-text' });
+  const view = () => h('div', {
+    class: `text-view${value ? '' : ' is-empty'}${disabled ? ' is-ro' : ''}`, role: disabled ? null : 'button', tabindex: disabled ? null : 0,
+    title: disabled ? null : 'Cliquer pour modifier',
+    onClick: () => { if (!disabled) edit(); },
+    onKeydown: (e) => { if (!disabled && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); edit(); } },
+  }, value || placeholder);
+  const edit = () => {
+    editingKeys.add(key);
+    const ta = h('textarea', { class: `textarea ${className}`.trim(), placeholder, dataset: { key },
+      onKeydown: (e) => {
+        if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); ta.value = value; ta.dataset.dirty = ''; ta.blur(); } // stopPropagation : sinon Échap ferme aussi la fiche
+        if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); ta.blur(); }
+      },
+      onBlur: () => {
+        // Un rendu complet (synchro distante) remplace la zone : ce blur-là n'est pas une sortie
+        // d'édition, la nouvelle zone reprend le texte et le focus via son data-key.
+        if (document.documentElement.dataset.rendering) return;
+        editingKeys.delete(key);
+        const next = ta.value;
+        if (next !== value) onSave(next); // le rendu qui suit ré-affiche le texte
+        else wrap.replaceChildren(view());
+      },
+    }, value);
+    wrap.replaceChildren(ta);
+    ta.focus({ preventScroll: true });
+    ta.setSelectionRange(ta.value.length, ta.value.length);
+  };
+  if (editingKeys.has(key) && !disabled) edit(); else wrap.append(view());
+  return wrap;
+}
+
 export function dateField(label, value, disabled, onChange, late = false) {
   return h('div', { class: 'field' },
     h('label', {}, label, late ? h('span', { class: 'badge badge-late', style: { marginLeft: '6px' } }, 'retard') : null),

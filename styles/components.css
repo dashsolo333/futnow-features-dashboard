@@ -260,3 +260,26 @@ input[type='date'].input { color-scheme: dark; }
 .token-steps { display: grid; gap: 10px; padding-left: 22px; list-style: decimal; color: var(--ink-2); }
 .token-steps li { line-height: 1.6; }
 .token-steps .btn { vertical-align: middle; margin-right: 6px; text-decoration: none; }
+
+/* ---------- Sélecteur d'emoji ---------- */
+.emoji-pick { position: relative; display: inline-block; flex: none; }
+.emoji-btn { width: 44px; height: 44px; display: grid; place-items: center; font-size: 22px; border-radius: var(--r-sm); background: var(--glass-2); border: 1px solid var(--hairline); cursor: pointer; transition: border-color var(--dur-fast), background var(--dur-fast); }
+.emoji-btn:hover:not(:disabled), .emoji-btn[aria-expanded='true'] { border-color: var(--accent); background: rgba(79,140,255,.14); }
+.emoji-btn.is-empty { color: var(--ink-3); }
+.emoji-btn:disabled { cursor: default; }
+.emoji-lg .emoji-btn { width: 56px; height: 56px; font-size: 28px; }
+.emoji-pop { position: absolute; top: calc(100% + 6px); left: 0; z-index: 30; width: min(312px, calc(100vw - 32px)); max-height: min(440px, calc(100vh - 140px)); overflow-y: auto; scrollbar-width: thin; padding: 6px 10px 0; border-radius: 14px; background: #0d1526; border: 1px solid var(--hairline-strong); box-shadow: var(--shadow-2); animation: pop var(--dur) var(--ease); }
+.emoji-group-label { font-size: 11px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); margin: 6px 4px 3px; }
+.emoji-grid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 2px; }
+.emoji-cell { height: 34px; border-radius: 8px; font-size: 20px; line-height: 1; display: grid; place-items: center; cursor: pointer; transition: background var(--dur-fast), transform var(--dur-fast); }
+.emoji-cell:hover, .emoji-cell:focus-visible { background: rgba(255,255,255,.08); transform: scale(1.15); outline: none; }
+.emoji-cell.is-on { background: rgba(79,140,255,.28); box-shadow: inset 0 0 0 1px var(--accent); }
+.emoji-foot { position: sticky; bottom: 0; display: flex; gap: 6px; align-items: center; margin: 10px -10px 0; padding: 10px; border-top: 1px solid var(--hairline); background: #0d1526; }
+.emoji-custom { flex: 1; min-width: 0; min-height: 34px; height: 34px; padding: 0 10px; font-size: 14px; }
+
+/* ---------- Texte long : lecture en clair, zone de texte au clic ---------- */
+.text-view { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.55; font-size: 14.5px; color: var(--ink); padding: 10px 12px; margin: -10px -12px; border-radius: 12px; border: 1px solid transparent; cursor: text; min-height: 24px; transition: background var(--dur-fast, .15s), border-color var(--dur-fast, .15s); }
+.text-view:hover, .text-view:focus-visible { background: rgba(255,255,255,.03); border-color: var(--hairline-strong); outline: none; }
+.text-view.is-empty { color: var(--ink-3); font-style: italic; }
+.text-view.is-ro { cursor: default; }
+.text-view.is-ro:hover { background: transparent; border-color: transparent; }

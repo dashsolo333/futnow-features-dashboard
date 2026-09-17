@@ -13,9 +13,13 @@ import { renderFeaturePage } from './ui/featurePage.js';
 import { renderFocus, focusList, toggleFullscreen } from './ui/focus.js';
 import { renderCreate } from './ui/create.js';
 import { renderSettings } from './ui/settings.js';
-import { moveFeature, featureById } from './model/features.js';
+import { moveFeature, featureById, setOrder } from './model/features.js';
 import { bulkMove, bulkUpdate, bulkDelete } from './model/bulk.js';
 import { stageById } from './model/stages.js';
+
+function readSort() {
+  try { const s = JSON.parse(localStorage.getItem(CONFIG.sortKey)); return s && s.col ? s : null; } catch { return null; }
+}
 
 const store = createStore();
 const $ = (id) => document.getElementById(id);
@@ -23,7 +27,7 @@ const $ = (id) => document.getElementById(id);
 const ui = {
   view: readHash().view || localStorage.getItem(CONFIG.viewKey) || 'board',
   filters: {},
-  sort: null,
+  sort: readSort(),
   journalType: '',
   featureId: readHash().feature || null,
   focusId: readHash().focus || null,
@@ -72,13 +76,17 @@ const ctx = {
   toast,
   rerender: () => render(),
   retry: () => store.retry(),
-  setView(v) { ui.view = v; ui.featureId = null; ui.selection = new Set(); localStorage.setItem(CONFIG.viewKey, v); writeHash(); render(); },
+  setView(v) { ui.view = v; ui.featureId = null; ui.selection = new Set(); localStorage.setItem(CONFIG.viewKey, v); writeHash(); render(); window.scrollTo({ top: 0 }); },
   setFilter(patch, { silent = false } = {}) { ui.filters = { ...ui.filters, ...patch }; if (silent) renderMain(); else render(); },
   toggleKpi(key, filter) {
     ui.filters = ui.filters.kpi === key ? {} : { q: ui.filters.q, family: ui.filters.family, kpi: key, ...filter };
     render();
   },
-  setSort(s) { ui.sort = s; renderMain(); },
+  setSort(s) { ui.sort = s; try { localStorage.setItem(CONFIG.sortKey, JSON.stringify(s)); } catch { /* stockage indisponible */ } renderMain(); },
+  /** Glisser-déposer dans la liste : enregistre l'ordre et bascule la liste en tri manuel. */
+  reorder(ids) {
+    if (ctx.act('a réordonné la liste', (d) => setOrder(d, ids, ctx.meta()))) ctx.setSort({ col: 'manual', dir: 1 });
+  },
   setJournalType(t) { ui.journalType = t; renderMain(); },
   openFeature(id) { ui.featureId = id; writeHash(); render(); window.scrollTo({ top: 0 }); },
   closeFeature() { ui.featureId = null; writeHash(); render(); },
@@ -168,7 +176,7 @@ function measureChrome() {
 //     clic tombe sur un nœud remplacé et se perd ;
 //  3. un rendu demandé pendant un rendu est rejoué après ;
 //  4. la position de défilement est conservée.
-const TEXT_TYPES = new Set(['text', 'search', 'url', 'email', 'number', 'date', 'password']);
+const TEXT_TYPES = new Set(['text', 'search', 'url', 'email', 'number', 'date', 'time', 'password']);
 const isTextField = (el) => el && (el.tagName === 'TEXTAREA' || (el.tagName === 'INPUT' && TEXT_TYPES.has(el.type)));
 let pointerDown = false;
 let rendering = false;
@@ -180,6 +188,12 @@ document.addEventListener('pointerup', () => { pointerDown = false; if (queued) 
 document.addEventListener('pointercancel', () => { pointerDown = false; if (queued) setTimeout(flushQueued, 0); }, true);
 
 function flushQueued() { if (!queued || rendering || pointerDown) return; const next = queued; queued = null; next(); }
+
+// Les blocs dépliés (<details data-key>) restent dépliés à travers un rendu.
+const openDetails = () => [...document.querySelectorAll('details[open][data-key]')].map((d) => d.dataset.key);
+function restoreDetails(keys) {
+  for (const key of keys) { const d = document.querySelector(`details[data-key="${key.replace(/"/g, '\\"')}"]`); if (d) d.open = true; }
+}
 
 function snapshotFocus() {
   const el = document.activeElement;
@@ -199,10 +213,14 @@ function guarded(fn, weight) {
   const run = () => {
     if (rendering || pointerDown) { queued = queued && queued.weight > weight ? queued : Object.assign(() => run(), { weight }); return; }
     rendering = true;
+    document.documentElement.dataset.rendering = '1'; // lu par les champs qui sauvegardent au blur
     const snap = snapshotFocus();
+    const opened = openDetails();
     const y = window.scrollY;
     try { fn(); } finally {
       rendering = false;
+      delete document.documentElement.dataset.rendering;
+      restoreDetails(opened);
       restoreFocus(snap);
       if (Math.abs(window.scrollY - y) > 1) window.scrollTo({ top: y });
       if (queued) setTimeout(flushQueued, 0);
@@ -258,11 +276,16 @@ document.addEventListener('visibilitychange', () => { if (!document.hidden) stor
 window.addEventListener('beforeunload', (e) => { if (store.state.pending.length) { e.preventDefault(); e.returnValue = ''; } });
 
 let lastStatus = '';
+let lastWrite = null;
 store.subscribe((s, kind) => {
   if (s.status === 'error' && lastStatus !== 'error' && s.error) toast(s.error, { kind: 'error' });
   if (s.status === 'conflict' && lastStatus !== 'conflict') toast('Conflit avec une modification distante. Recharge pour voir la version à jour.', { kind: 'error', action: { label: 'Recharger', onClick: () => location.reload() } });
   lastStatus = s.status;
-  if (kind === 'doc') render(); else renderChrome();
+  // Le droit d'écriture change ce que les vues affichent (glisser-déposer, boutons) : rendu complet.
+  const canWrite = store.canWrite();
+  const writeChanged = lastWrite !== null && canWrite !== lastWrite;
+  lastWrite = canWrite;
+  if (kind === 'doc' || writeChanged) render(); else renderChrome();
 });
 render();
 new ResizeObserver(() => measureChrome()).observe($('topbar'));

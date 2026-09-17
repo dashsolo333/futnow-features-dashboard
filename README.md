@@ -9,10 +9,12 @@ au nom de la personne connectée.
 
 ## Ce que ça fait
 
-- **Six vues** : **Tableau** kanban par étape (glisser-déposer), **Avancement** (plein
-  écran, une feature à la fois, flèches ← → et touche `f`), **Liste** triable avec
-  sélection multiple, **Roadmap** semaine par semaine, **Versions** (trains de release),
-  **Journal** d'activité.
+- **Six vues** : **Tableau** kanban par étape (glisser-déposer, colonnes de même largeur),
+  **Avancement** (plein écran, une feature à la fois, flèches ← → et touche `f`), **Liste**
+  triable avec sélection multiple, une ligne par feature (titre + famille, **dernier statut**
+  avec quand et par qui), **ordre manuel** en glissant les lignes par leur poignée (enregistré
+  pour toute l'équipe, tri mémorisé dans le navigateur), **Roadmap** semaine par semaine,
+  **Versions** (trains de release), **Journal** d'activité.
 - **Actions groupées** dans la Liste : cocher des features (ou Maj + clic), puis changer
   d'étape, de version, de priorité ou supprimer en un seul commit. La garde prod final
   s'applique par feature, avec « Forcer » pour celles bloquées.
@@ -22,10 +24,12 @@ au nom de la personne connectée.
   - entrer en **prod test** date automatiquement le test réel ;
   - entrer en **prod final** exige que le **dernier test soit OK** (forçable, journalisé).
 - **Page par feature** (clic sur une carte, lien `#f=<id>` partageable) : jauge et pipeline
-  en tête, bouton « Passer en … », **checklist centrale** groupée par étape (échéances,
-  qui a coché quand, checklist type spec → stores), description, sessions de test,
-  historique complet, **jalons** Prod test / Prod final (J-x, retard, fait, raccourcis),
-  frise datée, liens, personnes.
+  en tête, **statut libre** (une ligne, « Dernière update · quand par qui »), **icône
+  emoji** choisie dans une grille par thème (ou collée librement), **checklist centrale**
+  groupée par étape (échéances, qui a coché quand, checklist type spec → stores),
+  description en texte cliquable (zone de texte seulement à l'édition, Ctrl+Entrée
+  valide, Échap annule), sessions de test, historique complet, **jalons** Prod test /
+  Prod final (J-x, retard, fait, raccourcis), frise datée, liens, personnes.
 - **Sessions de test** : testeur, plateforme, build, verdict OK/KO, notes.
 - **Temporalité** : dates cibles et réelles prod test / prod final, retard en rouge.
 - **Fiches vierges** : bouton « Feature » (ou touche `n`) pour une idée sans mockup.

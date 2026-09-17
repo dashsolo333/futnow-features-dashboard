@@ -39,7 +39,7 @@ export function renderHeader(ctx) {
       h('button', { type: 'button', class: 'btn btn-cta', onClick: ctx.openCreate, title: 'Nouvelle feature (n)' }, icon('plus'), 'Feature'),
       h('div', { class: 'sync', title: state.error || (state.lastSync ? `Dernière synchro ${relTime(state.lastSync)}` : '') },
         h('span', { class: `pulse is-${st}` }),
-        STATUS_LABEL[st] || st,
+        h('span', { class: 'sync-label' }, STATUS_LABEL[st] || st),
         (st === 'error' || st === 'conflict' || st === 'offline') ? h('button', { type: 'button', class: 'btn btn-ghost btn-sm btn-icon', title: 'Réessayer', onClick: ctx.retry }, icon('refresh')) : null),
       h('button', { type: 'button', class: 'sync-user', onClick: () => ctx.openSettings(), title: 'Compte & réglages' },
         state.user ? [avatar(state.user, 24), state.user.login] : [icon('gear'), 'Connexion'])));

@@ -24,4 +24,5 @@ export const CONFIG = {
   tokenKey: 'ftn.features.token',
   userKey: 'ftn.features.user',
   viewKey: 'ftn.features.view',
+  sortKey: 'ftn.features.sort',
 };
