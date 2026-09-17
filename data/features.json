@@ -254,7 +254,7 @@
           "text": "Vérifier incohérence chemin UX match terminé \"ajouter un match\"",
           "group": "prod",
           "due": "",
-          "note": "",
+          "note": "suite modif",
           "status": "todo",
           "done": false,
           "doneAt": "",
@@ -271,7 +271,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:49:44.772Z",
+      "updatedAt": "2026-09-17T13:49:50.441Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
