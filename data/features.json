@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:57:44.175Z",
+  "updatedAt": "2026-09-17T13:57:47.549Z",
   "stages": [
     {
       "id": "idea",
@@ -1184,8 +1184,8 @@
       ],
       "stageId": "prodtest",
       "stepProgress": 0,
-      "status": "Discuter ensemble d",
-      "statusAt": "2026-09-17T13:57:44.175Z",
+      "status": "Discuter ensemble du merge",
+      "statusAt": "2026-09-17T13:57:47.549Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1278,7 +1278,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T13:57:44.175Z",
+      "updatedAt": "2026-09-17T13:57:47.549Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3114,6 +3114,17 @@
       "featureId": "f_mu1c5m8z9pu0rz",
       "type": "status",
       "text": "a mis à jour le statut de « Chat & DM sync » : Discuter ensemble d"
+    },
+    {
+      "id": "a_2026-09-17T13:57:47.549Z_f_mu1c5m8z9pu0rz_status",
+      "at": "2026-09-17T13:57:47.549Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "status",
+      "text": "a mis à jour le statut de « Chat & DM sync » : Discuter ensemble du merge"
     }
   ]
 }
