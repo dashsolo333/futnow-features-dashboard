@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:37:08.695Z",
+  "updatedAt": "2026-09-17T13:37:11.650Z",
   "stages": [
     {
       "id": "idea",
@@ -1212,12 +1212,15 @@
           "group": "idea",
           "due": "",
           "note": "",
-          "doneAt": "",
-          "doneBy": null,
+          "doneAt": "2026-09-17T13:37:11.650Z",
+          "doneBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
           "id": "i_mu1c9uehewfs2z",
           "text": "fonctionnalité react émoji",
-          "status": "todo",
-          "done": false,
+          "status": "done",
+          "done": true,
           "createdAt": "2026-09-14T14:29:21.065Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1230,7 +1233,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T13:37:08.695Z",
+      "updatedAt": "2026-09-17T13:37:11.650Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2822,6 +2825,17 @@
       "featureId": "f_mu1c5m8z9pu0rz",
       "type": "update",
       "text": "a passé « fonctionnalité répondre au sein d'un chat » faite sur « Chat & DM sync »"
+    },
+    {
+      "id": "a_2026-09-17T13:37:11.650Z_f_mu1c5m8z9pu0rz_update",
+      "at": "2026-09-17T13:37:11.650Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "update",
+      "text": "a passé « fonctionnalité react émoji » faite sur « Chat & DM sync »"
     }
   ]
 }
