@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T08:46:17.032Z",
+  "updatedAt": "2026-09-17T08:46:33.275Z",
   "stages": [
     {
       "id": "idea",
@@ -1270,6 +1270,45 @@
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
       "updatedAt": "2026-09-17T08:46:17.032Z",
+      "updatedBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      }
+    },
+    {
+      "id": "f_mu5ack6z4n6rnb",
+      "title": "Equilibrage XP GD",
+      "description": "",
+      "icon": "",
+      "family": "other",
+      "familyLabel": "Autre",
+      "priority": "p2",
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "stageId": "idea",
+      "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
+      "releaseId": "",
+      "devhubId": "",
+      "links": [],
+      "dates": {
+        "prodTestPlanned": "",
+        "prodTestActual": "",
+        "prodFinalPlanned": "",
+        "prodFinalActual": ""
+      },
+      "tests": [],
+      "items": [],
+      "createdAt": "2026-09-17T08:46:33.275Z",
+      "createdBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "updatedAt": "2026-09-17T08:46:33.275Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2651,6 +2690,17 @@
       "featureId": "f_mu5ac7nrdphiea",
       "type": "create",
       "text": "a créé « Design des rangs »"
+    },
+    {
+      "id": "a_2026-09-17T08:46:33.275Z_f_mu5ack6z4n6rnb_create",
+      "at": "2026-09-17T08:46:33.275Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu5ack6z4n6rnb",
+      "type": "create",
+      "text": "a créé « Equilibrage XP GD »"
     }
   ]
 }
