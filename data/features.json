@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T08:48:50.179Z",
+  "updatedAt": "2026-09-17T08:52:33.301Z",
   "stages": [
     {
       "id": "idea",
@@ -618,7 +618,7 @@
     },
     {
       "id": "dh_kit-nolt",
-      "title": "Maillot NOLT",
+      "title": "GD Maillot Mécanique",
       "description": "Le maillot NOLT comme objet de progression (brief sept. 2026) : achat libre, jauges propres, un niveau qui monte avec les matchs. Dans la Fiche, sous le header XP, le bloc Carte montre la rank card avec sa particule (feu, éclair, glace) et ce qu'il reste avant le prochain état. La fiche maillot est la même avant et après achat, façon battle pass : la carte en grand, le cran de niveau qu'on glisse pour prévisualiser la particule, la famille, les six paliers avec le buff d'XP sur victoire. On JOUE : créer le maillot (49 €), puis « Jouer un match » fait monter la jauge et densifie la particule ; chrome au niveau 5, holo au max. Modèle pur testé. GD : docs/brain/game-design/gd-maillot-nolt.md.\n\nTag DevHub : progression · 4 états",
       "icon": "👕",
       "family": "labs",
@@ -658,10 +658,10 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-10T11:33:04+02:00",
+      "updatedAt": "2026-09-17T08:52:33.301Z",
       "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
     },
     {
@@ -2739,6 +2739,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a modifié title de « Revanche »"
+    },
+    {
+      "id": "a_2026-09-17T08:52:33.301Z_dh_kit-nolt_update",
+      "at": "2026-09-17T08:52:33.301Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_kit-nolt",
+      "type": "update",
+      "text": "a modifié title de « Maillot NOLT »"
     }
   ]
 }
