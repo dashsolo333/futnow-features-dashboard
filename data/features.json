@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:14:16.396Z",
+  "updatedAt": "2026-09-17T14:17:45.753Z",
   "stages": [
     {
       "id": "idea",
@@ -959,6 +959,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu5m6hw9qc5o2g",
+          "text": "Design intégration chip dans activité",
+          "group": "design",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T14:17:45.753Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-04T18:15:26+02:00",
@@ -966,7 +982,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:17:14.142Z",
+      "updatedAt": "2026-09-17T14:17:45.753Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3177,6 +3193,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a passé « Benchmarker une méthode pour laisser à l'user la possibilité d'appeler le centre » faite sur « CTA / Revanche prochain créneau »"
+    },
+    {
+      "id": "a_2026-09-17T14:17:45.753Z_dh_revanche_update",
+      "at": "2026-09-17T14:17:45.753Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a ajouté la tâche « Design intégration chip dans activité » à « CTA / Revanche prochain créneau »"
     }
   ]
 }
