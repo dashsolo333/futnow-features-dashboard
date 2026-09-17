@@ -964,7 +964,7 @@
           "id": "i_mu5m6hw9qc5o2g",
           "text": "Design intégration chip dans activité",
           "group": "design",
-          "due": "",
+          "due": "2026-09-18",
           "note": "",
           "status": "todo",
           "done": false,
@@ -982,7 +982,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:17:45.753Z",
+      "updatedAt": "2026-09-17T14:17:56.154Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
