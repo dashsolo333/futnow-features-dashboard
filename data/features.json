@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:37:11.650Z",
+  "updatedAt": "2026-09-17T13:39:52.012Z",
   "stages": [
     {
       "id": "idea",
@@ -1226,6 +1226,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu5ktrgsl5k1um",
+          "text": "ajouter le double tap pour réaction coeur",
+          "group": "idea",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T13:39:52.012Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-14T14:26:03.875Z",
@@ -1233,7 +1249,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T13:39:35.609Z",
+      "updatedAt": "2026-09-17T13:39:52.012Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2836,6 +2852,17 @@
       "featureId": "f_mu1c5m8z9pu0rz",
       "type": "update",
       "text": "a passé « fonctionnalité react émoji » faite sur « Chat & DM sync »"
+    },
+    {
+      "id": "a_2026-09-17T13:39:52.012Z_f_mu1c5m8z9pu0rz_update",
+      "at": "2026-09-17T13:39:52.012Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "update",
+      "text": "a ajouté la tâche « ajouter le double tap pour réaction coeur » à « Chat & DM sync »"
     }
   ]
 }
