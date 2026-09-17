@@ -61,6 +61,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "league-v2",
       "links": [
@@ -112,6 +113,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
+      "rank": null,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -189,6 +191,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "activity-v2",
       "links": [
@@ -250,15 +253,15 @@
       "tests": [],
       "items": [
         {
-          "id": "i_mu5l6guclb22n6",
-          "text": "Vérifier incohérence chemin UX match terminé \"ajouter un match\"",
           "group": "prod",
           "due": "",
           "note": "suite modif",
-          "status": "todo",
-          "done": false,
           "doneAt": "",
           "doneBy": null,
+          "id": "i_mu5l6guclb22n6",
+          "text": "Vérifier incohérence chemin UX match terminé \"ajouter un match\"",
+          "status": "todo",
+          "done": false,
           "createdAt": "2026-09-17T13:49:44.772Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -294,6 +297,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "activite-prod",
       "links": [
@@ -346,30 +350,13 @@
           "build": ""
         }
       ],
-      "items": [
-        {
-          "group": "spec",
-          "due": "",
-          "note": "",
-          "doneAt": "",
-          "doneBy": null,
-          "id": "i_mu2sacmwpf0f2k",
-          "text": "ok",
-          "status": "todo",
-          "done": false,
-          "createdAt": "2026-09-15T14:45:24.728Z",
-          "createdBy": {
-            "login": "dashsolo333",
-            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
-        }
-      ],
+      "items": [],
       "createdAt": "2026-07-02T13:29:45+02:00",
       "createdBy": {
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-15T14:46:45.000Z",
+      "updatedAt": "2026-09-17T13:50:29.291Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -392,6 +379,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "lobby",
       "links": [
@@ -444,6 +432,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "match-detail",
       "links": [
@@ -496,6 +485,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "join-game",
       "links": [
@@ -553,6 +543,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "inbox",
       "links": [
@@ -605,6 +596,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "futstore",
       "links": [
@@ -653,6 +645,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "kit-nolt",
       "links": [
@@ -701,6 +694,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "reward",
       "links": [
@@ -749,6 +743,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "reward-prod",
       "links": [
@@ -801,6 +796,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "replay-feed",
       "links": [
@@ -845,6 +841,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "gerant-dash",
       "links": [
@@ -889,6 +886,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "revanche",
       "links": [
@@ -966,6 +964,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "pitch3d-full",
       "links": [
@@ -1014,6 +1013,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "annonces-verdict",
       "links": [
@@ -1070,6 +1070,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "pronos",
       "links": [
@@ -1135,6 +1136,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "home-prod",
       "links": [
@@ -1179,6 +1181,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1289,6 +1292,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1328,6 +1332,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
+      "rank": null,
       "releaseId": "",
       "devhubId": "",
       "links": [],
