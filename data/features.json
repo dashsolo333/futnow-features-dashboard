@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T08:48:34.258Z",
+  "updatedAt": "2026-09-17T08:48:50.179Z",
   "stages": [
     {
       "id": "idea",
@@ -854,7 +854,7 @@
     },
     {
       "id": "dh_revanche",
-      "title": "Revanche",
+      "title": "CTA / Revanche prochain créneau",
       "description": "La vue Activité façon lobby de fin de partie : score perdu en pleine face, top 5 noté /10 (le MVP est chez l'adversaire, toi 4ᵉ), une seule sortie — réserver le créneau de jeudi.\n\nTag DevHub : activité, lendemain de défaite",
       "icon": "🔁",
       "family": "brochure",
@@ -902,15 +902,15 @@
           }
         },
         {
-          "id": "i_mu5af5jmjd786v",
-          "text": "Paramétrer un after call \"le centre a répondu ?\" ..",
           "group": "spec",
           "due": "",
           "note": "",
-          "status": "todo",
-          "done": false,
           "doneAt": "",
           "doneBy": null,
+          "id": "i_mu5af5jmjd786v",
+          "text": "Paramétrer un after call \"le centre a répondu ?\" ..",
+          "status": "todo",
+          "done": false,
           "createdAt": "2026-09-17T08:48:34.258Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -923,7 +923,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T08:48:34.258Z",
+      "updatedAt": "2026-09-17T08:48:50.179Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2728,6 +2728,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a ajouté la tâche « Paramétrer un after call \"le centre a répondu ?\" .. » à « Revanche »"
+    },
+    {
+      "id": "a_2026-09-17T08:48:50.179Z_dh_revanche_update",
+      "at": "2026-09-17T08:48:50.179Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a modifié title de « Revanche »"
     }
   ]
 }
