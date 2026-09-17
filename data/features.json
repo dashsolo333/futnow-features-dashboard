@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:22:15.121Z",
+  "updatedAt": "2026-09-17T14:23:06.645Z",
   "stages": [
     {
       "id": "idea",
@@ -388,6 +388,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu5mddhx7foye0",
+          "text": "A et B à la place de E aigu",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T14:23:06.645Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-11T09:17:33.180Z",
@@ -395,7 +411,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:22:39.241Z",
+      "updatedAt": "2026-09-17T14:23:06.645Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3280,6 +3296,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a ajouté la tâche « Créateur de blason » à « Lobby »"
+    },
+    {
+      "id": "a_2026-09-17T14:23:06.645Z_dh_lobby_update",
+      "at": "2026-09-17T14:23:06.645Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a ajouté la tâche « A et B à la place de E aigu » à « Lobby »"
     }
   ]
 }
