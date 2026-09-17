@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:44:15.063Z",
+  "updatedAt": "2026-09-17T14:50:02.273Z",
   "stages": [
     {
       "id": "idea",
@@ -1266,6 +1266,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu5nc04humiy0t",
+          "text": "Gérer les groupes",
+          "group": "prodtest",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T14:50:02.273Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-14T14:26:03.875Z",
@@ -1273,7 +1289,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T14:44:44.054Z",
+      "updatedAt": "2026-09-17T14:50:02.273Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3285,6 +3301,17 @@
       "featureId": "dh_home-prod",
       "type": "delete",
       "text": "a supprimé « Home »"
+    },
+    {
+      "id": "a_2026-09-17T14:50:02.273Z_f_mu1c5m8z9pu0rz_update",
+      "at": "2026-09-17T14:50:02.273Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "update",
+      "text": "a ajouté la tâche « Gérer les groupes » à « Chat & DM sync »"
     }
   ]
 }
