@@ -930,7 +930,7 @@
         },
         {
           "group": "spec",
-          "due": "",
+          "due": "2026-09-18",
           "note": "",
           "doneAt": "",
           "doneBy": null,
@@ -966,7 +966,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:14:16.396Z",
+      "updatedAt": "2026-09-17T14:17:14.142Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
