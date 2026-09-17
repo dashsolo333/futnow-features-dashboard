@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:53:03.467Z",
+  "updatedAt": "2026-09-17T13:53:15.752Z",
   "stages": [
     {
       "id": "idea",
@@ -56,7 +56,7 @@
         "ios",
         "android"
       ],
-      "stageId": "design",
+      "stageId": "prod",
       "stepProgress": 0,
       "status": "",
       "statusAt": "",
@@ -78,7 +78,7 @@
         "prodTestPlanned": "",
         "prodTestActual": "",
         "prodFinalPlanned": "",
-        "prodFinalActual": ""
+        "prodFinalActual": "2026-09-17"
       },
       "tests": [],
       "items": [],
@@ -87,10 +87,10 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-04T18:15:26+02:00",
+      "updatedAt": "2026-09-17T13:53:15.752Z",
       "updatedBy": {
-        "login": "devhub",
-        "avatar": ""
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       }
     },
     {
@@ -2951,6 +2951,17 @@
       "featureId": "dh_pitch3d-full",
       "type": "move",
       "text": "a passé « Compo 3D » en Prod final (forcé, sans test OK)"
+    },
+    {
+      "id": "a_2026-09-17T13:53:15.752Z_dh_league-v2_move",
+      "at": "2026-09-17T13:53:15.752Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_league-v2",
+      "type": "move",
+      "text": "a passé « Ligues v2 » en Prod final (forcé, sans test OK)"
     }
   ]
 }
