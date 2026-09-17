@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T13:53:15.752Z",
+  "updatedAt": "2026-09-17T13:53:45.208Z",
   "stages": [
     {
       "id": "idea",
@@ -58,9 +58,12 @@
       ],
       "stageId": "prod",
       "stepProgress": 0,
-      "status": "",
-      "statusAt": "",
-      "statusBy": null,
+      "status": "UI à remodeler",
+      "statusAt": "2026-09-17T13:53:45.208Z",
+      "statusBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
       "rank": null,
       "releaseId": "",
       "devhubId": "league-v2",
@@ -87,7 +90,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:53:15.752Z",
+      "updatedAt": "2026-09-17T13:53:45.208Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2962,6 +2965,17 @@
       "featureId": "dh_league-v2",
       "type": "move",
       "text": "a passé « Ligues v2 » en Prod final (forcé, sans test OK)"
+    },
+    {
+      "id": "a_2026-09-17T13:53:45.208Z_dh_league-v2_status",
+      "at": "2026-09-17T13:53:45.208Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_league-v2",
+      "type": "status",
+      "text": "a mis à jour le statut de « Ligues v2 » : UI à remodeler"
     }
   ]
 }
