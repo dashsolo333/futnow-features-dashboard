@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T14:19:42.418Z",
+  "updatedAt": "2026-09-17T14:20:03.376Z",
   "stages": [
     {
       "id": "idea",
@@ -270,6 +270,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu5m9g34ax3c1q",
+          "text": "Virer le terme lobby",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-17T14:20:03.376Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-10T11:33:04+02:00",
@@ -277,7 +293,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:19:56.706Z",
+      "updatedAt": "2026-09-17T14:20:03.376Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3160,6 +3176,17 @@
       "featureId": "dh_activite-prod",
       "type": "delete",
       "text": "a supprimé « Tab Activité »"
+    },
+    {
+      "id": "a_2026-09-17T14:20:03.376Z_dh_activity-v2_update",
+      "at": "2026-09-17T14:20:03.376Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "update",
+      "text": "a ajouté la tâche « Virer le terme lobby » à « Activité v2 »"
     }
   ]
 }
