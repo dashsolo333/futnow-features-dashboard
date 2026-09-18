@@ -398,22 +398,6 @@
           "note": "",
           "doneAt": "",
           "doneBy": null,
-          "id": "i_2026-09-18T09:54:25.983Z_3",
-          "text": "Maquette validée",
-          "status": "todo",
-          "done": false,
-          "createdAt": "2026-09-18T09:54:25.983Z",
-          "createdBy": {
-            "login": "dashsolo333",
-            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
-        },
-        {
-          "group": "design",
-          "due": "",
-          "note": "",
-          "doneAt": "",
-          "doneBy": null,
           "id": "i_2026-09-18T09:54:25.983Z_4",
           "text": "États vides / erreur / chargement dessinés",
           "status": "todo",
@@ -462,7 +446,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T09:55:24.134Z",
+      "updatedAt": "2026-09-18T09:55:27.313Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
