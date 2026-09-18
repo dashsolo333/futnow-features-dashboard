@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T16:18:45.714Z",
+  "updatedAt": "2026-09-18T16:18:46.731Z",
   "stages": [
     {
       "id": "idea",
@@ -1403,11 +1403,14 @@
           "group": "idea",
           "due": "",
           "note": "",
-          "status": "todo",
-          "done": false,
+          "status": "done",
+          "done": true,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
+          "doneAt": "2026-09-18T16:18:46.731Z",
+          "doneBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
           "createdAt": "2026-09-18T16:18:45.714Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1420,7 +1423,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-18T16:18:45.714Z",
+      "updatedAt": "2026-09-18T16:18:46.731Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3798,6 +3801,17 @@
       "featureId": "f_mu1dnppp557kq3",
       "type": "update",
       "text": "a ajouté la tâche « premiere itération » à « Equilibrage XP GD »"
+    },
+    {
+      "id": "a_2026-09-18T16:18:46.731Z_f_mu1dnppp557kq3_update",
+      "at": "2026-09-18T16:18:46.731Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1dnppp557kq3",
+      "type": "update",
+      "text": "a passé « premiere itération » faite sur « Equilibrage XP GD »"
     }
   ]
 }
