@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T16:17:24.403Z",
+  "updatedAt": "2026-09-18T16:17:52.251Z",
   "stages": [
     {
       "id": "idea",
@@ -289,7 +289,7 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           },
-          "bug": false
+          "bug": true
         },
         {
           "group": "prod",
@@ -314,7 +314,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T16:17:50.766Z",
+      "updatedAt": "2026-09-18T16:17:52.251Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3711,6 +3711,17 @@
       "featureId": "dh_activity-v2",
       "type": "update",
       "text": "a signalé « Vérifier incohérence chemin UX match terminé \"ajouter un match\" » comme bug sur « Activité »"
+    },
+    {
+      "id": "a_2026-09-18T16:17:52.251Z_dh_activity-v2_update",
+      "at": "2026-09-18T16:17:52.251Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "update",
+      "text": "a signalé « Virer le terme lobby + check wording » comme bug sur « Activité »"
     }
   ]
 }
