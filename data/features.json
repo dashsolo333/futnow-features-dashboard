@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T16:17:58.791Z",
+  "updatedAt": "2026-09-18T16:18:00.808Z",
   "stages": [
     {
       "id": "idea",
@@ -193,8 +193,8 @@
       ],
       "stageId": "prod",
       "stepProgress": 0,
-      "status": "Chemin UX +",
-      "statusAt": "2026-09-18T16:17:58.791Z",
+      "status": "Chemin UX + wording",
+      "statusAt": "2026-09-18T16:18:00.808Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -317,7 +317,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T16:17:58.791Z",
+      "updatedAt": "2026-09-18T16:18:00.808Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3758,6 +3758,17 @@
       "featureId": "dh_activity-v2",
       "type": "status",
       "text": "a mis à jour le statut de « Activité » : Chemin UX +"
+    },
+    {
+      "id": "a_2026-09-18T16:18:00.808Z_dh_activity-v2_status",
+      "at": "2026-09-18T16:18:00.808Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "status",
+      "text": "a mis à jour le statut de « Activité » : Chemin UX + wording"
     }
   ]
 }
