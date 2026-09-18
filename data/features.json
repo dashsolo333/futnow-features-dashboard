@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T10:18:59.522Z",
+  "updatedAt": "2026-09-18T16:17:24.403Z",
   "stages": [
     {
       "id": "idea",
@@ -272,7 +272,7 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           },
-          "bug": false
+          "bug": true
         },
         {
           "group": "prod",
@@ -314,7 +314,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:20:53.595Z",
+      "updatedAt": "2026-09-18T16:17:24.403Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3700,6 +3700,17 @@
       "featureId": "f_mu6o996ehisr70",
       "type": "status",
       "text": "a mis à jour le statut de « LLM / Bot dans chat lobby par défaut » : En cours de mockup"
+    },
+    {
+      "id": "a_2026-09-18T16:17:24.403Z_dh_activity-v2_update",
+      "at": "2026-09-18T16:17:24.403Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "update",
+      "text": "a signalé « Vérifier incohérence chemin UX match terminé \"ajouter un match\" » comme bug sur « Activité »"
     }
   ]
 }
