@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T16:20:12.349Z",
+  "updatedAt": "2026-09-18T16:20:41.467Z",
   "stages": [
     {
       "id": "idea",
@@ -110,8 +110,8 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
-      "status": "Bloqué tant que test pas fait [Nadir]",
-      "statusAt": "2026-09-17T13:51:30.676Z",
+      "status": "Test faits avec tom",
+      "statusAt": "2026-09-18T16:20:41.467Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -173,7 +173,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T08:29:56.271Z",
+      "updatedAt": "2026-09-18T16:20:41.467Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3941,6 +3941,17 @@
       "featureId": "f_mu75zt8d5l8ubw",
       "type": "create",
       "text": "a créé « Fiche joueur »"
+    },
+    {
+      "id": "a_2026-09-18T16:20:41.467Z_dh_radar_status",
+      "at": "2026-09-18T16:20:41.467Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "status",
+      "text": "a mis à jour le statut de « Mode RADAR » : Test faits avec tom"
     }
   ]
 }
