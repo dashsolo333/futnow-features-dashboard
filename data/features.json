@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T08:25:54.345Z",
+  "updatedAt": "2026-09-18T08:27:03.234Z",
   "stages": [
     {
       "id": "idea",
@@ -445,13 +445,30 @@
         "prodFinalActual": "2026-09-18"
       },
       "tests": [],
-      "items": [],
+      "items": [
+        {
+          "id": "i_mu6p3c1u5wll4e",
+          "text": "Inviter par lien HS",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T08:27:03.234Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        }
+      ],
       "createdAt": "2026-09-11T09:17:33.184Z",
       "createdBy": {
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T08:25:54.345Z",
+      "updatedAt": "2026-09-18T08:27:03.234Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3476,6 +3493,17 @@
       "featureId": "dh_match-detail",
       "type": "move",
       "text": "a passé « Détail match » en Prod final (forcé, sans test OK)"
+    },
+    {
+      "id": "a_2026-09-18T08:27:03.234Z_dh_match-detail_update",
+      "at": "2026-09-18T08:27:03.234Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_match-detail",
+      "type": "update",
+      "text": "a ajouté la tâche « Inviter par lien HS » à « Détail match »"
     }
   ]
 }
