@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T16:19:02.228Z",
+  "updatedAt": "2026-09-18T16:19:19.823Z",
   "stages": [
     {
       "id": "idea",
@@ -1418,8 +1418,25 @@
           }
         },
         {
+          "group": "idea",
+          "due": "",
+          "note": "",
+          "doneAt": "",
+          "doneBy": null,
           "id": "i_mu75yb4ku77tcn",
           "text": "2eme itération xp avec prono",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "createdAt": "2026-09-18T16:19:02.228Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_mu75yopbbqygxd",
+          "text": "actualisation calcul ftn score",
           "group": "idea",
           "due": "",
           "note": "",
@@ -1428,7 +1445,7 @@
           "bug": false,
           "doneAt": "",
           "doneBy": null,
-          "createdAt": "2026-09-18T16:19:02.228Z",
+          "createdAt": "2026-09-18T16:19:19.823Z",
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1440,7 +1457,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-18T16:19:07.067Z",
+      "updatedAt": "2026-09-18T16:19:19.823Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3840,6 +3857,17 @@
       "featureId": "f_mu1dnppp557kq3",
       "type": "update",
       "text": "a ajouté la tâche « 2eme itération xp avec » à « Equilibrage XP GD »"
+    },
+    {
+      "id": "a_2026-09-18T16:19:19.823Z_f_mu1dnppp557kq3_update",
+      "at": "2026-09-18T16:19:19.823Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1dnppp557kq3",
+      "type": "update",
+      "text": "a ajouté la tâche « actualisation calcul ftn score » à « Equilibrage XP GD »"
     }
   ]
 }
