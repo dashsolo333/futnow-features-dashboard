@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T08:29:47.269Z",
+  "updatedAt": "2026-09-18T08:29:56.271Z",
   "stages": [
     {
       "id": "idea",
@@ -100,7 +100,7 @@
       "id": "dh_radar",
       "title": "Mode RADAR",
       "description": "RADAR est un attribut du lobby, pas un écran parallèle. L’écran, c’est le radar : platine 2.5D plein écran (chaque blip = un lobby réel), un gros bouton ON/OFF qui est la diode elle-même (couleur = nature, rythme = urgence), les lobbies en cartes au pouce, réglages derrière une roue crantée (« Quand » : dispo tout le temps, une fenêtre de la semaine, ou une date précise), bloc « Tes dispos » sous la barre (L M M J V S D en grand : un tap coche un jour ; deux molettes 17 – 23 h qu’on fait défiler au doigt, verticalement, pour l’amplitude 9 → 23 h, sans rien ouvrir ; hors fenêtre, les blips s’enfoncent dans le verre), tap sur une carte = sa fiche (radar depuis quand, créé quand, dernière activité, coup d’envoi ou expiration, demande en cours), onboarding en 3 slides à la première ouverture. Bots + bascule d’identité. Même magasin que le clone de prod.\n\nTag DevHub : plein écran",
-      "icon": "🛰",
+      "icon": "🌍",
       "family": "flows",
       "familyLabel": "Flux match",
       "priority": "p0",
@@ -171,7 +171,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:51:30.676Z",
+      "updatedAt": "2026-09-18T08:29:56.271Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3537,6 +3537,17 @@
       "featureId": "f_mu1dnppp557kq3",
       "type": "update",
       "text": "a modifié icon de « Equilibrage XP GD »"
+    },
+    {
+      "id": "a_2026-09-18T08:29:56.271Z_dh_radar_update",
+      "at": "2026-09-18T08:29:56.271Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "update",
+      "text": "a modifié icon de « Mode RADAR »"
     }
   ]
 }
