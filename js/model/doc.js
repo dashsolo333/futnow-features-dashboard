@@ -90,7 +90,7 @@ export function normalizeFeature(f) {
 
 function normalizeItem(i) {
   const status = ['todo', 'doing', 'blocked', 'done'].includes(i.status) ? i.status : (i.done ? 'done' : 'todo');
-  return { group: '', due: '', note: '', doneAt: '', doneBy: null, ...i, status, done: status === 'done' };
+  return { group: '', due: '', note: '', doneAt: '', doneBy: null, ...i, status, done: status === 'done', bug: Boolean(i.bug) };
 }
 
 export function pushActivity(doc, entry) {

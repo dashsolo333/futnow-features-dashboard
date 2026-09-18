@@ -1,5 +1,5 @@
 // Checklist : groupes alignés sur le pipeline, checklist type.
-import { addChecklistItem } from './features.js';
+import { addChecklistItem, isOpenBug } from './features.js';
 
 export const DEFAULT_TEMPLATE = [
   { group: 'spec', text: 'Intention et périmètre écrits' },
@@ -50,7 +50,7 @@ export function checklistStats(feature, today) {
   const doneItems = items.filter((i) => i.status === 'done' && i.doneAt).sort((a, b) => String(b.doneAt).localeCompare(String(a.doneAt)));
   const done = count('done');
   return {
-    total: items.length, done, doing: count('doing'), blocked: count('blocked'), todo: count('todo'),
+    total: items.length, done, doing: count('doing'), blocked: count('blocked'), todo: count('todo'), bugs: items.filter(isOpenBug).length,
     late: late.length, lateItems: late, pct: items.length ? Math.round((done / items.length) * 100) : 0,
     nextDue: upcoming[0] || null, lastDone: doneItems[0] || null,
   };
@@ -73,6 +73,7 @@ export function groupItems(doc, feature) {
       id, label: stage?.label || 'Autre', color: stage?.color || '#8b97ad', items, done,
       doing: items.filter((i) => i.status === 'doing').length,
       blocked: items.filter((i) => i.status === 'blocked').length,
+      bugs: items.filter(isOpenBug).length,
       pct: items.length ? Math.round((done / items.length) * 100) : 0,
     };
   });

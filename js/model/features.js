@@ -127,7 +127,7 @@ export function addChecklistItem(doc, id, { id: itemId, text, group = '', due = 
   const f = requireFeature(doc, id);
   const clean = String(text || '').trim();
   if (!clean) throw new Error('Le texte de la tâche est obligatoire.');
-  const item = { id: itemId, text: clean, group: group || '', due: due || '', note: '', status: 'todo', done: false, doneAt: '', doneBy: null, createdAt: at, createdBy: by };
+  const item = { id: itemId, text: clean, group: group || '', due: due || '', note: '', status: 'todo', done: false, bug: false, doneAt: '', doneBy: null, createdAt: at, createdBy: by };
   const next = { ...f, items: [...f.items, item], updatedAt: at, updatedBy: by };
   const out = replaceFeature(doc, next);
   if (silent) return out;
@@ -146,6 +146,18 @@ export function setChecklistStatus(doc, id, itemId, status, { by, at }) {
   const items = f.items.map((i) => (i.id === itemId ? { ...i, status, done, doneAt: done ? at : '', doneBy: done ? by : null } : i));
   const next = { ...f, items, updatedAt: at, updatedBy: by };
   const text = `a passé « ${item.text} » ${STATUS_TEXT[status]} sur « ${f.title} »`;
+  return journal(replaceFeature(doc, next), { type: 'update', featureId: id, text, by, at });
+}
+
+/** Drapeau « bug » : indépendant du statut, une tâche bug passée « faite » est un bug corrigé. */
+export function setChecklistBug(doc, id, itemId, bug, { by, at }) {
+  const f = requireFeature(doc, id);
+  const item = f.items.find((i) => i.id === itemId);
+  const flag = Boolean(bug);
+  if (!item || Boolean(item.bug) === flag) return doc;
+  const items = f.items.map((i) => (i.id === itemId ? { ...i, bug: flag } : i));
+  const next = { ...f, items, updatedAt: at, updatedBy: by };
+  const text = flag ? `a signalé « ${item.text} » comme bug sur « ${f.title} »` : `a retiré le bug de « ${item.text} » sur « ${f.title} »`;
   return journal(replaceFeature(doc, next), { type: 'update', featureId: id, text, by, at });
 }
 
@@ -175,5 +187,10 @@ export function removeChecklistItem(doc, id, itemId, { by, at }) {
 
 export function checklistProgress(feature) {
   const items = feature.items || [];
-  return { done: items.filter((i) => i.done).length, total: items.length };
+  return { done: items.filter((i) => i.done).length, total: items.length, bugs: items.filter(isOpenBug).length };
+}
+
+/** Bug ouvert : signalé et pas encore corrigé. */
+export function isOpenBug(item) {
+  return Boolean(item.bug) && item.status !== 'done' && !item.done;
 }

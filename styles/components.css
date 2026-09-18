@@ -60,6 +60,8 @@ input[type='date'].input { color-scheme: dark; }
 .badge-ok { background: rgba(43,190,106,.16); color: #6fe3a0; }
 .badge-ko { background: rgba(248,113,113,.16); color: #ff9b9b; }
 .badge-late { background: rgba(248,113,113,.14); color: #ff9b9b; }
+.badge-bug { display: inline-flex; align-items: center; gap: 4px; background: rgba(251,146,60,.16); color: var(--bug); font-variant-numeric: tabular-nums; }
+.badge-bug .ico { width: 13px; height: 13px; }
 .badge-soon { background: rgba(245,158,11,.14); color: #ffc862; }
 .badge-neutral { background: var(--glass-2); color: var(--ink-2); }
 .badge-forced { background: rgba(245,158,11,.14); color: #ffc862; }
@@ -244,6 +246,10 @@ input[type='date'].input { color-scheme: dark; }
 .check-due .dp-btn, .check-meta .dp-btn { height: 30px; font-size: 13px; font-weight: 500; }
 .check-group-sel { max-width: 130px; }
 .has-note { color: var(--accent-2); }
+.has-bug { color: var(--bug); background: rgba(251,146,60,.14); }
+.check-item.is-bug { border-left: 3px solid var(--bug); background: rgba(251,146,60,.05); }
+.check-bug { display: inline-flex; align-items: center; gap: 0; color: var(--bug); font-weight: 600; }
+.check-bug.is-fixed { color: var(--ink-3); font-weight: 500; }
 .check-add { display: grid; grid-template-columns: 32px 1fr auto auto; gap: 14px; align-items: center; margin-top: 20px; padding: 8px 10px; border-radius: var(--r-md); border: 1px dashed var(--hairline-strong); }
 .check-add-input { border-color: transparent; background: transparent; font-size: 18px; min-height: 44px; }
 .check-add-input:focus { background: rgba(0,0,0,.25); }

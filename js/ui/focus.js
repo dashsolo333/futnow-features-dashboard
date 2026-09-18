@@ -28,7 +28,7 @@ export function renderFocus(ctx) {
   const t = today();
   const late = isLate(f, t);
   const last = lastVerdict(f);
-  const { done, total } = checklistProgress(f);
+  const { done, total, bugs } = checklistProgress(f);
   const release = doc.releases.find((r) => r.id === f.releaseId);
   const go = (n) => ctx.setFocus(list[(i + n + list.length) % list.length].id);
 
@@ -56,7 +56,7 @@ export function renderFocus(ctx) {
           fact('Prod test', f.dates.prodTestActual ? `fait le ${fmtDay(f.dates.prodTestActual)}` : f.dates.prodTestPlanned ? `cible ${fmtDay(f.dates.prodTestPlanned)}` : '—', late.prodTest ? 'late' : f.dates.prodTestActual ? 'done' : ''),
           fact('Prod final', f.dates.prodFinalActual ? `livré le ${fmtDay(f.dates.prodFinalActual)}` : f.dates.prodFinalPlanned ? `cible ${fmtDay(f.dates.prodFinalPlanned)}` : '—', late.prodFinal ? 'late' : f.dates.prodFinalActual ? 'done' : ''),
           fact('Dernier test', last ? `${last.verdict.toUpperCase()} · ${fmtDay(last.at)}` : 'aucun', last ? (last.verdict === 'ok' ? 'done' : 'late') : ''),
-          fact('Checklist', total ? `${done} / ${total}` : '—', total && done === total ? 'done' : ''),
+          fact('Checklist', total ? `${done} / ${total}${bugs ? ` · ${bugs} bug${bugs > 1 ? 's' : ''}` : ''}` : '—', total && done === total ? 'done' : ''),
           fact('Étape', f.stepProgress ? `${f.stepProgress} % dans l’étape` : `${idx + 1} / ${doc.stages.length}`),
           h('div', { class: 'fact' }, h('span', { class: 'fact-label' }, 'Dernière action'), h('b', { style: { display: 'flex', alignItems: 'center', gap: '6px' } }, avatar(f.updatedBy, 18), `${f.updatedBy?.login || '—'} · ${relTime(f.updatedAt)}`))))),
 

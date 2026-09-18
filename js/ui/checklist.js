@@ -1,10 +1,11 @@
 // Checklist centrale d'une feature : synthèse, groupes par étape, statut et note par tâche.
 import { h, icon, avatar, fmtDay, relTime, today } from './dom.js';
 import { newId } from '../model/doc.js';
-import { addChecklistItem, removeChecklistItem, updateChecklistItem, setChecklistStatus } from '../model/features.js';
+import { addChecklistItem, removeChecklistItem, updateChecklistItem, setChecklistStatus, setChecklistBug, isOpenBug } from '../model/features.js';
 import { applyTemplate, groupItems, checklistStats, STATUSES } from '../model/checklist.js';
 import { milestoneStatus } from '../model/milestones.js';
 import { datePicker } from './featureParts.js';
+import { bugBadge } from './card.js';
 
 const statusOf = (id) => STATUSES.find((s) => s.id === id) || STATUSES[0];
 
@@ -27,7 +28,7 @@ export function renderChecklist(ctx, feature, ro) {
     h('div', { class: 'checklist-head' },
       h('div', {},
         h('h2', { class: 'checklist-title' }, 'Checklist'),
-        h('p', { class: 'checklist-sub' }, st.total ? `${st.done} faite${st.done > 1 ? 's' : ''} sur ${st.total}${st.total - st.done ? ` · ${st.total - st.done} restante${st.total - st.done > 1 ? 's' : ''}` : ' · tout est fait'}` : 'Ce qu’il reste à faire pour livrer, étape par étape.')),
+        h('p', { class: 'checklist-sub' }, st.total ? `${st.done} faite${st.done > 1 ? 's' : ''} sur ${st.total}${st.total - st.done ? ` · ${st.total - st.done} restante${st.total - st.done > 1 ? 's' : ''}` : ' · tout est fait'}${st.bugs ? ` · ${st.bugs} bug${st.bugs > 1 ? 's' : ''}` : ''}` : 'Ce qu’il reste à faire pour livrer, étape par étape.')),
       h('div', { class: 'checklist-progress' },
         h('span', { class: 'checklist-pct' }, `${st.pct}`, h('span', {}, '%')),
         h('div', { class: 'bar bar-stacked' },
@@ -42,6 +43,7 @@ export function renderChecklist(ctx, feature, ro) {
         h('span', { class: 'check-group-meta' },
           g.doing ? h('span', { class: 'badge badge-doing' }, `${g.doing} en cours`) : null,
           g.blocked ? h('span', { class: 'badge badge-ko' }, `${g.blocked} bloquée${g.blocked > 1 ? 's' : ''}`) : null,
+          g.bugs ? bugBadge(g.bugs) : null,
           h('span', { class: 'check-group-count' }, `${g.done}/${g.items.length}`)),
         h('div', { class: 'bar check-group-bar' }, h('i', { style: { width: `${g.pct}%`, background: g.color } }))),
       h('ul', { class: 'checklist' }, g.items.map((it) => renderItem(ctx, feature, it, { ro, t, groupOptions })))))) : null,
@@ -70,12 +72,13 @@ function renderItem(ctx, feature, it, { ro, t, groupOptions }) {
     noteEl = h('textarea', { class: 'textarea check-note-input', placeholder: 'Note : contexte, blocage, lien…', disabled: ro, rows: 2, dataset: { key: `note:${it.id}` },
       onChange: (e) => ctx.act(`a annoté une tâche de « ${feature.title} »`, (d) => updateChecklistItem(d, feature.id, it.id, { note: e.target.value.trim() }, meta())) }, it.note || ''));
 
-  return h('li', { class: `check-item is-${it.status}${late ? ' is-late' : ''}` },
+  return h('li', { class: `check-item is-${it.status}${late ? ' is-late' : ''}${isOpenBug(it) ? ' is-bug' : ''}` },
     h('button', { type: 'button', class: 'check-box', role: 'checkbox', 'aria-checked': it.status === 'done' ? 'true' : 'false', disabled: ro, 'aria-label': it.text,
       onClick: () => setStatus(it.status === 'done' ? 'todo' : 'done') }, it.status === 'done' ? icon('check') : null),
     h('div', { class: 'check-main' },
       textEl = h('input', { class: 'check-text', value: it.text, disabled: ro, 'aria-label': 'Texte de la tâche', dataset: { key: `text:${it.id}` }, onChange: saveText, onKeydown: (e) => { if (e.key === 'Enter') e.currentTarget.blur(); } }),
       h('div', { class: 'check-sub' },
+        it.bug ? h('span', { class: `check-bug${it.status === 'done' ? ' is-fixed' : ''}` }, icon('bug'), it.status === 'done' ? 'bug corrigé' : 'bug') : null,
         it.status === 'done'
           ? h('span', { class: 'check-done' }, icon('check'), 'faite ', fmtDay(it.doneAt), it.doneBy ? [' par ', avatar(it.doneBy, 16), ` ${it.doneBy.login}`] : null)
           : [
@@ -91,6 +94,8 @@ function renderItem(ctx, feature, it, { ro, t, groupOptions }) {
       it.status !== 'done' && !ro ? datePicker(it.due, (v) => ctx.act(`a daté une tâche de « ${feature.title} »`, (d) => updateChecklistItem(d, feature.id, it.id, { due: v }, meta())), { placeholder: 'échéance' }) : null,
       ro ? null : h('select', { class: 'select select-pill-sm check-group-sel', 'aria-label': 'Étape', onChange: (e) => ctx.act(`a déplacé une tâche de « ${feature.title} »`, (d) => updateChecklistItem(d, feature.id, it.id, { group: e.target.value }, meta())) },
         groupOptions.map((o) => h('option', { value: o.id, selected: o.id === (it.group || '') }, o.label))),
+      ro ? null : h('button', { type: 'button', class: `btn btn-ghost btn-sm btn-icon${it.bug ? ' has-bug' : ''}`, title: it.bug ? 'Ce n’est plus un bug' : 'Signaler comme bug', 'aria-label': 'Bug', 'aria-pressed': it.bug ? 'true' : 'false',
+        onClick: () => ctx.act(`a ${it.bug ? 'retiré un bug de' : 'signalé un bug sur'} « ${feature.title} »`, (d) => setChecklistBug(d, feature.id, it.id, !it.bug, meta())) }, icon('bug')),
       ro ? null : h('button', { type: 'button', class: `btn btn-ghost btn-sm btn-icon${it.note ? ' has-note' : ''}`, title: it.note ? 'Modifier la note' : 'Ajouter une note', 'aria-label': 'Note', onClick: () => { noteOpen = !noteOpen; noteBox.hidden = !noteOpen; if (noteOpen) noteEl.focus(); } }, icon('note')),
       ro ? null : h('button', { type: 'button', class: 'btn btn-ghost btn-sm btn-icon', 'aria-label': 'Retirer', onClick: () => { if (confirm(`Retirer la tâche « ${it.text} » ?`)) ctx.act(`a retiré une tâche de « ${feature.title} »`, (d) => removeChecklistItem(d, feature.id, it.id, meta())); } }, icon('close'))));
 }

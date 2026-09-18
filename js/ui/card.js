@@ -21,6 +21,16 @@ export function tasksChip(feature) {
   return h('span', { class: `badge ${done === total ? 'badge-ok' : 'badge-neutral'}`, title: 'Checklist' }, `${done}/${total} tâches`);
 }
 
+/** Pastille du nombre de bugs ouverts (fiche, liste, cartes). */
+export function bugBadge(n) {
+  return h('span', { class: 'badge badge-bug', title: `${n} bug${n > 1 ? 's' : ''} ouvert${n > 1 ? 's' : ''}` }, icon('bug'), `${n}`);
+}
+
+export function bugsChip(feature) {
+  const { bugs } = checklistProgress(feature);
+  return bugs ? bugBadge(bugs) : null;
+}
+
 export function releaseChip(doc, feature) {
   const r = doc.releases.find((x) => x.id === feature.releaseId);
   return r ? h('span', { class: 'chip' }, r.version) : null;
@@ -48,6 +58,7 @@ export function renderCard(ctx, feature) {
     datePill('Prod', feature.dates.prodFinalPlanned, feature.dates.prodFinalActual, late.prodFinal),
     verdictBadge(feature),
     tasksChip(feature),
+    bugsChip(feature),
     releaseChip(doc, feature),
     avatar(feature.updatedBy, 20)));
   return el;

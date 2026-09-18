@@ -2,7 +2,7 @@ import { h, icon, avatar, fmtDay, relTime, today } from './dom.js';
 import { PRIORITIES } from '../model/doc.js';
 import { gaugeOf, stageById } from '../model/stages.js';
 import { isLate, byRank, checklistProgress } from '../model/features.js';
-import { verdictBadge } from './card.js';
+import { verdictBadge, bugBadge } from './card.js';
 import { visibleFeatures } from './filters.js';
 
 const COLS = [
@@ -109,12 +109,13 @@ function statusCell(f) {
     h('small', {}, at ? relTime(at) : '', by?.login ? ` · ${by.login}` : ''));
 }
 
-function tasksCell({ done, total }) {
+function tasksCell({ done, total, bugs }) {
   if (!total) return h('span', { class: 'dim' }, '—');
   const pct = Math.round((done / total) * 100);
   return h('div', { class: 'cell-tasks', title: `${done} tâche${done > 1 ? 's' : ''} faite${done > 1 ? 's' : ''} sur ${total}` },
     h('b', { class: done === total ? 'is-done' : '' }, `${done}/${total}`),
-    h('div', { class: 'bar bar-tasks' }, h('i', { style: { width: `${pct}%` } })));
+    h('div', { class: 'bar bar-tasks' }, h('i', { style: { width: `${pct}%` } })),
+    bugs ? bugBadge(bugs) : null);
 }
 
 function dateCell(planned, actual, late) {

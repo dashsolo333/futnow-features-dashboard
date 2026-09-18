@@ -12,11 +12,11 @@ test('checklist items can be added, toggled and removed immutably', () => {
   let d = addChecklistItem(base(), 'f1', { id: 'i1', text: 'Maquette validée', by: who, at: now });
   d = addChecklistItem(d, 'f1', { id: 'i2', text: 'RPC prête', by: who, at: now });
   assert.equal(featureById(d, 'f1').items.length, 2);
-  assert.deepEqual(checklistProgress(featureById(d, 'f1')), { done: 0, total: 2 });
+  assert.deepEqual(checklistProgress(featureById(d, 'f1')), { done: 0, total: 2, bugs: 0 });
   const d2 = toggleChecklistItem(d, 'f1', 'i1', { by: who, at: now });
   assert.equal(featureById(d2, 'f1').items[0].done, true);
   assert.equal(featureById(d, 'f1').items[0].done, false);
-  assert.deepEqual(checklistProgress(featureById(d2, 'f1')), { done: 1, total: 2 });
+  assert.deepEqual(checklistProgress(featureById(d2, 'f1')), { done: 1, total: 2, bugs: 0 });
   const d3 = removeChecklistItem(d2, 'f1', 'i2', { by: who, at: now });
   assert.equal(featureById(d3, 'f1').items.length, 1);
   assert.equal(d2.activity.at(-1).type, 'update');

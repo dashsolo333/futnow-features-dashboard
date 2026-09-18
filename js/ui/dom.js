@@ -100,6 +100,7 @@ export function icon(name) {
     up: 'M12 19V5M5 12l7-7 7 7',
     down: 'M12 5v14M19 12l-7 7-7-7',
     flag: 'M4 22V4M4 4h12l-2 4 2 4H4',
+    bug: 'M9 7a3 3 0 0 1 6 0M8 9h8v6a4 4 0 0 1-8 0zM12 13v6M8 12H4M20 12h-4M8 16l-3 2M16 16l3 2M8 9L5 7M16 9l3-2',
     expand: 'M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5',
     left: 'M15 18l-6-6 6-6',
     note: 'M4 4h16v12l-4 4H4zM8 9h8M8 13h5',
