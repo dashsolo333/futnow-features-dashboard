@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T08:03:39.830Z",
+  "updatedAt": "2026-09-18T08:04:12.405Z",
   "stages": [
     {
       "id": "idea",
@@ -1389,9 +1389,12 @@
       ],
       "stageId": "idea",
       "stepProgress": 0,
-      "status": "",
-      "statusAt": "",
-      "statusBy": null,
+      "status": "Réfléchir à un système de bot da",
+      "statusAt": "2026-09-18T08:04:12.405Z",
+      "statusBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
       "rank": null,
       "releaseId": "",
       "devhubId": "",
@@ -1409,7 +1412,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-18T08:03:39.830Z",
+      "updatedAt": "2026-09-18T08:04:12.405Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3363,6 +3366,17 @@
       "featureId": "f_mu6o996ehisr70",
       "type": "create",
       "text": "a créé « LLM / Bot dans chat »"
+    },
+    {
+      "id": "a_2026-09-18T08:04:12.405Z_f_mu6o996ehisr70_status",
+      "at": "2026-09-18T08:04:12.405Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu6o996ehisr70",
+      "type": "status",
+      "text": "a mis à jour le statut de « LLM / Bot dans chat » : Réfléchir à un système de bot da"
     }
   ]
 }
