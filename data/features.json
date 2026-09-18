@@ -423,6 +423,182 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_1",
+          "text": "Intention et périmètre écrits",
+          "group": "spec",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_2",
+          "text": "Arbitrages tranchés avec l’équipe",
+          "group": "spec",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_3",
+          "text": "Maquette validée",
+          "group": "design",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_4",
+          "text": "États vides / erreur / chargement dessinés",
+          "group": "design",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_5",
+          "text": "Implémentation terminée",
+          "group": "dev",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_6",
+          "text": "Tests unitaires verts",
+          "group": "dev",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_7",
+          "text": "Review de code OK",
+          "group": "review",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_8",
+          "text": "Migration / RLS vérifiées si besoin",
+          "group": "review",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_9",
+          "text": "Build de test distribué (TestFlight / interne)",
+          "group": "prodtest",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_10",
+          "text": "Testé sur iOS",
+          "group": "prodtest",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_2026-09-18T09:55:30.436Z_11",
+          "text": "Testé sur Android",
+          "group": "prodtest",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:55:30.436Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-11T09:17:33.180Z",
@@ -430,7 +606,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T09:55:29.325Z",
+      "updatedAt": "2026-09-18T09:55:30.436Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3624,6 +3800,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a ajouté la checklist type (13 tâches) à « Lobby »"
+    },
+    {
+      "id": "a_2026-09-18T09:55:30.436Z_dh_lobby_template",
+      "at": "2026-09-18T09:55:30.436Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a ajouté la checklist type (11 tâches) à « Lobby »"
     }
   ]
 }
