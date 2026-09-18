@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T09:10:49.298Z",
+  "updatedAt": "2026-09-18T09:56:36.082Z",
   "stages": [
     {
       "id": "idea",
@@ -407,6 +407,22 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mu6sahrmdl7how",
+          "text": "Quitter la partie conserve le match en vue activité",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-18T09:56:36.082Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-11T09:17:33.180Z",
@@ -414,7 +430,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T09:56:13.490Z",
+      "updatedAt": "2026-09-18T09:56:36.082Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3619,6 +3635,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a ajouté la checklist type (11 tâches) à « Lobby »"
+    },
+    {
+      "id": "a_2026-09-18T09:56:36.082Z_dh_lobby_update",
+      "at": "2026-09-18T09:56:36.082Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a ajouté la tâche « Quitter la partie conserve le match en vue activité » à « Lobby »"
     }
   ]
 }
