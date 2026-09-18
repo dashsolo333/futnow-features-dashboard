@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T08:27:03.234Z",
+  "updatedAt": "2026-09-18T08:29:10.525Z",
   "stages": [
     {
       "id": "idea",
@@ -1186,7 +1186,7 @@
       "id": "f_mu1c5m8z9pu0rz",
       "title": "Chat & DM sync",
       "description": "Recuperer DM privé et chat des games.",
-      "icon": "",
+      "icon": "✉",
       "family": "other",
       "familyLabel": "Autre",
       "priority": "p2",
@@ -1306,7 +1306,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T14:50:30.000Z",
+      "updatedAt": "2026-09-18T08:29:10.525Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3504,6 +3504,17 @@
       "featureId": "dh_match-detail",
       "type": "update",
       "text": "a ajouté la tâche « Inviter par lien HS » à « Détail match »"
+    },
+    {
+      "id": "a_2026-09-18T08:29:10.525Z_f_mu1c5m8z9pu0rz_update",
+      "at": "2026-09-18T08:29:10.525Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "update",
+      "text": "a modifié icon de « Chat & DM sync »"
     }
   ]
 }
