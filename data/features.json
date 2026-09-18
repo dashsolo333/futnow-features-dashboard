@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T16:20:03.056Z",
+  "updatedAt": "2026-09-18T16:20:05.890Z",
   "stages": [
     {
       "id": "idea",
@@ -64,7 +64,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 70,
+      "rank": 80,
       "releaseId": "",
       "devhubId": "league-v2",
       "links": [
@@ -116,7 +116,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 80,
+      "rank": 90,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -465,7 +465,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 90,
+      "rank": 100,
       "releaseId": "",
       "devhubId": "match-detail",
       "links": [
@@ -536,7 +536,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 100,
+      "rank": 110,
       "releaseId": "",
       "devhubId": "join-game",
       "links": [
@@ -1480,7 +1480,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 110,
+      "rank": 70,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -3872,6 +3872,17 @@
     {
       "id": "a_2026-09-18T16:20:03.056Z_null_update",
       "at": "2026-09-18T16:20:03.056Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": null,
+      "type": "update",
+      "text": "a réordonné la liste"
+    },
+    {
+      "id": "a_2026-09-18T16:20:05.890Z_null_update",
+      "at": "2026-09-18T16:20:05.890Z",
       "by": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
