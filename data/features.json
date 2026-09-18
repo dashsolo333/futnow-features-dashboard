@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T10:11:40.135Z",
+  "updatedAt": "2026-09-18T10:12:25.665Z",
   "stages": [
     {
       "id": "idea",
@@ -1209,7 +1209,7 @@
           "doneBy": null,
           "id": "i_mu1bhcvtfbc154",
           "text": "fignoler pour go françois",
-          "status": "todo",
+          "status": "doing",
           "done": false,
           "createdAt": "2026-09-14T14:07:11.993Z",
           "createdBy": {
@@ -1224,7 +1224,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-14T14:47:48.807Z",
+      "updatedAt": "2026-09-18T10:12:25.665Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3678,6 +3678,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a signalé « Quitter la partie conserve le match en vue activité » comme bug sur « Lobby »"
+    },
+    {
+      "id": "a_2026-09-18T10:12:25.665Z_dh_pronos_update",
+      "at": "2026-09-18T10:12:25.665Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_pronos",
+      "type": "update",
+      "text": "a passé « fignoler pour go françois » en cours sur « Pronos sans stats ballon »"
     }
   ]
 }
