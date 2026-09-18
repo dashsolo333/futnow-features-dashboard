@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T08:29:40.267Z",
+  "updatedAt": "2026-09-18T08:29:47.269Z",
   "stages": [
     {
       "id": "idea",
@@ -1316,7 +1316,7 @@
       "id": "f_mu1dnppp557kq3",
       "title": "Equilibrage XP GD",
       "description": "",
-      "icon": "",
+      "icon": "🎲",
       "family": "other",
       "familyLabel": "Autre",
       "priority": "p1",
@@ -1346,7 +1346,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-14T15:08:07.789Z",
+      "updatedAt": "2026-09-18T08:29:47.269Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3526,6 +3526,17 @@
       "featureId": "f_mu5ac7nrdphiea",
       "type": "update",
       "text": "a modifié icon de « Design des rangs »"
+    },
+    {
+      "id": "a_2026-09-18T08:29:47.269Z_f_mu1dnppp557kq3_update",
+      "at": "2026-09-18T08:29:47.269Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu1dnppp557kq3",
+      "type": "update",
+      "text": "a modifié icon de « Equilibrage XP GD »"
     }
   ]
 }
