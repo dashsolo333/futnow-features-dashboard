@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T08:04:12.405Z",
+  "updatedAt": "2026-09-18T08:04:24.593Z",
   "stages": [
     {
       "id": "idea",
@@ -1389,8 +1389,8 @@
       ],
       "stageId": "idea",
       "stepProgress": 0,
-      "status": "Réfléchir à un système de bot da",
-      "statusAt": "2026-09-18T08:04:12.405Z",
+      "status": "Réfléchir à intégrer dans MDS/Lobby",
+      "statusAt": "2026-09-18T08:04:24.593Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1412,7 +1412,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-18T08:04:12.405Z",
+      "updatedAt": "2026-09-18T08:04:24.593Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3377,6 +3377,17 @@
       "featureId": "f_mu6o996ehisr70",
       "type": "status",
       "text": "a mis à jour le statut de « LLM / Bot dans chat » : Réfléchir à un système de bot da"
+    },
+    {
+      "id": "a_2026-09-18T08:04:24.593Z_f_mu6o996ehisr70_status",
+      "at": "2026-09-18T08:04:24.593Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu6o996ehisr70",
+      "type": "status",
+      "text": "a mis à jour le statut de « LLM / Bot dans chat » : Réfléchir à intégrer dans MDS/Lobby"
     }
   ]
 }
