@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T16:17:52.251Z",
+  "updatedAt": "2026-09-18T16:17:54.875Z",
   "stages": [
     {
       "id": "idea",
@@ -193,9 +193,12 @@
       ],
       "stageId": "prod",
       "stepProgress": 0,
-      "status": "",
-      "statusAt": "",
-      "statusBy": null,
+      "status": "C",
+      "statusAt": "2026-09-18T16:17:54.875Z",
+      "statusBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
       "rank": 20,
       "releaseId": "",
       "devhubId": "activity-v2",
@@ -314,7 +317,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T16:17:52.251Z",
+      "updatedAt": "2026-09-18T16:17:54.875Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3722,6 +3725,17 @@
       "featureId": "dh_activity-v2",
       "type": "update",
       "text": "a signalé « Virer le terme lobby + check wording » comme bug sur « Activité »"
+    },
+    {
+      "id": "a_2026-09-18T16:17:54.875Z_dh_activity-v2_status",
+      "at": "2026-09-18T16:17:54.875Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_activity-v2",
+      "type": "status",
+      "text": "a mis à jour le statut de « Activité » : C"
     }
   ]
 }
