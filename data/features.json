@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T08:50:23.926Z",
+  "updatedAt": "2026-09-18T09:10:49.298Z",
   "stages": [
     {
       "id": "idea",
@@ -1404,7 +1404,7 @@
         "ios",
         "android"
       ],
-      "stageId": "idea",
+      "stageId": "design",
       "stepProgress": 0,
       "status": "Réfléchir à intégrer dans MDS/Lobby",
       "statusAt": "2026-09-18T08:04:24.593Z",
@@ -1429,7 +1429,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-18T08:05:21.398Z",
+      "updatedAt": "2026-09-18T09:10:49.298Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3570,6 +3570,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a passé « Design intégration chip dans activité » en cours sur « CTA / Revanche prochain créneau »"
+    },
+    {
+      "id": "a_2026-09-18T09:10:49.298Z_f_mu6o996ehisr70_move",
+      "at": "2026-09-18T09:10:49.298Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu6o996ehisr70",
+      "type": "move",
+      "text": "a passé « LLM / Bot dans chat lobby par défaut » en Design"
     }
   ]
 }
