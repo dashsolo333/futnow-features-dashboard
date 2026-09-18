@@ -1398,19 +1398,19 @@
       "tests": [],
       "items": [
         {
-          "id": "i_mu75xyducsz3l7",
-          "text": "premiere itération",
           "group": "idea",
           "due": "",
           "note": "",
-          "status": "done",
-          "done": true,
-          "bug": false,
           "doneAt": "2026-09-18T16:18:46.731Z",
           "doneBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           },
+          "id": "i_mu75xyducsz3l7",
+          "text": "premiere itération xp",
+          "status": "done",
+          "done": true,
+          "bug": false,
           "createdAt": "2026-09-18T16:18:45.714Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1423,7 +1423,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-18T16:18:46.731Z",
+      "updatedAt": "2026-09-18T16:18:51.150Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
