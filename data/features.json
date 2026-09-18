@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T09:56:36.082Z",
+  "updatedAt": "2026-09-18T10:11:40.135Z",
   "stages": [
     {
       "id": "idea",
@@ -147,7 +147,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "design",
@@ -163,7 +164,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         }
       ],
       "createdAt": "2026-09-04T18:15:26+02:00",
@@ -269,7 +271,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "prod",
@@ -285,7 +288,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "prod",
@@ -301,7 +305,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         }
       ],
       "createdAt": "2026-09-10T11:33:04+02:00",
@@ -374,7 +379,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "prod",
@@ -390,7 +396,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "prod",
@@ -406,23 +413,25 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
-          "id": "i_mu6sahrmdl7how",
-          "text": "Quitter la partie conserve le match en vue activité",
           "group": "prod",
           "due": "",
           "note": "",
-          "status": "todo",
-          "done": false,
           "doneAt": "",
           "doneBy": null,
+          "id": "i_mu6sahrmdl7how",
+          "text": "Quitter la partie conserve le match en vue activité",
+          "status": "todo",
+          "done": false,
           "createdAt": "2026-09-18T09:56:36.082Z",
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": true
         }
       ],
       "createdAt": "2026-09-11T09:17:33.180Z",
@@ -430,7 +439,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T09:56:36.082Z",
+      "updatedAt": "2026-09-18T10:11:40.135Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -492,7 +501,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         }
       ],
       "createdAt": "2026-09-11T09:17:33.184Z",
@@ -961,7 +971,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "spec",
@@ -977,7 +988,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "spec",
@@ -993,7 +1005,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "design",
@@ -1009,7 +1022,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "design",
@@ -1025,7 +1039,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         }
       ],
       "createdAt": "2026-09-04T18:15:26+02:00",
@@ -1200,7 +1215,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         }
       ],
       "createdAt": "2026-09-11T09:16:17.188Z",
@@ -1260,7 +1276,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "idea",
@@ -1279,7 +1296,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "idea",
@@ -1298,7 +1316,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "idea",
@@ -1314,7 +1333,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         },
         {
           "group": "idea",
@@ -1330,7 +1350,8 @@
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          }
+          },
+          "bug": false
         }
       ],
       "createdAt": "2026-09-14T14:26:03.875Z",
@@ -3646,6 +3667,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a ajouté la tâche « Quitter la partie conserve le match en vue activité » à « Lobby »"
+    },
+    {
+      "id": "a_2026-09-18T10:11:40.135Z_dh_lobby_update",
+      "at": "2026-09-18T10:11:40.135Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a signalé « Quitter la partie conserve le match en vue activité » comme bug sur « Lobby »"
     }
   ]
 }
