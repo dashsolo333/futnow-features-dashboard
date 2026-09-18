@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T10:12:25.665Z",
+  "updatedAt": "2026-09-18T10:18:59.522Z",
   "stages": [
     {
       "id": "idea",
@@ -1459,8 +1459,8 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
-      "status": "Réfléchir à intégrer dans MDS/Lobby",
-      "statusAt": "2026-09-18T08:04:24.593Z",
+      "status": "En cours de mockup",
+      "statusAt": "2026-09-18T10:18:59.522Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1482,7 +1482,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-18T09:10:49.298Z",
+      "updatedAt": "2026-09-18T10:18:59.522Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3689,6 +3689,17 @@
       "featureId": "dh_pronos",
       "type": "update",
       "text": "a passé « fignoler pour go françois » en cours sur « Pronos sans stats ballon »"
+    },
+    {
+      "id": "a_2026-09-18T10:18:59.522Z_f_mu6o996ehisr70_status",
+      "at": "2026-09-18T10:18:59.522Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu6o996ehisr70",
+      "type": "status",
+      "text": "a mis à jour le statut de « LLM / Bot dans chat lobby par défaut » : En cours de mockup"
     }
   ]
 }
