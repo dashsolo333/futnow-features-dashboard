@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T08:05:21.398Z",
+  "updatedAt": "2026-09-18T08:05:39.200Z",
   "stages": [
     {
       "id": "idea",
@@ -116,7 +116,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 120,
+      "rank": 80,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -585,7 +585,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 100,
+      "rank": 110,
       "releaseId": "",
       "devhubId": "futstore",
       "links": [
@@ -1116,7 +1116,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 110,
+      "rank": 120,
       "releaseId": "",
       "devhubId": "pronos",
       "links": [
@@ -1185,7 +1185,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 80,
+      "rank": 90,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1395,7 +1395,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 90,
+      "rank": 100,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -3443,6 +3443,17 @@
       "featureId": "f_mu6o996ehisr70",
       "type": "update",
       "text": "a modifié title de « LLM / Bot dans chat lobby »"
+    },
+    {
+      "id": "a_2026-09-18T08:05:39.200Z_null_update",
+      "at": "2026-09-18T08:05:39.200Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": null,
+      "type": "update",
+      "text": "a réordonné la liste"
     }
   ]
 }
