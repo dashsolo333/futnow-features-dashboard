@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T08:29:10.525Z",
+  "updatedAt": "2026-09-18T08:29:40.267Z",
   "stages": [
     {
       "id": "idea",
@@ -1356,7 +1356,7 @@
       "id": "f_mu5ac7nrdphiea",
       "title": "Design des rangs",
       "description": "",
-      "icon": "",
+      "icon": "🏆",
       "family": "other",
       "familyLabel": "Autre",
       "priority": "p2",
@@ -1386,7 +1386,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-17T08:46:17.032Z",
+      "updatedAt": "2026-09-18T08:29:40.267Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3515,6 +3515,17 @@
       "featureId": "f_mu1c5m8z9pu0rz",
       "type": "update",
       "text": "a modifié icon de « Chat & DM sync »"
+    },
+    {
+      "id": "a_2026-09-18T08:29:40.267Z_f_mu5ac7nrdphiea_update",
+      "at": "2026-09-18T08:29:40.267Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mu5ac7nrdphiea",
+      "type": "update",
+      "text": "a modifié icon de « Design des rangs »"
     }
   ]
 }
