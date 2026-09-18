@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T16:19:19.823Z",
+  "updatedAt": "2026-09-18T16:20:03.056Z",
   "stages": [
     {
       "id": "idea",
@@ -64,7 +64,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 10,
+      "rank": 70,
       "releaseId": "",
       "devhubId": "league-v2",
       "links": [
@@ -116,7 +116,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 90,
+      "rank": 80,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -199,7 +199,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 20,
+      "rank": 10,
       "releaseId": "",
       "devhubId": "activity-v2",
       "links": [
@@ -343,7 +343,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 30,
+      "rank": 40,
       "releaseId": "",
       "devhubId": "lobby",
       "links": [
@@ -465,7 +465,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 130,
+      "rank": 90,
       "releaseId": "",
       "devhubId": "match-detail",
       "links": [
@@ -536,7 +536,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 40,
+      "rank": 100,
       "releaseId": "",
       "devhubId": "join-game",
       "links": [
@@ -594,7 +594,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 50,
+      "rank": 120,
       "releaseId": "",
       "devhubId": "inbox",
       "links": [
@@ -647,7 +647,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 110,
+      "rank": 130,
       "releaseId": "",
       "devhubId": "futstore",
       "links": [
@@ -745,7 +745,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 60,
+      "rank": 150,
       "releaseId": "",
       "devhubId": "reward",
       "links": [
@@ -794,7 +794,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 170,
+      "rank": 160,
       "releaseId": "",
       "devhubId": "reward-prod",
       "links": [
@@ -847,7 +847,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 180,
+      "rank": 170,
       "releaseId": "",
       "devhubId": "replay-feed",
       "links": [
@@ -892,7 +892,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 190,
+      "rank": 180,
       "releaseId": "",
       "devhubId": "gerant-dash",
       "links": [
@@ -940,7 +940,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 150,
+      "rank": 60,
       "releaseId": "",
       "devhubId": "revanche",
       "links": [
@@ -1077,7 +1077,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 70,
+      "rank": 30,
       "releaseId": "",
       "devhubId": "pitch3d-full",
       "links": [
@@ -1126,7 +1126,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 160,
+      "rank": 190,
       "releaseId": "",
       "devhubId": "annonces-verdict",
       "links": [
@@ -1183,7 +1183,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 120,
+      "rank": 200,
       "releaseId": "",
       "devhubId": "pronos",
       "links": [
@@ -1253,7 +1253,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 80,
+      "rank": 50,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1385,7 +1385,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 200,
+      "rank": 210,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1435,16 +1435,16 @@
           }
         },
         {
-          "id": "i_mu75yopbbqygxd",
-          "text": "actualisation calcul ftn score",
           "group": "idea",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mu75yopbbqygxd",
+          "text": "actualisation calcul ftn score",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-18T16:19:19.823Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1480,7 +1480,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 210,
+      "rank": 110,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1523,7 +1523,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 100,
+      "rank": 20,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -3868,6 +3868,17 @@
       "featureId": "f_mu1dnppp557kq3",
       "type": "update",
       "text": "a ajouté la tâche « actualisation calcul ftn score » à « Equilibrage XP GD »"
+    },
+    {
+      "id": "a_2026-09-18T16:20:03.056Z_null_update",
+      "at": "2026-09-18T16:20:03.056Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": null,
+      "type": "update",
+      "text": "a réordonné la liste"
     }
   ]
 }
