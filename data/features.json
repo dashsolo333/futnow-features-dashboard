@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T12:32:46.472Z",
+  "updatedAt": "2026-09-21T12:38:12.625Z",
   "stages": [
     {
       "id": "idea",
@@ -423,12 +423,15 @@
           "group": "prod",
           "due": "",
           "note": "",
-          "doneAt": "",
-          "doneBy": null,
+          "doneAt": "2026-09-21T12:38:12.625Z",
+          "doneBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
           "id": "i_mu6sahrmdl7how",
           "text": "Quitter la partie conserve le match en vue activité",
-          "status": "todo",
-          "done": false,
+          "status": "done",
+          "done": true,
           "createdAt": "2026-09-18T09:56:36.082Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -442,7 +445,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T16:18:23.883Z",
+      "updatedAt": "2026-09-21T12:38:12.625Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3974,6 +3977,17 @@
       "featureId": "dh_radar",
       "type": "status",
       "text": "a mis à jour le statut de « Mode RADAR » : Test faits avec tom, à débrief, 2 personnes en +"
+    },
+    {
+      "id": "a_2026-09-21T12:38:12.625Z_dh_lobby_update",
+      "at": "2026-09-21T12:38:12.625Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a passé « Quitter la partie conserve le match en vue activité » faite sur « Lobby »"
     }
   ]
 }
