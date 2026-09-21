@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T16:20:45.294Z",
+  "updatedAt": "2026-09-21T12:32:46.472Z",
   "stages": [
     {
       "id": "idea",
@@ -110,8 +110,8 @@
       ],
       "stageId": "design",
       "stepProgress": 0,
-      "status": "Test faits avec tom, à débrief",
-      "statusAt": "2026-09-18T16:20:45.294Z",
+      "status": "Test faits avec tom, à débrief, 2 personnes en +",
+      "statusAt": "2026-09-21T12:32:46.472Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -173,7 +173,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T16:20:45.294Z",
+      "updatedAt": "2026-09-21T12:32:46.472Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3963,6 +3963,17 @@
       "featureId": "dh_radar",
       "type": "status",
       "text": "a mis à jour le statut de « Mode RADAR » : Test faits avec tom, à débrief"
+    },
+    {
+      "id": "a_2026-09-21T12:32:46.472Z_dh_radar_status",
+      "at": "2026-09-21T12:32:46.472Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "status",
+      "text": "a mis à jour le statut de « Mode RADAR » : Test faits avec tom, à débrief, 2 personnes en +"
     }
   ]
 }
