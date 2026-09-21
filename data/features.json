@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T12:38:12.625Z",
+  "updatedAt": "2026-09-21T12:38:31.989Z",
   "stages": [
     {
       "id": "idea",
@@ -1100,13 +1100,31 @@
         "prodFinalActual": "2026-09-17"
       },
       "tests": [],
-      "items": [],
+      "items": [
+        {
+          "id": "i_mub8ealwv7s8k1",
+          "text": "Bouton retour pixel",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-21T12:38:31.989Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        }
+      ],
       "createdAt": "2026-09-10T11:33:04+02:00",
       "createdBy": {
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T14:31:09.440Z",
+      "updatedAt": "2026-09-21T12:38:31.989Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -3988,6 +4006,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a passé « Quitter la partie conserve le match en vue activité » faite sur « Lobby »"
+    },
+    {
+      "id": "a_2026-09-21T12:38:31.989Z_dh_pitch3d-full_update",
+      "at": "2026-09-21T12:38:31.989Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_pitch3d-full",
+      "type": "update",
+      "text": "a ajouté la tâche « Bouton retour pixel » à « Compo 3D »"
     }
   ]
 }
