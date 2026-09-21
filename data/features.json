@@ -1246,7 +1246,7 @@
       "tests": [],
       "items": [
         {
-          "group": "design",
+          "group": "dev",
           "due": "2026-09-22",
           "note": "",
           "doneAt": "",
@@ -1263,16 +1263,16 @@
           "bug": false
         },
         {
-          "id": "i_mub90luxgayak0",
-          "text": "Validation design",
           "group": "design",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mub90luxgayak0",
+          "text": "Validation design",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-21T12:55:53.001Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1285,7 +1285,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T12:55:53.001Z",
+      "updatedAt": "2026-09-21T12:56:30.848Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
