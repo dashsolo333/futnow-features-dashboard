@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T13:01:57.679Z",
+  "updatedAt": "2026-09-21T13:02:37.240Z",
   "stages": [
     {
       "id": "idea",
@@ -440,16 +440,16 @@
           "bug": true
         },
         {
-          "id": "i_mub98eat6naahm",
-          "text": "Verifier cohérence side équipe lors des changements",
           "group": "prod",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mub98eat6naahm",
+          "text": "Verifier cohérence side équipe lors des changements",
           "status": "todo",
           "done": false,
           "bug": true,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-21T13:01:56.454Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1740,6 +1740,23 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mub999rs55u80g",
+          "text": "team pass map",
+          "group": "idea",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-21T13:02:37.240Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-21T12:58:25.583Z",
@@ -1747,7 +1764,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-21T12:59:30.479Z",
+      "updatedAt": "2026-09-21T13:02:37.240Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4262,6 +4279,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a signalé « Verifier cohérence side équipe lors des changements » comme bug sur « Lobby »"
+    },
+    {
+      "id": "a_2026-09-21T13:02:37.240Z_f_mub93vlanuyk3e_update",
+      "at": "2026-09-21T13:02:37.240Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mub93vlanuyk3e",
+      "type": "update",
+      "text": "a ajouté la tâche « team pass map » à « Refonte stats avec ballon »"
     }
   ]
 }
