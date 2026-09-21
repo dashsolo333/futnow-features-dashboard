@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T12:43:29.809Z",
+  "updatedAt": "2026-09-21T12:49:26.796Z",
   "stages": [
     {
       "id": "idea",
@@ -1050,6 +1050,23 @@
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           },
           "bug": false
+        },
+        {
+          "id": "i_mub8sbuyrld4ex",
+          "text": "Expliquer logique à françois et fournir .md",
+          "group": "dev",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-21T12:49:26.796Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-04T18:15:26+02:00",
@@ -1057,7 +1074,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T12:43:29.809Z",
+      "updatedAt": "2026-09-21T12:49:26.796Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4031,6 +4048,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a passé « Paramétrer un after call \"le centre a répondu ?\" .. » faite sur « CTA / Revanche prochain créneau »"
+    },
+    {
+      "id": "a_2026-09-21T12:49:26.796Z_dh_revanche_update",
+      "at": "2026-09-21T12:49:26.796Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a ajouté la tâche « Expliquer logique à françois et fournir .md » à « CTA / Revanche prochain créneau »"
     }
   ]
 }
