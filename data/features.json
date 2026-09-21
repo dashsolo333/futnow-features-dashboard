@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T12:38:31.989Z",
+  "updatedAt": "2026-09-21T12:43:29.809Z",
   "stages": [
     {
       "id": "idea",
@@ -984,12 +984,15 @@
           "group": "spec",
           "due": "2026-09-18",
           "note": "",
-          "doneAt": "",
-          "doneBy": null,
+          "doneAt": "2026-09-21T12:43:29.809Z",
+          "doneBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
           "id": "i_mu5af5jmjd786v",
           "text": "Paramétrer un after call \"le centre a répondu ?\" ..",
-          "status": "doing",
-          "done": false,
+          "status": "done",
+          "done": true,
           "createdAt": "2026-09-17T08:48:34.258Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1054,7 +1057,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T08:50:23.926Z",
+      "updatedAt": "2026-09-21T12:43:29.809Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1102,16 +1105,16 @@
       "tests": [],
       "items": [
         {
-          "id": "i_mub8ealwv7s8k1",
-          "text": "Bouton retour pixel",
           "group": "prod",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mub8ealwv7s8k1",
+          "text": "Bouton retour pixel",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-21T12:38:31.989Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -4017,6 +4020,17 @@
       "featureId": "dh_pitch3d-full",
       "type": "update",
       "text": "a ajouté la tâche « Bouton retour pixel » à « Compo 3D »"
+    },
+    {
+      "id": "a_2026-09-21T12:43:29.809Z_dh_revanche_update",
+      "at": "2026-09-21T12:43:29.809Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a passé « Paramétrer un after call \"le centre a répondu ?\" .. » faite sur « CTA / Revanche prochain créneau »"
     }
   ]
 }
