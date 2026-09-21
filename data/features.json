@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T13:01:56.454Z",
+  "updatedAt": "2026-09-21T13:01:57.679Z",
   "stages": [
     {
       "id": "idea",
@@ -447,7 +447,7 @@
           "note": "",
           "status": "todo",
           "done": false,
-          "bug": false,
+          "bug": true,
           "doneAt": "",
           "doneBy": null,
           "createdAt": "2026-09-21T13:01:56.454Z",
@@ -462,7 +462,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T13:01:56.454Z",
+      "updatedAt": "2026-09-21T13:01:57.679Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4251,6 +4251,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a ajouté la tâche « Verifier cohérence side équipe lors des changements » à « Lobby »"
+    },
+    {
+      "id": "a_2026-09-21T13:01:57.679Z_dh_lobby_update",
+      "at": "2026-09-21T13:01:57.679Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a signalé « Verifier cohérence side équipe lors des changements » comme bug sur « Lobby »"
     }
   ]
 }
