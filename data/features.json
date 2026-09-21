@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T13:03:56.000Z",
+  "updatedAt": "2026-09-21T13:16:26.783Z",
   "stages": [
     {
       "id": "idea",
@@ -1664,7 +1664,7 @@
     {
       "id": "f_mub93vlanuyk3e",
       "title": "Refonte stats avec ballon",
-      "description": "",
+      "description": "tous les tirs : timestamp + séquences\ntirs avec fx par dessus\nidem pour buts\n2 caméras\n\n",
       "icon": "🏃",
       "family": "other",
       "familyLabel": "Autre",
@@ -1801,7 +1801,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-21T13:15:30.836Z",
+      "updatedAt": "2026-09-21T13:16:26.783Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4360,6 +4360,17 @@
       "featureId": "f_mub93vlanuyk3e",
       "type": "update",
       "text": "a ajouté la tâche « teambut » à « Refonte stats avec ballon »"
+    },
+    {
+      "id": "a_2026-09-21T13:16:26.783Z_f_mub93vlanuyk3e_update",
+      "at": "2026-09-21T13:16:26.783Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mub93vlanuyk3e",
+      "type": "update",
+      "text": "a modifié description de « Refonte stats avec ballon »"
     }
   ]
 }
