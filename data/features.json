@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T16:31:45.302Z",
+  "updatedAt": "2026-09-21T16:32:14.365Z",
   "stages": [
     {
       "id": "idea",
@@ -1087,6 +1087,23 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mubgqucdaki0x7",
+          "text": "animation txt",
+          "group": "design",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-21T16:32:14.365Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-04T18:15:26+02:00",
@@ -1094,7 +1111,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T16:31:45.302Z",
+      "updatedAt": "2026-09-21T16:32:14.365Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4385,6 +4402,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a passé « Design intégration chip dans activité + lobby » faite sur « CTA / Revanche prochain créneau »"
+    },
+    {
+      "id": "a_2026-09-21T16:32:14.365Z_dh_revanche_update",
+      "at": "2026-09-21T16:32:14.365Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a ajouté la tâche « animation txt » à « CTA / Revanche prochain créneau »"
     }
   ]
 }
