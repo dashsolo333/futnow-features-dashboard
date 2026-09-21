@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T12:59:30.479Z",
+  "updatedAt": "2026-09-21T13:01:56.454Z",
   "stages": [
     {
       "id": "idea",
@@ -438,6 +438,23 @@
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           },
           "bug": true
+        },
+        {
+          "id": "i_mub98eat6naahm",
+          "text": "Verifier cohérence side équipe lors des changements",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-21T13:01:56.454Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-11T09:17:33.180Z",
@@ -445,7 +462,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T12:38:12.625Z",
+      "updatedAt": "2026-09-21T13:01:56.454Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1708,16 +1725,16 @@
           }
         },
         {
-          "id": "i_mub959nz65as1z",
-          "text": "momentum vertical",
           "group": "design",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mub959nz65as1z",
+          "text": "momentum vertical",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-21T12:59:30.479Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -4223,6 +4240,17 @@
       "featureId": "f_mub93vlanuyk3e",
       "type": "update",
       "text": "a ajouté la tâche « momentum vertical » à « Refonte stats avec ballon »"
+    },
+    {
+      "id": "a_2026-09-21T13:01:56.454Z_dh_lobby_update",
+      "at": "2026-09-21T13:01:56.454Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a ajouté la tâche « Verifier cohérence side équipe lors des changements » à « Lobby »"
     }
   ]
 }
