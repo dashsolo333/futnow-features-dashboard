@@ -284,7 +284,7 @@
           "doneAt": "",
           "doneBy": null,
           "id": "i_mu5m9g34ax3c1q",
-          "text": "Virer le terme lobby + check wording",
+          "text": "Virer le terme lobby + check wording GLOBAL",
           "status": "todo",
           "done": false,
           "createdAt": "2026-09-17T14:20:03.376Z",
@@ -317,7 +317,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T16:18:00.808Z",
+      "updatedAt": "2026-09-21T12:35:08.103Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
