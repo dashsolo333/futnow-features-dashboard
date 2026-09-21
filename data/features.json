@@ -1779,16 +1779,16 @@
           }
         },
         {
-          "id": "i_mub9ayjk2ifi53",
-          "text": "teambut",
           "group": "design",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mub9ayjk2ifi53",
+          "text": "teambut + logique but",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-21T13:03:56.000Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1801,7 +1801,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-21T13:04:01.414Z",
+      "updatedAt": "2026-09-21T13:15:30.836Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
