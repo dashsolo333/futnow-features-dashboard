@@ -1247,7 +1247,7 @@
       "items": [
         {
           "group": "design",
-          "due": "",
+          "due": "2026-09-22",
           "note": "",
           "doneAt": "",
           "doneBy": null,
@@ -1268,7 +1268,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-18T10:12:25.665Z",
+      "updatedAt": "2026-09-21T12:55:18.970Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
