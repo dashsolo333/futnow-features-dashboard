@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T12:58:34.735Z",
+  "updatedAt": "2026-09-21T12:59:13.040Z",
   "stages": [
     {
       "id": "idea",
@@ -1674,9 +1674,26 @@
       "tests": [],
       "items": [
         {
+          "group": "design",
+          "due": "",
+          "note": "",
+          "doneAt": "",
+          "doneBy": null,
           "id": "i_mub942njaf9xkh",
           "text": "shotmap",
-          "group": "design",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "createdAt": "2026-09-21T12:58:34.735Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_mub94w7kiifhui",
+          "text": "tirs et actions player",
+          "group": "idea",
           "due": "",
           "note": "",
           "status": "todo",
@@ -1684,7 +1701,7 @@
           "bug": false,
           "doneAt": "",
           "doneBy": null,
-          "createdAt": "2026-09-21T12:58:34.735Z",
+          "createdAt": "2026-09-21T12:59:13.040Z",
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1696,7 +1713,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-21T12:58:57.837Z",
+      "updatedAt": "2026-09-21T12:59:13.040Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4167,6 +4184,17 @@
       "featureId": "f_mub93vlanuyk3e",
       "type": "update",
       "text": "a ajouté la tâche « Design shotmap » à « Refonte stats avec ballon »"
+    },
+    {
+      "id": "a_2026-09-21T12:59:13.040Z_f_mub93vlanuyk3e_update",
+      "at": "2026-09-21T12:59:13.040Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mub93vlanuyk3e",
+      "type": "update",
+      "text": "a ajouté la tâche « tirs et actions player » à « Refonte stats avec ballon »"
     }
   ]
 }
