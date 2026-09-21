@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T12:49:26.796Z",
+  "updatedAt": "2026-09-21T12:55:53.001Z",
   "stages": [
     {
       "id": "idea",
@@ -1261,6 +1261,23 @@
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           },
           "bug": false
+        },
+        {
+          "id": "i_mub90luxgayak0",
+          "text": "Validation design",
+          "group": "design",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-21T12:55:53.001Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-11T09:16:17.188Z",
@@ -1268,7 +1285,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T12:55:35.063Z",
+      "updatedAt": "2026-09-21T12:55:53.001Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4059,6 +4076,17 @@
       "featureId": "dh_revanche",
       "type": "update",
       "text": "a ajouté la tâche « Expliquer logique à françois et fournir .md » à « CTA / Revanche prochain créneau »"
+    },
+    {
+      "id": "a_2026-09-21T12:55:53.001Z_dh_pronos_update",
+      "at": "2026-09-21T12:55:53.001Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_pronos",
+      "type": "update",
+      "text": "a ajouté la tâche « Validation design » à « Pronos sans stats ballon »"
     }
   ]
 }
