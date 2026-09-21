@@ -1041,7 +1041,7 @@
           "doneAt": "",
           "doneBy": null,
           "id": "i_mu5m7prel1dnua",
-          "text": "Link avec radar",
+          "text": "design intégration dans radar",
           "status": "todo",
           "done": false,
           "createdAt": "2026-09-17T14:18:42.602Z",
@@ -1074,7 +1074,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T12:50:19.879Z",
+      "updatedAt": "2026-09-21T12:50:46.570Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
