@@ -1024,7 +1024,7 @@
           "doneAt": "",
           "doneBy": null,
           "id": "i_mu5m6hw9qc5o2g",
-          "text": "Design intégration chip dans activité",
+          "text": "Design intégration chip dans activité + lobby",
           "status": "doing",
           "done": false,
           "createdAt": "2026-09-17T14:17:45.753Z",
@@ -1052,16 +1052,16 @@
           "bug": false
         },
         {
-          "id": "i_mub8sbuyrld4ex",
-          "text": "Expliquer logique à françois et fournir .md",
           "group": "dev",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mub8sbuyrld4ex",
+          "text": "Expliquer logique à françois et fournir .md",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-21T12:49:26.796Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1074,7 +1074,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T12:49:26.796Z",
+      "updatedAt": "2026-09-21T12:50:19.879Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
