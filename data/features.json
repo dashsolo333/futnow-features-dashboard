@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T12:59:13.040Z",
+  "updatedAt": "2026-09-21T12:59:30.479Z",
   "stages": [
     {
       "id": "idea",
@@ -1691,8 +1691,25 @@
           }
         },
         {
+          "group": "design",
+          "due": "",
+          "note": "",
+          "doneAt": "",
+          "doneBy": null,
           "id": "i_mub94w7kiifhui",
           "text": "tirs et actions player",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "createdAt": "2026-09-21T12:59:13.040Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_mub959nz65as1z",
+          "text": "momentum vertical",
           "group": "design",
           "due": "",
           "note": "",
@@ -1701,7 +1718,7 @@
           "bug": false,
           "doneAt": "",
           "doneBy": null,
-          "createdAt": "2026-09-21T12:59:13.040Z",
+          "createdAt": "2026-09-21T12:59:30.479Z",
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1713,7 +1730,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-21T12:59:16.496Z",
+      "updatedAt": "2026-09-21T12:59:30.479Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4195,6 +4212,17 @@
       "featureId": "f_mub93vlanuyk3e",
       "type": "update",
       "text": "a ajouté la tâche « tirs et actions player » à « Refonte stats avec ballon »"
+    },
+    {
+      "id": "a_2026-09-21T12:59:30.479Z_f_mub93vlanuyk3e_update",
+      "at": "2026-09-21T12:59:30.479Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mub93vlanuyk3e",
+      "type": "update",
+      "text": "a ajouté la tâche « momentum vertical » à « Refonte stats avec ballon »"
     }
   ]
 }
