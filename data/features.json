@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T12:42:39.815Z",
+  "updatedAt": "2026-09-22T12:42:44.841Z",
   "stages": [
     {
       "id": "idea",
@@ -1258,8 +1258,8 @@
       ],
       "stageId": "dev",
       "stepProgress": 0,
-      "status": "V1 soumise à françois",
-      "statusAt": "2026-09-22T12:42:39.815Z",
+      "status": "V1 soumise à François",
+      "statusAt": "2026-09-22T12:42:44.841Z",
       "statusBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -1325,7 +1325,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-22T12:42:39.815Z",
+      "updatedAt": "2026-09-22T12:42:44.841Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4438,6 +4438,17 @@
       "featureId": "dh_pronos",
       "type": "status",
       "text": "a mis à jour le statut de « Pronos sans stats ballon » : V1 soumise à françois"
+    },
+    {
+      "id": "a_2026-09-22T12:42:44.841Z_dh_pronos_status",
+      "at": "2026-09-22T12:42:44.841Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_pronos",
+      "type": "status",
+      "text": "a mis à jour le statut de « Pronos sans stats ballon » : V1 soumise à François"
     }
   ]
 }
