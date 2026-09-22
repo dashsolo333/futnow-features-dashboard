@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T12:42:44.841Z",
+  "updatedAt": "2026-09-22T16:10:02.217Z",
   "stages": [
     {
       "id": "idea",
@@ -154,12 +154,15 @@
           "group": "design",
           "due": "2026-09-23",
           "note": "sur mockup, désactiver les notifs",
-          "doneAt": "",
-          "doneBy": null,
+          "doneAt": "2026-09-22T16:10:02.217Z",
+          "doneBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
           "id": "i_mu1cowogzv00bv",
           "text": "Test PEP",
-          "status": "todo",
-          "done": false,
+          "status": "done",
+          "done": true,
           "createdAt": "2026-09-14T14:41:03.856Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -173,7 +176,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T12:34:30.329Z",
+      "updatedAt": "2026-09-22T16:10:02.217Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4449,6 +4452,17 @@
       "featureId": "dh_pronos",
       "type": "status",
       "text": "a mis à jour le statut de « Pronos sans stats ballon » : V1 soumise à François"
+    },
+    {
+      "id": "a_2026-09-22T16:10:02.217Z_dh_radar_update",
+      "at": "2026-09-22T16:10:02.217Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "update",
+      "text": "a passé « Test PEP » faite sur « Mode RADAR »"
     }
   ]
 }
