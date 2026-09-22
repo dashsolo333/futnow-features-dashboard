@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T16:10:02.217Z",
+  "updatedAt": "2026-09-22T16:10:04.581Z",
   "stages": [
     {
       "id": "idea",
@@ -154,15 +154,12 @@
           "group": "design",
           "due": "2026-09-23",
           "note": "sur mockup, désactiver les notifs",
-          "doneAt": "2026-09-22T16:10:02.217Z",
-          "doneBy": {
-            "login": "dashsolo333",
-            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
-          },
+          "doneAt": "",
+          "doneBy": null,
           "id": "i_mu1cowogzv00bv",
           "text": "Test PEP",
-          "status": "done",
-          "done": true,
+          "status": "todo",
+          "done": false,
           "createdAt": "2026-09-14T14:41:03.856Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -176,7 +173,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-22T16:10:02.217Z",
+      "updatedAt": "2026-09-22T16:10:04.581Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4463,6 +4460,17 @@
       "featureId": "dh_radar",
       "type": "update",
       "text": "a passé « Test PEP » faite sur « Mode RADAR »"
+    },
+    {
+      "id": "a_2026-09-22T16:10:04.581Z_dh_radar_update",
+      "at": "2026-09-22T16:10:04.581Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "update",
+      "text": "a passé « Test PEP » à faire sur « Mode RADAR »"
     }
   ]
 }
