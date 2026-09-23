@@ -196,7 +196,7 @@
           "id": "i_mudtmts8rstzki",
           "text": "2 tests en +",
           "group": "review",
-          "due": "",
+          "due": "2026-09-23",
           "note": "",
           "status": "todo",
           "done": false,
@@ -215,7 +215,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-23T08:08:34.376Z",
+      "updatedAt": "2026-09-23T08:08:39.606Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
