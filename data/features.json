@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T07:40:08.795Z",
+  "updatedAt": "2026-09-23T07:44:29.984Z",
   "stages": [
     {
       "id": "idea",
@@ -143,6 +143,18 @@
           "verdict": "ok",
           "notes": "Test avec joueur futsal : retours -> bouton discret on off\nChangement de poste interne souhaité\nRoster 5v5 + Chat souhaité",
           "build": ""
+        },
+        {
+          "id": "t_mudsrva8zsgpob",
+          "at": "2026-09-23T07:44:29.984Z",
+          "by": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
+          "platform": "ios",
+          "verdict": "ok",
+          "notes": "Test avec Tom\nTrouve l'expérience radar top mais pense qu'il pourrait être + efficient couplé à une vue liste \nSuggestion caroussel \"Les joueurs à proximité\"\nWording activité : \"trouver un match\"\nParcours tuto interactif suggéré\nPinch to get out",
+          "build": ""
         }
       ],
       "items": [
@@ -186,7 +198,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-23T07:40:08.795Z",
+      "updatedAt": "2026-09-23T07:44:29.984Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4495,6 +4507,17 @@
       "featureId": "dh_radar",
       "type": "test",
       "text": "a testé « Mode RADAR » sur ios : OK — Test avec joueur futsal : retours -> bouton discret on off\nChangement de poste interne souhaité\nRoster 5v5 + Chat souhaité"
+    },
+    {
+      "id": "a_2026-09-23T07:44:29.984Z_dh_radar_test",
+      "at": "2026-09-23T07:44:29.984Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "test",
+      "text": "a testé « Mode RADAR » sur ios : OK — Test avec Tom\nTrouve l'expérience radar top mais pense qu'il pourrait être + efficient couplé à une vue liste \nSuggestion caroussel \"Les joueurs à proximité\"\nWording activité : \"trouver un match\"\nParcours tuto interactif suggéré\nPinch to get out"
     }
   ]
 }
