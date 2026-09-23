@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T07:44:29.984Z",
+  "updatedAt": "2026-09-23T08:02:35.319Z",
   "stages": [
     {
       "id": "idea",
@@ -64,7 +64,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 80,
+      "rank": 110,
       "releaseId": "",
       "devhubId": "league-v2",
       "links": [
@@ -116,7 +116,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 90,
+      "rank": 20,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -224,7 +224,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 10,
+      "rank": 60,
       "releaseId": "",
       "devhubId": "activity-v2",
       "links": [
@@ -368,7 +368,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 40,
+      "rank": 50,
       "releaseId": "",
       "devhubId": "lobby",
       "links": [
@@ -510,7 +510,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 100,
+      "rank": 70,
       "releaseId": "",
       "devhubId": "match-detail",
       "links": [
@@ -581,7 +581,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 110,
+      "rank": 120,
       "releaseId": "",
       "devhubId": "join-game",
       "links": [
@@ -639,7 +639,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 120,
+      "rank": 130,
       "releaseId": "",
       "devhubId": "inbox",
       "links": [
@@ -692,7 +692,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 130,
+      "rank": 140,
       "releaseId": "",
       "devhubId": "futstore",
       "links": [
@@ -741,7 +741,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 140,
+      "rank": 150,
       "releaseId": "",
       "devhubId": "kit-nolt",
       "links": [
@@ -790,7 +790,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 150,
+      "rank": 160,
       "releaseId": "",
       "devhubId": "reward",
       "links": [
@@ -839,7 +839,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 160,
+      "rank": 170,
       "releaseId": "",
       "devhubId": "reward-prod",
       "links": [
@@ -892,7 +892,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 170,
+      "rank": 180,
       "releaseId": "",
       "devhubId": "replay-feed",
       "links": [
@@ -937,7 +937,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 180,
+      "rank": 190,
       "releaseId": "",
       "devhubId": "gerant-dash",
       "links": [
@@ -985,7 +985,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 60,
+      "rank": 10,
       "releaseId": "",
       "devhubId": "revanche",
       "links": [
@@ -1162,7 +1162,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 30,
+      "rank": 80,
       "releaseId": "",
       "devhubId": "pitch3d-full",
       "links": [
@@ -1229,7 +1229,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 190,
+      "rank": 200,
       "releaseId": "",
       "devhubId": "annonces-verdict",
       "links": [
@@ -1289,7 +1289,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 200,
+      "rank": 90,
       "releaseId": "",
       "devhubId": "pronos",
       "links": [
@@ -1376,7 +1376,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 50,
+      "rank": 30,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1508,7 +1508,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 210,
+      "rank": 40,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1603,7 +1603,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 70,
+      "rank": 210,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1646,7 +1646,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 20,
+      "rank": 220,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1686,7 +1686,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 230,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1729,7 +1729,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": null,
+      "rank": 100,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -4518,6 +4518,17 @@
       "featureId": "dh_radar",
       "type": "test",
       "text": "a testé « Mode RADAR » sur ios : OK — Test avec Tom\nTrouve l'expérience radar top mais pense qu'il pourrait être + efficient couplé à une vue liste \nSuggestion caroussel \"Les joueurs à proximité\"\nWording activité : \"trouver un match\"\nParcours tuto interactif suggéré\nPinch to get out"
+    },
+    {
+      "id": "a_2026-09-23T08:02:35.319Z_null_update",
+      "at": "2026-09-23T08:02:35.319Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": null,
+      "type": "update",
+      "text": "a réordonné la liste"
     }
   ]
 }
