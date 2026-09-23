@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T16:10:04.581Z",
+  "updatedAt": "2026-09-23T07:40:08.795Z",
   "stages": [
     {
       "id": "idea",
@@ -131,7 +131,20 @@
         "prodFinalPlanned": "",
         "prodFinalActual": ""
       },
-      "tests": [],
+      "tests": [
+        {
+          "id": "t_mudsm9qyluccrr",
+          "at": "2026-09-23T07:40:08.795Z",
+          "by": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
+          "platform": "ios",
+          "verdict": "ok",
+          "notes": "Test avec joueur futsal : retours -> bouton discret on off\nChangement de poste interne souhaité\nRoster 5v5 + Chat souhaité",
+          "build": ""
+        }
+      ],
       "items": [
         {
           "group": "dev",
@@ -173,7 +186,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-22T16:10:04.581Z",
+      "updatedAt": "2026-09-23T07:40:08.795Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4471,6 +4484,17 @@
       "featureId": "dh_radar",
       "type": "update",
       "text": "a passé « Test PEP » à faire sur « Mode RADAR »"
+    },
+    {
+      "id": "a_2026-09-23T07:40:08.795Z_dh_radar_test",
+      "at": "2026-09-23T07:40:08.795Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "test",
+      "text": "a testé « Mode RADAR » sur ios : OK — Test avec joueur futsal : retours -> bouton discret on off\nChangement de poste interne souhaité\nRoster 5v5 + Chat souhaité"
     }
   ]
 }
