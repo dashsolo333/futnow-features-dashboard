@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T08:13:05.380Z",
+  "updatedAt": "2026-09-23T12:04:41.581Z",
   "stages": [
     {
       "id": "idea",
@@ -155,6 +155,18 @@
           "verdict": "ok",
           "notes": "Test avec Tom\nTrouve l'expérience radar top mais pense qu'il pourrait être + efficient couplé à une vue liste \nSuggestion caroussel \"Les joueurs à proximité\"\nWording activité : \"trouver un match\"\nParcours tuto interactif suggéré\nPinch to get out",
           "build": ""
+        },
+        {
+          "id": "t_mue22h9p78gmjz",
+          "at": "2026-09-23T12:04:41.581Z",
+          "by": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
+          "platform": "ios",
+          "verdict": "ok",
+          "notes": "Test avec Gigan, il zappe l'étape activité, a lu \"je veux jouer et non \"je viens de jouer\"\nCTA radar a insister\nVoir + d'info sur invitation dans liste demandes (a essayé de cliquer sur le bouton et non sur accepter refuser)\nDistinguer davantage les joueurs seuls des parties en construction (2 ou+)",
+          "build": ""
         }
       ],
       "items": [
@@ -215,7 +227,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-23T08:08:39.606Z",
+      "updatedAt": "2026-09-23T12:04:41.581Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -499,16 +511,16 @@
           }
         },
         {
-          "id": "i_mudtsmw4frq93l",
-          "text": "Abaisser la partie supérieure de 10%",
           "group": "prod",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mudtsmw4frq93l",
+          "text": "Abaisser la partie supérieure de 10%",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-23T08:13:05.380Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -4632,6 +4644,17 @@
       "featureId": "dh_lobby",
       "type": "update",
       "text": "a ajouté la tâche « Abaisser la partie supérieure de 10% » à « Lobby »"
+    },
+    {
+      "id": "a_2026-09-23T12:04:41.581Z_dh_radar_test",
+      "at": "2026-09-23T12:04:41.581Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_radar",
+      "type": "test",
+      "text": "a testé « Mode RADAR » sur ios : OK — Test avec Gigan, il zappe l'étape activité, a lu \"je veux jouer et non \"je viens de jouer\"\nCTA radar a insister\nVoir + d'info sur invitation dans liste demandes (a essayé de cliquer sur le bouton et non sur accepter refuser)\nDistinguer davantage les joueurs seuls des parties en construction (2 ou+)"
     }
   ]
 }
