@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T08:03:06.063Z",
+  "updatedAt": "2026-09-23T08:03:18.238Z",
   "stages": [
     {
       "id": "idea",
@@ -1117,12 +1117,15 @@
           "group": "design",
           "due": "",
           "note": "",
-          "doneAt": "",
-          "doneBy": null,
+          "doneAt": "2026-09-23T08:03:18.238Z",
+          "doneBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          },
           "id": "i_mubgqucdaki0x7",
           "text": "animation txt",
-          "status": "todo",
-          "done": false,
+          "status": "done",
+          "done": true,
           "bug": false,
           "createdAt": "2026-09-21T16:32:14.365Z",
           "createdBy": {
@@ -1136,7 +1139,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-23T08:02:40.819Z",
+      "updatedAt": "2026-09-23T08:03:18.238Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4562,6 +4565,17 @@
       "featureId": "dh_radar",
       "type": "status",
       "text": "a mis à jour le statut de « Mode RADAR » : Test faits avec tom + joueur futsal , à débrief"
+    },
+    {
+      "id": "a_2026-09-23T08:03:18.238Z_dh_revanche_update",
+      "at": "2026-09-23T08:03:18.238Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_revanche",
+      "type": "update",
+      "text": "a passé « animation txt » faite sur « CTA / Revanche prochain créneau »"
     }
   ]
 }
