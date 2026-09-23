@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T08:08:34.376Z",
+  "updatedAt": "2026-09-23T08:13:05.380Z",
   "stages": [
     {
       "id": "idea",
@@ -193,16 +193,16 @@
           "bug": false
         },
         {
-          "id": "i_mudtmts8rstzki",
-          "text": "2 tests en +",
           "group": "review",
           "due": "2026-09-23",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mudtmts8rstzki",
+          "text": "2 tests en +",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-23T08:08:34.376Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -497,6 +497,23 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mudtsmw4frq93l",
+          "text": "Abaisser la partie supérieure de 10%",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-09-23T08:13:05.380Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-09-11T09:17:33.180Z",
@@ -504,7 +521,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-21T13:01:57.679Z",
+      "updatedAt": "2026-09-23T08:13:05.380Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4604,6 +4621,17 @@
       "featureId": "dh_radar",
       "type": "update",
       "text": "a ajouté la tâche « 2 tests en + » à « Mode RADAR »"
+    },
+    {
+      "id": "a_2026-09-23T08:13:05.380Z_dh_lobby_update",
+      "at": "2026-09-23T08:13:05.380Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "dh_lobby",
+      "type": "update",
+      "text": "a ajouté la tâche « Abaisser la partie supérieure de 10% » à « Lobby »"
     }
   ]
 }
