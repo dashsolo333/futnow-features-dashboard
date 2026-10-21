@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T15:28:38.713Z",
+  "updatedAt": "2026-10-21T15:28:53.295Z",
   "stages": [
     {
       "id": "idea",
@@ -1949,13 +1949,31 @@
         "prodFinalActual": ""
       },
       "tests": [],
-      "items": [],
+      "items": [
+        {
+          "id": "i_mvi9oxf3mg6zag",
+          "text": "améliorer UI",
+          "group": "idea",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-10-21T15:28:53.295Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        }
+      ],
       "createdAt": "2026-10-21T15:28:38.713Z",
       "createdBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-10-21T15:28:38.713Z",
+      "updatedAt": "2026-10-21T15:28:53.295Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4734,6 +4752,17 @@
       "featureId": "f_mvi9om603yh6ot",
       "type": "create",
       "text": "a créé « Loading screen »"
+    },
+    {
+      "id": "a_2026-10-21T15:28:53.295Z_f_mvi9om603yh6ot_update",
+      "at": "2026-10-21T15:28:53.295Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mvi9om603yh6ot",
+      "type": "update",
+      "text": "a ajouté la tâche « améliorer UI » à « Loading screen »"
     }
   ]
 }
