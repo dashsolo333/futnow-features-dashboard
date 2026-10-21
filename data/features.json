@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T15:40:38.604Z",
+  "updatedAt": "2026-10-21T15:42:08.623Z",
   "stages": [
     {
       "id": "idea",
@@ -2002,8 +2002,25 @@
           }
         },
         {
+          "group": "idea",
+          "due": "",
+          "note": "",
+          "doneAt": "",
+          "doneBy": null,
           "id": "i_mvia41n02v5f0w",
           "text": "message en meme temps que l'animation",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "createdAt": "2026-10-21T15:40:38.604Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_mvia5z3jadieoz",
+          "text": "10 sec chargement + l'animation + txt arrive au bout de 3.5 sec",
           "group": "idea",
           "due": "",
           "note": "",
@@ -2012,7 +2029,7 @@
           "bug": false,
           "doneAt": "",
           "doneBy": null,
-          "createdAt": "2026-10-21T15:40:38.604Z",
+          "createdAt": "2026-10-21T15:42:08.623Z",
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2024,7 +2041,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-10-21T15:40:38.604Z",
+      "updatedAt": "2026-10-21T15:42:08.623Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4847,6 +4864,17 @@
       "featureId": "f_mvi9om603yh6ot",
       "type": "update",
       "text": "a ajouté la tâche « message en meme temps que l'animation » à « Loading screen »"
+    },
+    {
+      "id": "a_2026-10-21T15:42:08.623Z_f_mvi9om603yh6ot_update",
+      "at": "2026-10-21T15:42:08.623Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mvi9om603yh6ot",
+      "type": "update",
+      "text": "a ajouté la tâche « 10 sec chargement + l'animation + txt arrive au bout de 3.5 sec » à « Loading screen »"
     }
   ]
 }
