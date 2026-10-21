@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T15:29:00.158Z",
+  "updatedAt": "2026-10-21T15:29:13.807Z",
   "stages": [
     {
       "id": "idea",
@@ -1983,6 +1983,23 @@
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
           }
+        },
+        {
+          "id": "i_mvi9pd8vmmck1t",
+          "text": "trouver meilleur anim pour engagement",
+          "group": "idea",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-10-21T15:29:13.807Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
         }
       ],
       "createdAt": "2026-10-21T15:28:38.713Z",
@@ -1990,7 +2007,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-10-21T15:29:00.158Z",
+      "updatedAt": "2026-10-21T15:29:13.807Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4791,6 +4808,17 @@
       "featureId": "f_mvi9om603yh6ot",
       "type": "update",
       "text": "a ajouté la tâche « Supprimer futnow » à « Loading screen »"
+    },
+    {
+      "id": "a_2026-10-21T15:29:13.807Z_f_mvi9om603yh6ot_update",
+      "at": "2026-10-21T15:29:13.807Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mvi9om603yh6ot",
+      "type": "update",
+      "text": "a ajouté la tâche « trouver meilleur anim pour engagement » à « Loading screen »"
     }
   ]
 }
