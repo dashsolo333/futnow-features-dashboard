@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T15:29:13.807Z",
+  "updatedAt": "2026-10-21T15:40:38.604Z",
   "stages": [
     {
       "id": "idea",
@@ -1951,16 +1951,16 @@
       "tests": [],
       "items": [
         {
-          "id": "i_mvi9oxf3mg6zag",
-          "text": "améliorer UI",
           "group": "idea",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mvi9oxf3mg6zag",
+          "text": "améliorer UI",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-10-21T15:28:53.295Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1968,16 +1968,16 @@
           }
         },
         {
-          "id": "i_mvi9p2pqn6bm6m",
-          "text": "Supprimer futnow",
           "group": "idea",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mvi9p2pqn6bm6m",
+          "text": "Supprimer futnow",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-10-21T15:29:00.158Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1985,8 +1985,25 @@
           }
         },
         {
+          "group": "idea",
+          "due": "",
+          "note": "",
+          "doneAt": "",
+          "doneBy": null,
           "id": "i_mvi9pd8vmmck1t",
           "text": "trouver meilleur anim pour engagement",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "createdAt": "2026-10-21T15:29:13.807Z",
+          "createdBy": {
+            "login": "dashsolo333",
+            "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+          }
+        },
+        {
+          "id": "i_mvia41n02v5f0w",
+          "text": "message en meme temps que l'animation",
           "group": "idea",
           "due": "",
           "note": "",
@@ -1995,7 +2012,7 @@
           "bug": false,
           "doneAt": "",
           "doneBy": null,
-          "createdAt": "2026-10-21T15:29:13.807Z",
+          "createdAt": "2026-10-21T15:40:38.604Z",
           "createdBy": {
             "login": "dashsolo333",
             "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -2007,7 +2024,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-10-21T15:29:13.807Z",
+      "updatedAt": "2026-10-21T15:40:38.604Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4819,6 +4836,17 @@
       "featureId": "f_mvi9om603yh6ot",
       "type": "update",
       "text": "a ajouté la tâche « trouver meilleur anim pour engagement » à « Loading screen »"
+    },
+    {
+      "id": "a_2026-10-21T15:40:38.604Z_f_mvi9om603yh6ot_update",
+      "at": "2026-10-21T15:40:38.604Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mvi9om603yh6ot",
+      "type": "update",
+      "text": "a ajouté la tâche « message en meme temps que l'animation » à « Loading screen »"
     }
   ]
 }
