@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T12:59:40.405Z",
+  "updatedAt": "2026-10-21T15:28:38.713Z",
   "stages": [
     {
       "id": "idea",
@@ -1250,16 +1250,16 @@
           }
         },
         {
-          "id": "i_mue416npwjowqh",
-          "text": "Changement de poste",
           "group": "prod",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mue416npwjowqh",
+          "text": "Changement de poste",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-09-23T12:59:40.405Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1916,6 +1916,46 @@
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
       "updatedAt": "2026-09-21T13:16:26.783Z",
+      "updatedBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      }
+    },
+    {
+      "id": "f_mvi9om603yh6ot",
+      "title": "Loading screen",
+      "description": "Tips 1 + Tips 2",
+      "icon": "",
+      "family": "reward",
+      "familyLabel": "Reward",
+      "priority": "p2",
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "stageId": "idea",
+      "stepProgress": 0,
+      "status": "",
+      "statusAt": "",
+      "statusBy": null,
+      "rank": null,
+      "releaseId": "",
+      "devhubId": "",
+      "links": [],
+      "dates": {
+        "prodTestPlanned": "",
+        "prodTestActual": "",
+        "prodFinalPlanned": "",
+        "prodFinalActual": ""
+      },
+      "tests": [],
+      "items": [],
+      "createdAt": "2026-10-21T15:28:38.713Z",
+      "createdBy": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "updatedAt": "2026-10-21T15:28:38.713Z",
       "updatedBy": {
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
@@ -4683,6 +4723,17 @@
       "featureId": "dh_pitch3d-full",
       "type": "update",
       "text": "a ajouté la tâche « Changement de poste » à « Compo 3D »"
+    },
+    {
+      "id": "a_2026-10-21T15:28:38.713Z_f_mvi9om603yh6ot_create",
+      "at": "2026-10-21T15:28:38.713Z",
+      "by": {
+        "login": "dashsolo333",
+        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+      },
+      "featureId": "f_mvi9om603yh6ot",
+      "type": "create",
+      "text": "a créé « Loading screen »"
     }
   ]
 }
