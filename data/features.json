@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T13:26:21.609Z",
+  "updatedAt": "2026-11-05T13:36:00.523Z",
   "stages": [
     {
       "id": "idea",
@@ -856,16 +856,34 @@
         "prodFinalActual": "2026-09-17"
       },
       "tests": [],
-      "items": [],
+      "items": [
+        {
+          "id": "i_mw3l9jijwf8m3q",
+          "text": "Reward Call of Duty (et le premier du coup, il est tout seul ?)",
+          "group": "prod",
+          "due": "",
+          "note": "",
+          "status": "todo",
+          "done": false,
+          "bug": false,
+          "doneAt": "",
+          "doneBy": null,
+          "createdAt": "2026-11-05T13:36:00.523Z",
+          "createdBy": {
+            "login": "TarlyMormont",
+            "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
+          }
+        }
+      ],
       "createdAt": "2026-09-04T18:15:26+02:00",
       "createdBy": {
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-09-17T13:53:03.467Z",
+      "updatedAt": "2026-11-05T13:36:00.523Z",
       "updatedBy": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+        "login": "TarlyMormont",
+        "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
       }
     },
     {
@@ -4969,6 +4987,17 @@
       "featureId": null,
       "type": "update",
       "text": "a réordonné la liste"
+    },
+    {
+      "id": "a_2026-11-05T13:36:00.523Z_dh_reward_update",
+      "at": "2026-11-05T13:36:00.523Z",
+      "by": {
+        "login": "TarlyMormont",
+        "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
+      },
+      "featureId": "dh_reward",
+      "type": "update",
+      "text": "a ajouté la tâche « Reward Call of Duty (et le premier du coup, il est tout seul ?) » à « Reward »"
     }
   ]
 }
