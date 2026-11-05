@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T13:09:33.419Z",
+  "updatedAt": "2026-11-05T13:12:28.449Z",
   "stages": [
     {
       "id": "idea",
@@ -1458,12 +1458,15 @@
           "group": "idea",
           "due": "",
           "note": "Garder le shortcut vers lobby ou par défaut laisser dans dm et mettre un lien cliquable vers MDS ?",
-          "doneAt": "",
-          "doneBy": null,
+          "doneAt": "2026-11-05T13:12:28.449Z",
+          "doneBy": {
+            "login": "TarlyMormont",
+            "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
+          },
           "id": "i_mu1c7jenacsjsn",
           "text": "créer un groupe automatiquement dans les dm pour chaque lobby",
-          "status": "todo",
-          "done": false,
+          "status": "done",
+          "done": true,
           "createdAt": "2026-09-14T14:27:33.503Z",
           "createdBy": {
             "login": "dashsolo333",
@@ -1551,10 +1554,10 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "updatedAt": "2026-09-18T08:29:10.525Z",
+      "updatedAt": "2026-11-05T13:12:28.449Z",
       "updatedBy": {
-        "login": "dashsolo333",
-        "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
+        "login": "TarlyMormont",
+        "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
       }
     },
     {
@@ -4908,6 +4911,17 @@
       "featureId": "f_mu6o996ehisr70",
       "type": "move",
       "text": "a passé « LLM / Bot dans chat lobby par défaut » en Idée"
+    },
+    {
+      "id": "a_2026-11-05T13:12:28.449Z_f_mu1c5m8z9pu0rz_update",
+      "at": "2026-11-05T13:12:28.449Z",
+      "by": {
+        "login": "TarlyMormont",
+        "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
+      },
+      "featureId": "f_mu1c5m8z9pu0rz",
+      "type": "update",
+      "text": "a passé « créer un groupe automatiquement dans les dm pour chaque lobby » faite sur « Chat & DM sync »"
     }
   ]
 }
