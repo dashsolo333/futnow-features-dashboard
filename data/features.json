@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T13:36:00.523Z",
+  "updatedAt": "2026-11-05T13:38:38.857Z",
   "stages": [
     {
       "id": "idea",
@@ -821,7 +821,7 @@
     },
     {
       "id": "dh_reward",
-      "title": "Reward",
+      "title": "Reward avec buts/joueur",
       "description": "La cérémonie stats → rang, en takeover. Trois issues selon la progression du palier.\n\nTag DevHub : 3 scénarios",
       "icon": "✨",
       "family": "reward",
@@ -858,16 +858,16 @@
       "tests": [],
       "items": [
         {
-          "id": "i_mw3l9jijwf8m3q",
-          "text": "Reward Call of Duty (et le premier du coup, il est tout seul ?)",
           "group": "prod",
           "due": "",
           "note": "",
+          "doneAt": "",
+          "doneBy": null,
+          "id": "i_mw3l9jijwf8m3q",
+          "text": "Reward Call of Duty (et le premier du coup, il est tout seul ?)",
           "status": "todo",
           "done": false,
           "bug": false,
-          "doneAt": "",
-          "doneBy": null,
           "createdAt": "2026-11-05T13:36:00.523Z",
           "createdBy": {
             "login": "TarlyMormont",
@@ -880,7 +880,7 @@
         "login": "devhub",
         "avatar": ""
       },
-      "updatedAt": "2026-11-05T13:36:00.523Z",
+      "updatedAt": "2026-11-05T13:38:38.857Z",
       "updatedBy": {
         "login": "TarlyMormont",
         "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
@@ -4998,6 +4998,17 @@
       "featureId": "dh_reward",
       "type": "update",
       "text": "a ajouté la tâche « Reward Call of Duty (et le premier du coup, il est tout seul ?) » à « Reward »"
+    },
+    {
+      "id": "a_2026-11-05T13:38:38.857Z_dh_reward_update",
+      "at": "2026-11-05T13:38:38.857Z",
+      "by": {
+        "login": "TarlyMormont",
+        "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
+      },
+      "featureId": "dh_reward",
+      "type": "update",
+      "text": "a modifié title de « Reward »"
     }
   ]
 }
