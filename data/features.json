@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T13:12:30.793Z",
+  "updatedAt": "2026-11-05T13:26:17.097Z",
   "stages": [
     {
       "id": "idea",
@@ -64,7 +64,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 110,
+      "rank": 190,
       "releaseId": "",
       "devhubId": "league-v2",
       "links": [
@@ -253,7 +253,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 60,
+      "rank": 90,
       "releaseId": "",
       "devhubId": "activity-v2",
       "links": [
@@ -397,7 +397,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 50,
+      "rank": 70,
       "releaseId": "",
       "devhubId": "lobby",
       "links": [
@@ -556,7 +556,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 70,
+      "rank": 120,
       "releaseId": "",
       "devhubId": "match-detail",
       "links": [
@@ -627,7 +627,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 120,
+      "rank": 200,
       "releaseId": "",
       "devhubId": "join-game",
       "links": [
@@ -685,7 +685,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 130,
+      "rank": 210,
       "releaseId": "",
       "devhubId": "inbox",
       "links": [
@@ -738,7 +738,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 40,
+      "rank": 50,
       "releaseId": "",
       "devhubId": "futstore",
       "links": [
@@ -787,7 +787,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 50,
+      "rank": 80,
       "releaseId": "",
       "devhubId": "kit-nolt",
       "links": [
@@ -836,7 +836,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 160,
+      "rank": 110,
       "releaseId": "",
       "devhubId": "reward",
       "links": [
@@ -885,7 +885,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 80,
+      "rank": 140,
       "releaseId": "",
       "devhubId": "reward-prod",
       "links": [
@@ -938,7 +938,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 90,
+      "rank": 160,
       "releaseId": "",
       "devhubId": "replay-feed",
       "links": [
@@ -983,7 +983,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 100,
+      "rank": 170,
       "releaseId": "",
       "devhubId": "gerant-dash",
       "links": [
@@ -1211,7 +1211,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 80,
+      "rank": 150,
       "releaseId": "",
       "devhubId": "pitch3d-full",
       "links": [
@@ -1295,7 +1295,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 60,
+      "rank": 100,
       "releaseId": "",
       "devhubId": "annonces-verdict",
       "links": [
@@ -1442,7 +1442,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 30,
+      "rank": 40,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1580,7 +1580,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 40,
+      "rank": 60,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1675,7 +1675,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 210,
+      "rank": 220,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1718,7 +1718,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 70,
+      "rank": 130,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1801,7 +1801,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 100,
+      "rank": 180,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -1944,7 +1944,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": null,
+      "rank": 240,
       "releaseId": "",
       "devhubId": "",
       "links": [],
@@ -4936,6 +4936,17 @@
       "featureId": "f_mu1c5m8z9pu0rz",
       "type": "update",
       "text": "a passé « ajouter le double tap pour réaction coeur » faite sur « Chat & DM sync »"
+    },
+    {
+      "id": "a_2026-11-05T13:26:17.097Z_null_update",
+      "at": "2026-11-05T13:26:17.097Z",
+      "by": {
+        "login": "TarlyMormont",
+        "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
+      },
+      "featureId": null,
+      "type": "update",
+      "text": "a réordonné la liste"
     }
   ]
 }
