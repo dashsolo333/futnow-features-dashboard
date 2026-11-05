@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T13:08:13.900Z",
+  "updatedAt": "2026-11-05T13:08:16.076Z",
   "stages": [
     {
       "id": "idea",
@@ -116,7 +116,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 50,
+      "rank": 10,
       "releaseId": "",
       "devhubId": "radar",
       "links": [
@@ -738,7 +738,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 30,
+      "rank": 40,
       "releaseId": "",
       "devhubId": "futstore",
       "links": [
@@ -787,7 +787,7 @@
       "status": "",
       "statusAt": "",
       "statusBy": null,
-      "rank": 40,
+      "rank": 50,
       "releaseId": "",
       "devhubId": "kit-nolt",
       "links": [
@@ -1031,7 +1031,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 10,
+      "rank": 20,
       "releaseId": "",
       "devhubId": "revanche",
       "links": [
@@ -1355,7 +1355,7 @@
         "login": "dashsolo333",
         "avatar": "https://avatars.githubusercontent.com/u/266866216?v=4"
       },
-      "rank": 20,
+      "rank": 30,
       "releaseId": "",
       "devhubId": "pronos",
       "links": [
@@ -4879,6 +4879,17 @@
     {
       "id": "a_2026-11-05T13:08:13.900Z_null_update",
       "at": "2026-11-05T13:08:13.900Z",
+      "by": {
+        "login": "TarlyMormont",
+        "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
+      },
+      "featureId": null,
+      "type": "update",
+      "text": "a réordonné la liste"
+    },
+    {
+      "id": "a_2026-11-05T13:08:16.076Z_null_update",
+      "at": "2026-11-05T13:08:16.076Z",
       "by": {
         "login": "TarlyMormont",
         "avatar": "https://avatars.githubusercontent.com/u/30619803?v=4"
